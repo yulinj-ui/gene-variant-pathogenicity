@@ -2,7 +2,7 @@
 
 > 基因变异致病性评级分析技能 —— 一个为 Claude（Claude Code / Agent Skills）设计的、遵循 **ACMG/AMP 2015 + ClinGen SVI 系列更新 + ACGS 2024** 的临床级变异解读工作流，内置**三源结构化取数引擎**、**产前遗传咨询专项模块**与**多重质控门控**。
 
-<!-- Version: +GeneBe 三源集成 2026-07; +培训班课件复核 2026-09-21; +§1.8 框内插入不套 H 分支 2026-09-25; +频率证据 v2 (Step 0.45) 2026-09-29 -->
+<!-- Version: +GeneBe 三源集成 2026-07; +培训班课件复核 2026-09-21; +§1.8 框内插入不套 H 分支 2026-09-25; +频率证据 v2 (Step 0.45) 2026-09-29; +本地 dbNSFP 5.4a 2026-10-09 -->
 
 ---
 
@@ -77,13 +77,13 @@ gene-variant-pathogenicity/
 
 | 文件 | 行数 | 作用 |
 |---|---|---|
-| `SKILL.md` | ~1508 | 技能主体：角色、运行模式、Step 0–9、判定引擎、输出结构、关键原则 |
+| `SKILL.md` | ~1516 | 技能主体：角色、运行模式、Step 0–9、判定引擎、输出结构、关键原则 |
 | `references/ACMG_CRITERIA.md` | ~946 | PVS1 决策树、PM2/BA1/BS1、PS3/BS3、PM1、家系证据、矛盾处理、产前提醒 |
 | `references/CNV_CRITERIA.md` | ~251 | CNV 五段式评分、基因内 CNV 的 PVS1 复用、产前 CNV 专项 |
 | `references/FREQUENCY_EVIDENCE.md` | ~250 | 频率证据规则：FAF95/grpmax、Whiffin 最大可信 AF、等价写法陷阱、东亚人群补充 |
 | `references/freq_evidence.py` | ~633 | gnomAD GraphQL → 公共存储桶 VCF 远程 tabix 双来源取数，REF 核对、左对齐、等价写法扫描、VCEP 频率条款拉取 |
 | `references/freq_repeat_lookup.py` | ~314 | ClinVar 三态（FOUND / ABSENT_CONFIRMED / NOT_QUERIED）+ 重复区判定（PM4/BP3） |
-| `references/genebe_fields.py` | ~267 | VariantValidator + GeneBe + 五源 Worker 并跑，输出证据 JSON |
+| `references/genebe_fields.py` | ~344 | VariantValidator + GeneBe + 五源 Worker 并跑（可选本地 dbNSFP 5.4a），输出证据 JSON |
 
 ---
 
@@ -161,6 +161,7 @@ Step 9-V  参考文献 PMID 反查验证（输出前最后一道质控关卡）
 | **VariantValidator** | hg19 + hg38 双坐标（权威互证）+ 权威 HGVSp |
 | **GeneBe** | 变异自身 ClinVar 分类 + 自动 ACMG（仅对标）+ AlphaMissense / BayesDel |
 | **五源 Worker** | gnomAD 全局 + EAS 精确 AC/AN + 约束 + 全预测（CADD/REVEL/phyloP/SIFT/PolyPhen/SpliceAI）+ 同位点地形 |
+| **本地 dbNSFP 5.4a（可选）** | 本机 tabix 查询（无外发）；命中时 REVEL/AlphaMissense/BayesDel/MetaRNN/PrimateAI/VARITY/ESM1b/CADD 覆盖在线值，库不可用自动回落 |
 
 ### 命令行
 
@@ -182,6 +183,8 @@ python3 references/genebe_fields.py "NM_017780.4:c.2831G>A" --raw
 | `$WORKER_URL` / `--worker` | 五源 Worker base URL |
 | `$GENEBE_KEY` / `--genebe-key` | GeneBe Basic Auth `email:apikey`（防 429） |
 | `$NCBI_KEY` | 传给 Worker 稳定 ClinVar 同位点扫描 |
+| `$DBNSFP54_TABIX` | 本地 dbNSFP 5.4a（GRCh38）bgzip 文件路径，需同目录 `.tbi`；默认指向作者本机外置盘，其他机器须自行设置 |
+| `$TABIX_BIN` | tabix 可执行文件路径（不在 PATH 时） |
 
 ### 输出字段 → 下游模块
 
@@ -191,7 +194,8 @@ python3 references/genebe_fields.py "NM_017780.4:c.2831G>A" --raw
 | `coords` | 报告头 | 双坐标已 VV 互证 |
 | `clinvar` | Step 0.5 分流 | 变异自身分类 / 星级 / 提交 |
 | `frequency` | Step 1.2 | EAS 原始 AC/AN（仅筛；FAF95 另查 gnomAD） |
-| `predictors` | PP3/BP4 | 读 `*_score` + 技能阈值自定 |
+| `predictors` | PP3/BP4 | 读 `*_score` + 技能阈值自定；本地 5.4a 命中时 `source="dbNSFP5.4a(local)"` |
+| `dbnsfp54` | Step 1.2 / 模块 2 | 本地 5.4a 归并原始值；`found=false`=不在库（如 indel），`null`=库不可用 |
 | `constraint` | PVS1/PM2 背景 | pLI / LOEUF / mis_z |
 | `codon_landscape` | PS1/PM5 | 同密码子已分类变异 |
 | `acmg_benchmark` | 模块 5 外部对标 | GeneBe 自动 ACMG，**仅基准，绝不覆盖专家评级** |
@@ -351,6 +355,7 @@ CMA 报告 arr[GRCh37] 11p11.2(44,100,000-44,300,000)x1，请分类
 | `+培训班课件复核` | 2026-09-21 | 15 份讲者课件逐条比对，修正 12 处硬错误；补充产前前置质控、VUS 报告取舍与措辞、证据优先级与冲突组合判定 |
 | `+§1.8 框内插入` | 2026-09-25 | 框内插入不套 H 分支 |
 | `+频率证据 v2` | 2026-09-28/29 | 新增 Step 0.45 强制门控：三态取数（FOUND / ABSENT_CONFIRMED / NOT_QUERIED）、REF 核对与 indel 左对齐、gnomAD 双来源、重复区判定；起因是一次 indel 因"没查到"被误赋 PM2_Supporting 的事故 |
+| `+本地 dbNSFP 5.4a` | 2026-10-09 | `genebe_fields.py` 新增本地 tabix 源，预测分优先取 dbNSFP 5.4a 并标注来源版本；SKILL.md 新增 §0.4.2b 使用规则（SIFT/PolyPhen 不覆盖、indel 不覆盖勿读作良性） |
 
 ---
 
