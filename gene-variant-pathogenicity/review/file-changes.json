@@ -1,0 +1,202 @@
+[
+  {
+    "file": "SKILL.md",
+    "change": "modified"
+  },
+  {
+    "file": "assets/prenatal.md",
+    "change": "modified"
+  },
+  {
+    "file": "assets/report-cnv.md",
+    "change": "modified"
+  },
+  {
+    "file": "assets/report-snv.md",
+    "change": "modified"
+  },
+  {
+    "file": "original/ACMG_CRITERIA.md",
+    "change": "unchanged"
+  },
+  {
+    "file": "original/CNV_CRITERIA.md",
+    "change": "unchanged"
+  },
+  {
+    "file": "original/SKILL.md.txt",
+    "change": "unchanged"
+  },
+  {
+    "file": "original/genebe_fields.py.txt",
+    "change": "unchanged"
+  },
+  {
+    "file": "references/DATA_CONTRACT.md",
+    "change": "modified"
+  },
+  {
+    "file": "references/RULES_V2.md",
+    "change": "added"
+  },
+  {
+    "file": "references/WORKFLOW.md",
+    "change": "modified"
+  },
+  {
+    "file": "review/ACCEPTANCE.md",
+    "change": "modified"
+  },
+  {
+    "file": "review/CHANGELOG_V2.md",
+    "change": "added"
+  },
+  {
+    "file": "review/FEATURE_MAP.md",
+    "change": "modified"
+  },
+  {
+    "file": "review/MISSING_ITEMS.md",
+    "change": "added"
+  },
+  {
+    "file": "review/RULE_REVIEW.md",
+    "change": "modified"
+  },
+  {
+    "file": "review/SOURCE_CHECKS.md",
+    "change": "added"
+  },
+  {
+    "file": "review/USER_REVIEW.md",
+    "change": "added"
+  },
+  {
+    "file": "review/USER_REVIEW_INTAKE.md",
+    "change": "added"
+  },
+  {
+    "file": "review/example-evidence.json",
+    "change": "unchanged"
+  },
+  {
+    "file": "review/example-report-v2.md",
+    "change": "added"
+  },
+  {
+    "file": "review/example-score-v2.json",
+    "change": "added"
+  },
+  {
+    "file": "review/feature-map.json",
+    "change": "unchanged"
+  },
+  {
+    "file": "review/independent-review-v2.md",
+    "change": "added"
+  },
+  {
+    "file": "review/official-validator.log",
+    "change": "added"
+  },
+  {
+    "file": "review/offline-tests.log",
+    "change": "modified"
+  },
+  {
+    "file": "review/revision-decisions.json",
+    "change": "added"
+  },
+  {
+    "file": "review/rule-review.json",
+    "change": "unchanged"
+  },
+  {
+    "file": "review/source-checks.json",
+    "change": "added"
+  },
+  {
+    "file": "review/source-manifest.json",
+    "change": "unchanged"
+  },
+  {
+    "file": "review/structure-validation.log",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.1-ACCEPTANCE.md",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.1-example-score.json",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.1-independent-review.md",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.1-offline-tests.log",
+    "change": "added"
+  },
+  {
+    "file": "scripts/cnv_interval.py",
+    "change": "unchanged"
+  },
+  {
+    "file": "scripts/compare_frameworks.py",
+    "change": "added"
+  },
+  {
+    "file": "scripts/evidence_helpers.py",
+    "change": "added"
+  },
+  {
+    "file": "scripts/genebe_fields.py",
+    "change": "modified"
+  },
+  {
+    "file": "scripts/render_report.py",
+    "change": "added"
+  },
+  {
+    "file": "scripts/report_audit.py",
+    "change": "added"
+  },
+  {
+    "file": "scripts/run_offline_tests.py",
+    "change": "unchanged"
+  },
+  {
+    "file": "scripts/score.py",
+    "change": "modified"
+  },
+  {
+    "file": "scripts/validate_package.py",
+    "change": "modified"
+  },
+  {
+    "file": "tests/fixtures/case-v2.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/score-reviewed.json",
+    "change": "unchanged"
+  },
+  {
+    "file": "tests/fixtures/score-v2.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/sources.json",
+    "change": "unchanged"
+  },
+  {
+    "file": "tests/test_migration.py",
+    "change": "modified"
+  },
+  {
+    "file": "tests/test_v2.py",
+    "change": "added"
+  }
+]

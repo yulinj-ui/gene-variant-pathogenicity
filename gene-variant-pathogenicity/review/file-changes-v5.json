@@ -1,0 +1,138 @@
+[
+  {
+    "file": "SKILL.md",
+    "change": "modified"
+  },
+  {
+    "file": "references/PVS1_V5.md",
+    "change": "added"
+  },
+  {
+    "file": "references/pvs1-inventory.json",
+    "change": "added"
+  },
+  {
+    "file": "references/pvs1-source-manifest.json",
+    "change": "added"
+  },
+  {
+    "file": "references/sources/pvs1-2018.html",
+    "change": "added"
+  },
+  {
+    "file": "references/sources/pvs1-figure1.jpg",
+    "change": "added"
+  },
+  {
+    "file": "references/sources/pvs1-template.pptx",
+    "change": "added"
+  },
+  {
+    "file": "review/ACCEPTANCE.md",
+    "change": "modified"
+  },
+  {
+    "file": "review/CHANGELOG_V5.md",
+    "change": "added"
+  },
+  {
+    "file": "review/MISSING_ITEMS.md",
+    "change": "modified"
+  },
+  {
+    "file": "review/PVS1_PATH_ACCEPTANCE.md",
+    "change": "added"
+  },
+  {
+    "file": "review/RULE_STATUS_V5.md",
+    "change": "added"
+  },
+  {
+    "file": "review/example-pvs1-v5.json",
+    "change": "added"
+  },
+  {
+    "file": "review/example-report-v5.md",
+    "change": "added"
+  },
+  {
+    "file": "review/offline-tests.log",
+    "change": "modified"
+  },
+  {
+    "file": "review/pvs1-path-coverage-v5.json",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.4-ACCEPTANCE.md",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.4-MISSING_ITEMS.md",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.4-official-validator.log",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.4-offline-tests.log",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.4-package-manifest.json",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.4-structure-validation.log",
+    "change": "added"
+  },
+  {
+    "file": "scripts/pvs1_review.py",
+    "change": "added"
+  },
+  {
+    "file": "scripts/render_report.py",
+    "change": "modified"
+  },
+  {
+    "file": "scripts/score.py",
+    "change": "modified"
+  },
+  {
+    "file": "scripts/validate_package.py",
+    "change": "modified"
+  },
+  {
+    "file": "tests/fixtures/case-v5.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/pvs1-D01-v5.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/pvs1-I02-v5.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/pvs1-N01-v5.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/pvs1-S09-v5.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/pvs1-U04-v5.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/pvs1-all-paths-v5.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/test_v5.py",
+    "change": "added"
+  }
+]

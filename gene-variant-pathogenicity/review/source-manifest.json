@@ -1,0 +1,26 @@
+[
+  {
+    "file": "original/SKILL.md.txt",
+    "sha256": "e0459b0ff32102ff483a6e4a09337df1cd7d9b8dadd965789ed2cfae858af02a",
+    "bytes": 97389,
+    "lines": 1431
+  },
+  {
+    "file": "original/ACMG_CRITERIA.md",
+    "sha256": "9ce63e99729666a26c8d5521d5069abbfc3e7b0b207b6d3311e9029dfe853270",
+    "bytes": 87816,
+    "lines": 925
+  },
+  {
+    "file": "original/CNV_CRITERIA.md",
+    "sha256": "a2ab6a5622d9ee348d64c3b66f8717590b334ec9cd25d5a9f38cc7cc48e25822",
+    "bytes": 22937,
+    "lines": 251
+  },
+  {
+    "file": "original/genebe_fields.py.txt",
+    "sha256": "89ab4facaf624c9c6c4106ff28a2d9dc7142ba4133d699d4470dd0411cc252a9",
+    "bytes": 13665,
+    "lines": 267
+  }
+]

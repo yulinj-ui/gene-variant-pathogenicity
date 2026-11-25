@@ -1,0 +1,178 @@
+[
+  {
+    "id": "S01",
+    "title": "Richards et al. 2015",
+    "url": "https://www.cmgg.be/assets/bestanden/Richards-et-al-ACMG-guidelines-2015.pdf",
+    "location": "作者稿第33–36页，表3–5",
+    "finding": "原始组合结构、PM1和证据默认强度已核对；比较器不负责每条证据适用性或后续修订",
+    "access": "primary_fulltext_targeted",
+    "review_items": [
+      "R05",
+      "R09",
+      "R18"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S02",
+    "title": "Tavtigian et al. 2020",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8011844/",
+    "location": "表3及脚注",
+    "finding": "整数分区已核对；采用原文LB −1至−6，不静默替换其他体系的−2门槛；原文说明先验限制",
+    "access": "primary_indexed_fulltext_targeted",
+    "review_items": [
+      "R05"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S03",
+    "title": "ClinGen PM2 2020",
+    "url": "https://clinicalgenome.org/site/assets/files/5182/pm2_-_svi_recommendation_-_approved_sept2020.pdf",
+    "location": "第1页",
+    "finding": "支持强度及PVS1+PM2_Supporting可达LP的建议已核对；不能从查询失败赋值",
+    "access": "official_pdf_targeted",
+    "review_items": [
+      "R01",
+      "R05"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S04",
+    "title": "SVI de novo v1.1，2021更新",
+    "url": "https://www.clinicalgenome.org/site/assets/files/3461/svi_proposal_for_de_novo_criteria_v1_1.pdf",
+    "location": "表1、2，脚注，第2页特殊遗传情形",
+    "finding": "门槛0.5/1/2/4，高异质性贡献封顶1；病例分不是最终Bayesian分。AR、X连锁、嵌合另有条件，计算器不自动处理",
+    "access": "official_pdf_targeted",
+    "review_items": [
+      "R10"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S05",
+    "title": "SVI PM3 v1.0，2019",
+    "url": "https://www.clinicalgenome.org/docs/pm3-recommendation-for-in-trans-criterion-pm3-version-1.0/",
+    "location": "表1、2及第2页Considerations",
+    "finding": "相位未知对侧P=0.5、LP=0.25；原文有特定单亲定相路径。需受累、稀有和避免循环分类；未做自动赋值",
+    "access": "official_pdf_targeted",
+    "review_items": [
+      "R10"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S06",
+    "title": "Pejaver et al. 2022",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9748256/",
+    "location": "表2、表4、Implications for combining rules",
+    "finding": "REVEL分档及PM1+PP3合计Strong上限已定位；工具需预先选择，不按结果挑选；表2极低分区间只保留为测试标注",
+    "access": "primary_indexed_fulltext_targeted",
+    "review_items": [
+      "R09",
+      "R18"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S07",
+    "title": "Riggs et al. 2020",
+    "url": "https://www.vkgl.nl/nl/kwaliteit/formulieren-documenten-kwaliteit/8-toelichtende-documenten?download=81:richtlijn-interpretatie-en-rapportage-constitutionele-cnvs-2020",
+    "location": "表1/2，第8–9页分类说明",
+    "finding": "分区、1B和4O范围核对；不由无编码基因直接判良性，不启用固定频率映射；全部补充材料尚未逐项审定",
+    "access": "primary_reprint_targeted",
+    "review_items": [
+      "R06",
+      "R07",
+      "R17"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S08",
+    "title": "Abou Tayoun et al. 2018",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/6185798/",
+    "location": "Intra-genic duplications",
+    "finding": "未知插入位点的降档有长度/移码/NMD等前提；不推广成任意重复可赋Strong。整套PVS1决策树尚未自动实现",
+    "access": "primary_indexed_section",
+    "review_items": [
+      "R06"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S09",
+    "title": "Brnich et al.，在线2019/卷期2020",
+    "url": "https://genomemedicine.biomedcentral.com/counter/pdf/10.1186/s13073-019-0690-2.pdf",
+    "location": "第6–7页，步骤3及第10页限制",
+    "finding": "11个对照路径带有实验评价前提；无校准时不是只按数量决定；自动PS3/BS3关闭",
+    "access": "primary_pdf_targeted",
+    "review_items": [
+      "R08"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S10",
+    "title": "Biesecker et al. 2024",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806742/",
+    "location": "表2及Figure 2讨论",
+    "finding": "原文明确不能直接分摊积分；完整小数、位点合并及封顶框架未实现，过渡降档也未自动启用",
+    "access": "primary_indexed_section",
+    "review_items": [
+      "R11"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S11",
+    "title": "Walker et al. 2023",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10357475/",
+    "location": "Combined application…及Figure 5相关讨论",
+    "finding": "RNA、蛋白实验与预测分开，重复机制不能叠加；框内插入通用禁令不直接采用，疾病适用性仍需复核",
+    "access": "primary_indexed_section",
+    "review_items": [
+      "R18",
+      "R19"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  },
+  {
+    "id": "S12",
+    "title": "ESHG/ISPD 2026",
+    "url": "https://obgyn.onlinelibrary.wiley.com/doi/10.1002/pd.70248",
+    "location": "首次发表日期，建议20，方法验证部分",
+    "finding": "确于2026-09-15发表；hot VUS报告有情境、MDT及父母偏好条件；不自动改变机构签发政策",
+    "access": "publisher_fulltext_targeted",
+    "review_items": [
+      "R12",
+      "R15"
+    ],
+    "checked_at": "2026-09-26",
+    "checked_by": "Codex source comparison, not clinical signoff",
+    "status": "source_checked_test_only"
+  }
+]

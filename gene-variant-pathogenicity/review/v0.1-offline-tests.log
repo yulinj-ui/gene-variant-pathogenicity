@@ -1,0 +1,49 @@
+test_agreement (test_migration.AnnotationTests) ... ok
+test_bounded_predictor (test_migration.AnnotationTests) ... ok
+test_build_mismatch (test_migration.AnnotationTests) ... ok
+test_coordinate_mismatch (test_migration.AnnotationTests) ... ok
+test_error_object_not_success (test_migration.AnnotationTests) ... ok
+test_http_429_retry (test_migration.AnnotationTests) ... ok
+test_http_auth_error_not_retried (test_migration.AnnotationTests) ... ok
+test_invalid_frequency (test_migration.AnnotationTests) ... ok
+test_malformed_frequency_and_predictor_payload (test_migration.AnnotationTests) ... ok
+test_missing_is_not_zero (test_migration.AnnotationTests) ... ok
+test_offline_cli_from_other_cwd (test_migration.AnnotationTests) ... ok
+test_online_mock_has_no_default_worker_or_key_forward (test_migration.AnnotationTests) ... ok
+test_predictor_conflict (test_migration.AnnotationTests) ... ok
+test_predictor_conflict_stays_conflict (test_migration.AnnotationTests) ... ok
+test_protein_conflict (test_migration.AnnotationTests) ... ok
+test_timeout_exhausted (test_migration.AnnotationTests) ... ok
+test_unresolved_protein_not_passed (test_migration.AnnotationTests) ... ok
+test_version_mismatch (test_migration.AnnotationTests) ... ok
+test_vv_missing_never_claims_crosscheck (test_migration.AnnotationTests) ... ok
+test_vv_warnings_block (test_migration.AnnotationTests) ... ok
+test_wrong_transcript_no_fallback (test_migration.AnnotationTests) ... ok
+test_every_nonblank_line_mapped_exactly_once (test_migration.ArchiveTests) ... ok
+test_original_hashes (test_migration.ArchiveTests) ... ok
+test_single_discoverable_skill (test_migration.ArchiveTests) ... ok
+test_build_mismatch (test_migration.IntervalTests) ... ok
+test_coordinate_conventions (test_migration.IntervalTests) ... ok
+test_geometry_never_assigns_code (test_migration.IntervalTests) ... ok
+test_invalid_bounds (test_migration.IntervalTests) ... ok
+test_partial_not_complete (test_migration.IntervalTests) ... ok
+test_touching_not_overlap (test_migration.IntervalTests) ... ok
+test_cap (test_migration.ScoreTests) ... ok
+test_cnv_boundaries (test_migration.ScoreTests) ... ok
+test_duplicate_patient_different_sources (test_migration.ScoreTests) ... ok
+test_mutual_exclusion (test_migration.ScoreTests) ... ok
+test_nan_rejected (test_migration.ScoreTests) ... ok
+test_no_clinical_classification (test_migration.ScoreTests) ... ok
+test_no_evidence_not_vus (test_migration.ScoreTests) ... ok
+test_pending_not_scored (test_migration.ScoreTests) ... ok
+test_points_cannot_override_rule (test_migration.ScoreTests) ... ok
+test_rule_cannot_approve_different_code (test_migration.ScoreTests) ... ok
+test_snv_boundaries (test_migration.ScoreTests) ... ok
+test_source_required (test_migration.ScoreTests) ... ok
+test_string_source_ids_rejected (test_migration.ScoreTests) ... ok
+test_wrong_framework (test_migration.ScoreTests) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.324s
+
+OK

@@ -1,0 +1,134 @@
+{
+  "version": "ClinGen July 2018; linked by official guidance page checked 2026-09-27",
+  "source": "https://www.clinicalgenome.org/docs/ba1-exception-list/",
+  "location": "Table 1 page 1; GRCh37 footnote",
+  "complete_current_exception_universe": false,
+  "variants": [
+    {
+      "id": "BA1-2018-1",
+      "gene": "ACAD9",
+      "hgvs": "NM_014049.4:c.-44_-41dupTAAG",
+      "clinvar_variation_id": "1018",
+      "allele_registry_id": "CA114709",
+      "coordinate": {
+        "build": "GRCh37",
+        "chrom": "3",
+        "pos": 128598490,
+        "ref": "C",
+        "alt": "CTAAG"
+      }
+    },
+    {
+      "id": "BA1-2018-2",
+      "gene": "GJB2",
+      "hgvs": "NM_004004.5:c.109G>A",
+      "clinvar_variation_id": "17023",
+      "allele_registry_id": "CA172210",
+      "coordinate": {
+        "build": "GRCh37",
+        "chrom": "13",
+        "pos": 20763612,
+        "ref": "C",
+        "alt": "T"
+      }
+    },
+    {
+      "id": "BA1-2018-3",
+      "gene": "HFE",
+      "hgvs": "NM_000410.3:c.187C>G",
+      "clinvar_variation_id": "10",
+      "allele_registry_id": "CA113797",
+      "coordinate": {
+        "build": "GRCh37",
+        "chrom": "6",
+        "pos": 26091179,
+        "ref": "C",
+        "alt": "G"
+      }
+    },
+    {
+      "id": "BA1-2018-4",
+      "gene": "HFE",
+      "hgvs": "NM_000410.3:c.845G>A",
+      "clinvar_variation_id": "9",
+      "allele_registry_id": "CA113795",
+      "coordinate": {
+        "build": "GRCh37",
+        "chrom": "6",
+        "pos": 26093141,
+        "ref": "G",
+        "alt": "A"
+      }
+    },
+    {
+      "id": "BA1-2018-5",
+      "gene": "MEFV",
+      "hgvs": "NM_000243.2:c.1105C>T",
+      "clinvar_variation_id": "2551",
+      "allele_registry_id": "CA280114",
+      "coordinate": {
+        "build": "GRCh37",
+        "chrom": "16",
+        "pos": 3299586,
+        "ref": "G",
+        "alt": "A"
+      }
+    },
+    {
+      "id": "BA1-2018-6",
+      "gene": "MEFV",
+      "hgvs": "NM_000243.2:c.1223G>A",
+      "clinvar_variation_id": "2552",
+      "allele_registry_id": "CA280116",
+      "coordinate": {
+        "build": "GRCh37",
+        "chrom": "16",
+        "pos": 3299468,
+        "ref": "C",
+        "alt": "T"
+      }
+    },
+    {
+      "id": "BA1-2018-7",
+      "gene": "PIBF1",
+      "hgvs": "NM_006346.2:c.1214G>A",
+      "clinvar_variation_id": "217689",
+      "allele_registry_id": "CA210261",
+      "coordinate": {
+        "build": "GRCh37",
+        "chrom": "13",
+        "pos": 73409497,
+        "ref": "G",
+        "alt": "A"
+      }
+    },
+    {
+      "id": "BA1-2018-8",
+      "gene": "ACADS",
+      "hgvs": "NM_000017.3:c.511C>T",
+      "clinvar_variation_id": "3830",
+      "allele_registry_id": "CA312214",
+      "coordinate": {
+        "build": "GRCh37",
+        "chrom": "12",
+        "pos": 121175678,
+        "ref": "C",
+        "alt": "T"
+      }
+    },
+    {
+      "id": "BA1-2018-9",
+      "gene": "BTD",
+      "hgvs": "NM_000060.4:c.1330G>C",
+      "clinvar_variation_id": "1900",
+      "allele_registry_id": "CA090886",
+      "coordinate": {
+        "build": "GRCh37",
+        "chrom": "3",
+        "pos": 15686693,
+        "ref": "G",
+        "alt": "C"
+      }
+    }
+  ]
+}

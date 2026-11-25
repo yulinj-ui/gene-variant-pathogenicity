@@ -1,0 +1,27 @@
+{
+  "tool": "pvs1_review",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6185798/",
+  "status": "test_calculation_only",
+  "blockers": [],
+  "path_results": [
+    {
+      "scenario_id": "scenario1",
+      "path_id": "N01",
+      "nodes": [
+        "60",
+        "61",
+        "63",
+        "65"
+      ],
+      "source_tree_output": "PVS1",
+      "tree_strength": "VeryStrong",
+      "global_exclusions": []
+    }
+  ],
+  "tree_strength": "VeryStrong",
+  "adjusted_strength": "VeryStrong",
+  "mechanism_tier": "G1",
+  "automatic_score_import": false,
+  "evidence_code": null,
+  "classification": null
+}

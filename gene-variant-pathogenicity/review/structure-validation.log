@@ -1,0 +1,2 @@
+PASS: local package scalar frontmatter, references, fences, single entrypoint and original hashes
+This is the bundled local validator; see the separate official validator log for its result.

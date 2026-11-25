@@ -1,0 +1,15 @@
+{
+  "joint_points": "3.4",
+  "review": {
+    "applicability_reviewed": true,
+    "phase_reviewed": true,
+    "penetrance_reviewed": true,
+    "independence_reviewed": true,
+    "probability_allocation_reviewed": true,
+    "cap_reviewed": true,
+    "reviewer": "synthetic reviewer",
+    "reviewed_at": "2026-09-27",
+    "source": "synthetic fixture",
+    "rationale": "synthetic calculation test; not a patient"
+  }
+}

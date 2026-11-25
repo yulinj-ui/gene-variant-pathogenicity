@@ -1,0 +1,57 @@
+{
+  "review": {
+    "recessive_disease": true,
+    "disease_applicability": true,
+    "frequency_threshold_validated": true,
+    "case_independence_reviewed": true,
+    "vcep_checked": true,
+    "reviewer": "synthetic reviewer",
+    "reviewed_at": "2026-09-27",
+    "source": "synthetic fixture",
+    "rationale": "synthetic calculation test; not a patient"
+  },
+  "cases": [
+    {
+      "id": "case0",
+      "family_id": "family0",
+      "phase": "unknown",
+      "partner_class": "LP",
+      "partner_variant_id": "variant0",
+      "source_ids": [
+        "synthetic"
+      ],
+      "review": {
+        "affected": true,
+        "target_rare": true,
+        "partner_rare": true,
+        "independent_partner_classification": true,
+        "phase_or_homozygosity_reviewed": true,
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "source": "synthetic fixture",
+        "rationale": "synthetic calculation test; not a patient"
+      }
+    },
+    {
+      "id": "case1",
+      "family_id": "family1",
+      "phase": "unknown",
+      "partner_class": "LP",
+      "partner_variant_id": "variant1",
+      "source_ids": [
+        "synthetic"
+      ],
+      "review": {
+        "affected": true,
+        "target_rare": true,
+        "partner_rare": true,
+        "independent_partner_classification": true,
+        "phase_or_homozygosity_reviewed": true,
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "source": "synthetic fixture",
+        "rationale": "synthetic calculation test; not a patient"
+      }
+    }
+  ]
+}

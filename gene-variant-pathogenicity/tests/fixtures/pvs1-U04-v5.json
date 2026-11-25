@@ -1,0 +1,81 @@
+{
+  "kind": "duplication",
+  "identity": {
+    "variant_id": "synthetic-v1",
+    "build": "GRCh38",
+    "genomic_change": "synthetic-only",
+    "transcript": "NM_TEST.1",
+    "gene": "SYNTHETIC",
+    "disease": "synthetic disease",
+    "inheritance": "AD"
+  },
+  "review": {
+    "identity_reviewed": true,
+    "disease_mechanism_reviewed": true,
+    "transcript_reviewed": true,
+    "exon_population_reviewed": true,
+    "vcep_reviewed": true,
+    "technical_quality_reviewed": true,
+    "reviewer": "synthetic reviewer",
+    "reviewed_at": "2026-09-27",
+    "source": "synthetic fixture",
+    "rationale": "synthetic calculation test; not a patient"
+  },
+  "source_version": "AbouTayoun_2018_generic",
+  "vcep_policy": "reviewed_generic_applicable",
+  "basis_ids": [
+    "synthetic-pvs1-basis"
+  ],
+  "facts_review": {
+    "nmd_or_frame": {
+      "source": "synthetic example, not patient evidence",
+      "location": "synthetic fact record",
+      "rationale": "engineering test only"
+    },
+    "exon_relevance": {
+      "source": "synthetic example, not patient evidence",
+      "location": "synthetic fact record",
+      "rationale": "engineering test only"
+    },
+    "population_tolerance": {
+      "source": "synthetic example, not patient evidence",
+      "location": "synthetic fact record",
+      "rationale": "engineering test only"
+    },
+    "critical_region_or_start": {
+      "source": "synthetic example, not patient evidence",
+      "location": "synthetic fact record",
+      "rationale": "engineering test only"
+    },
+    "mechanism": {
+      "source": "synthetic example, not patient evidence",
+      "location": "synthetic fact record",
+      "rationale": "engineering test only"
+    }
+  },
+  "mechanism": {
+    "lof_mechanism": "established",
+    "association": "definitive",
+    "independent_pathogenic_lof_count": 3,
+    "phenotype_lof_count": 3,
+    "phenotype_total_count": 10,
+    "associated_lof_count": 3,
+    "multiple_exons": true,
+    "single_exon_gene": false,
+    "null_mouse": false
+  },
+  "scenarios": [
+    {
+      "id": "scenario1",
+      "facts": {
+        "exon_present": true,
+        "lof_common": false,
+        "length_known": true,
+        "whole_gene": false,
+        "external_insertion": false,
+        "tandem": "presumed",
+        "effect": "disrupts_frame_and_nmd"
+      }
+    }
+  ]
+}

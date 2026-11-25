@@ -1,0 +1,58 @@
+[
+  {
+    "file": "SKILL.md",
+    "status": "modified"
+  },
+  {
+    "file": "references/CNV_MANUAL_REVIEW.md",
+    "status": "added"
+  },
+  {
+    "file": "tests/test_v5r2.py",
+    "status": "modified"
+  },
+  {
+    "file": "tests/manual_fixture.py",
+    "status": "added"
+  },
+  {
+    "file": "tests/test_v5r3.py",
+    "status": "added"
+  },
+  {
+    "file": "review/offline-tests.log",
+    "status": "modified"
+  },
+  {
+    "file": "review/CHANGELOG_V5R3.md",
+    "status": "added"
+  },
+  {
+    "file": "review/ACCEPTANCE.md",
+    "status": "modified"
+  },
+  {
+    "file": "scripts/validate_package.py",
+    "status": "modified"
+  },
+  {
+    "file": "scripts/render_report.py",
+    "status": "modified"
+  },
+  {
+    "file": "scripts/cnv_manual_review.py",
+    "status": "added"
+  },
+  {
+    "file": "scripts/cnv_case.py",
+    "status": "modified"
+  },
+  {
+    "file": "assets/CNV人工审阅表.md",
+    "status": "added"
+  },
+  {
+    "file": "assets/cnv-manual-review-template.json",
+    "status": "added"
+  }
+]

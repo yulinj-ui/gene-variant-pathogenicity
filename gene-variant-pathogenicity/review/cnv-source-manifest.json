@@ -1,0 +1,18 @@
+[
+  {
+    "file": "references/sources/CNV-Riggs-Supplemental-Material-1.docx",
+    "sha256": "29f4b181cf46c729fb14784703b744598fb9001776e4aafd8e9f0073b30649a3"
+  },
+  {
+    "file": "references/sources/CNV-supplement.txt",
+    "sha256": "069cd2ab94e678bb12f15968fce40fa788cd723948ba7961ed32c69660986d5c"
+  },
+  {
+    "file": "references/sources/CNV-loss.html",
+    "sha256": "fc407f1918e5e1ffe41f6552284048ef64ec00edf02912129b03b88004c1222f"
+  },
+  {
+    "file": "references/sources/CNV-gain.html",
+    "sha256": "65a9190093972acd96438912b8346592024eba96d8d54fa8537ab437ee2cfc62"
+  }
+]

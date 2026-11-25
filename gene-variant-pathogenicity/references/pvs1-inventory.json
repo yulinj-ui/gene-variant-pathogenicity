@@ -1,0 +1,2652 @@
+{
+  "status": "review_inventory_only_not_executable",
+  "source_version": "2018 generic Figure 1 plus ClinGen editable template retrieved 2026-09-27",
+  "entry_nodes": [
+    "60",
+    "87",
+    "131",
+    "149",
+    "160"
+  ],
+  "nodes": [
+    {
+      "id": "60",
+      "label_zh": "无义或移码变异",
+      "kind": "entry",
+      "next": [
+        "61",
+        "62"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "60",
+      "position_emu": {
+        "x": "80325",
+        "y": "225673"
+      },
+      "size_emu": {
+        "cx": "1105800",
+        "cy": "2819700"
+      }
+    },
+    {
+      "id": "61",
+      "label_zh": "预测发生NMD",
+      "kind": "condition",
+      "next": [
+        "63",
+        "64"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "61",
+      "position_emu": {
+        "x": "1664575",
+        "y": "216325"
+      },
+      "size_emu": {
+        "cx": "2374200",
+        "cy": "705600"
+      }
+    },
+    {
+      "id": "62",
+      "label_zh": "预测不发生NMD",
+      "kind": "condition",
+      "next": [
+        "67",
+        "68"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "62",
+      "position_emu": {
+        "x": "1664575",
+        "y": "1464775"
+      },
+      "size_emu": {
+        "cx": "2374200",
+        "cy": "958800"
+      }
+    },
+    {
+      "id": "63",
+      "label_zh": "受影响外显子存在于有生物学意义的转录本",
+      "kind": "condition",
+      "next": [
+        "65"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "63",
+      "position_emu": {
+        "x": "4536350",
+        "y": "192700"
+      },
+      "size_emu": {
+        "cx": "5868000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "64",
+      "label_zh": "受影响外显子缺失于有生物学意义的转录本",
+      "kind": "condition",
+      "next": [
+        "66"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "64",
+      "position_emu": {
+        "x": "4536275",
+        "y": "621275"
+      },
+      "size_emu": {
+        "cx": "5868000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "65",
+      "label_zh": "PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "65",
+      "position_emu": {
+        "x": "10945225",
+        "y": "192700"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "66",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "66",
+      "position_emu": {
+        "x": "10945225",
+        "y": "621275"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "67",
+      "label_zh": "受截短/改变区域对蛋白功能关键",
+      "kind": "condition",
+      "next": [
+        "70"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "67",
+      "position_emu": {
+        "x": "4529000",
+        "y": "1112700"
+      },
+      "size_emu": {
+        "cx": "5896500",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "68",
+      "label_zh": "该区域功能作用未知",
+      "kind": "condition",
+      "next": [
+        "69",
+        "74"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "68",
+      "position_emu": {
+        "x": "4557575",
+        "y": "1487150"
+      },
+      "size_emu": {
+        "cx": "1080900",
+        "cy": "1409100"
+      }
+    },
+    {
+      "id": "69",
+      "label_zh": "该外显子LoF在人群常见，和/或外显子不在相关转录本",
+      "kind": "condition",
+      "next": [
+        "71"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "69",
+      "position_emu": {
+        "x": "6201875",
+        "y": "1497075"
+      },
+      "size_emu": {
+        "cx": "4234500",
+        "cy": "461700"
+      }
+    },
+    {
+      "id": "70",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "70",
+      "position_emu": {
+        "x": "10945225",
+        "y": "1112700"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "71",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "71",
+      "position_emu": {
+        "x": "10945225",
+        "y": "1542225"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "371400"
+      }
+    },
+    {
+      "id": "72",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "72",
+      "position_emu": {
+        "x": "10945225",
+        "y": "2130450"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "324300"
+      }
+    },
+    {
+      "id": "73",
+      "label_zh": "PVS1_Moderate",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "73",
+      "position_emu": {
+        "x": "10945225",
+        "y": "2633075"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "371400"
+      }
+    },
+    {
+      "id": "74",
+      "label_zh": "该外显子LoF在人群不常见，且外显子在相关转录本",
+      "kind": "condition",
+      "next": [
+        "75",
+        "76"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "74",
+      "position_emu": {
+        "x": "6201875",
+        "y": "2066250"
+      },
+      "size_emu": {
+        "cx": "2618100",
+        "cy": "978900"
+      }
+    },
+    {
+      "id": "75",
+      "label_zh": "去除蛋白比例>10%",
+      "kind": "condition",
+      "next": [
+        "72"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "75",
+      "position_emu": {
+        "x": "9204900",
+        "y": "2066250"
+      },
+      "size_emu": {
+        "cx": "1231500",
+        "cy": "452700"
+      }
+    },
+    {
+      "id": "76",
+      "label_zh": "去除蛋白比例<10%",
+      "kind": "condition",
+      "next": [
+        "73"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "76",
+      "position_emu": {
+        "x": "9204825",
+        "y": "2592425"
+      },
+      "size_emu": {
+        "cx": "1231500",
+        "cy": "452700"
+      }
+    },
+    {
+      "id": "87",
+      "label_zh": "GT–AG经典±1/±2剪接位点",
+      "kind": "entry",
+      "next": [
+        "88",
+        "106",
+        "89"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "87",
+      "position_emu": {
+        "x": "80325",
+        "y": "3209450"
+      },
+      "size_emu": {
+        "cx": "1105800",
+        "cy": "4800300"
+      }
+    },
+    {
+      "id": "88",
+      "label_zh": "外显子跳跃/隐蔽剪接破坏阅读框，且预测NMD",
+      "kind": "condition",
+      "next": [
+        "90",
+        "92"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "88",
+      "position_emu": {
+        "x": "1664575",
+        "y": "3308700"
+      },
+      "size_emu": {
+        "cx": "2374200",
+        "cy": "802500"
+      }
+    },
+    {
+      "id": "89",
+      "label_zh": "外显子跳跃/隐蔽剪接保持阅读框",
+      "kind": "condition",
+      "next": [
+        "210",
+        "97"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "89",
+      "position_emu": {
+        "x": "1654125",
+        "y": "6290300"
+      },
+      "size_emu": {
+        "cx": "2374200",
+        "cy": "1558200"
+      }
+    },
+    {
+      "id": "90",
+      "label_zh": "受影响外显子存在于有生物学意义的转录本",
+      "kind": "condition",
+      "next": [
+        "98"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "90",
+      "position_emu": {
+        "x": "4536350",
+        "y": "3232500"
+      },
+      "size_emu": {
+        "cx": "5868000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "91",
+      "label_zh": "受截短/改变区域对蛋白功能关键",
+      "kind": "condition",
+      "next": [
+        "100"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "91",
+      "position_emu": {
+        "x": "4507775",
+        "y": "4114825"
+      },
+      "size_emu": {
+        "cx": "5896500",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "92",
+      "label_zh": "受影响外显子缺失于有生物学意义的转录本",
+      "kind": "condition",
+      "next": [
+        "99"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "92",
+      "position_emu": {
+        "x": "4536275",
+        "y": "3661075"
+      },
+      "size_emu": {
+        "cx": "5868000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "93",
+      "label_zh": "该区域功能作用未知",
+      "kind": "condition",
+      "next": [
+        "94",
+        "95"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "93",
+      "position_emu": {
+        "x": "4536350",
+        "y": "4489275"
+      },
+      "size_emu": {
+        "cx": "1080900",
+        "cy": "1558200"
+      }
+    },
+    {
+      "id": "94",
+      "label_zh": "该外显子LoF在人群常见，和/或外显子不在相关转录本",
+      "kind": "condition",
+      "next": [
+        "101"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "94",
+      "position_emu": {
+        "x": "6180650",
+        "y": "4499200"
+      },
+      "size_emu": {
+        "cx": "4234500",
+        "cy": "461700"
+      }
+    },
+    {
+      "id": "95",
+      "label_zh": "该外显子LoF在人群不常见，且外显子在相关转录本",
+      "kind": "condition",
+      "next": [
+        "96",
+        "105"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "95",
+      "position_emu": {
+        "x": "6180650",
+        "y": "5068725"
+      },
+      "size_emu": {
+        "cx": "2618100",
+        "cy": "978900"
+      }
+    },
+    {
+      "id": "96",
+      "label_zh": "去除蛋白比例>10%",
+      "kind": "condition",
+      "next": [
+        "102"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "96",
+      "position_emu": {
+        "x": "9183675",
+        "y": "5068725"
+      },
+      "size_emu": {
+        "cx": "1231500",
+        "cy": "452700"
+      }
+    },
+    {
+      "id": "97",
+      "label_zh": "受截短/改变区域对蛋白功能关键",
+      "kind": "condition",
+      "next": [
+        "104"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "97",
+      "position_emu": {
+        "x": "4533750",
+        "y": "7752350"
+      },
+      "size_emu": {
+        "cx": "5907300",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "98",
+      "label_zh": "PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "98",
+      "position_emu": {
+        "x": "10945225",
+        "y": "3232500"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "99",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "99",
+      "position_emu": {
+        "x": "10945225",
+        "y": "3661075"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "100",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "100",
+      "position_emu": {
+        "x": "10945225",
+        "y": "4114825"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "101",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "101",
+      "position_emu": {
+        "x": "10945225",
+        "y": "4544350"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "371400"
+      }
+    },
+    {
+      "id": "102",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "102",
+      "position_emu": {
+        "x": "10945225",
+        "y": "5132925"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "324300"
+      }
+    },
+    {
+      "id": "103",
+      "label_zh": "PVS1_Moderate",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "103",
+      "position_emu": {
+        "x": "10945225",
+        "y": "5635550"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "371400"
+      }
+    },
+    {
+      "id": "104",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "104",
+      "position_emu": {
+        "x": "10945225",
+        "y": "7759100"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "105",
+      "label_zh": "去除蛋白比例<10%",
+      "kind": "condition",
+      "next": [
+        "103"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "105",
+      "position_emu": {
+        "x": "9183600",
+        "y": "5594900"
+      },
+      "size_emu": {
+        "cx": "1231500",
+        "cy": "452700"
+      }
+    },
+    {
+      "id": "106",
+      "label_zh": "外显子跳跃/隐蔽剪接破坏阅读框，且预测不发生NMD",
+      "kind": "condition",
+      "next": [
+        "91",
+        "93"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "106",
+      "position_emu": {
+        "x": "1643625",
+        "y": "4315725"
+      },
+      "size_emu": {
+        "cx": "2395200",
+        "cy": "1612200"
+      }
+    },
+    {
+      "id": "131",
+      "label_zh": "缺失：单外显子至全基因",
+      "kind": "entry",
+      "next": [
+        "134",
+        "132",
+        "168",
+        "133"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "131",
+      "position_emu": {
+        "x": "80325",
+        "y": "8238775"
+      },
+      "size_emu": {
+        "cx": "1105800",
+        "cy": "3657300"
+      }
+    },
+    {
+      "id": "132",
+      "label_zh": "单至多外显子缺失，破坏阅读框且预测NMD",
+      "kind": "condition",
+      "next": [
+        "135",
+        "137"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "132",
+      "position_emu": {
+        "x": "1701200",
+        "y": "8738200"
+      },
+      "size_emu": {
+        "cx": "2327100",
+        "cy": "802500"
+      }
+    },
+    {
+      "id": "133",
+      "label_zh": "单至多外显子缺失，保持阅读框",
+      "kind": "condition",
+      "next": [
+        "138",
+        "141"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "133",
+      "position_emu": {
+        "x": "1701200",
+        "y": "10904150"
+      },
+      "size_emu": {
+        "cx": "2327100",
+        "cy": "802500"
+      }
+    },
+    {
+      "id": "134",
+      "label_zh": "全基因缺失",
+      "kind": "condition",
+      "next": [
+        "140"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "134",
+      "position_emu": {
+        "x": "1701200",
+        "y": "8253750"
+      },
+      "size_emu": {
+        "cx": "2327100",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "135",
+      "label_zh": "受影响外显子存在于有生物学意义的转录本",
+      "kind": "condition",
+      "next": [
+        "142"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "135",
+      "position_emu": {
+        "x": "4572975",
+        "y": "8662000"
+      },
+      "size_emu": {
+        "cx": "5868000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "136",
+      "label_zh": "受截短/改变区域对蛋白功能关键",
+      "kind": "condition",
+      "next": [
+        "144"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "136",
+      "position_emu": {
+        "x": "4544400",
+        "y": "9544325"
+      },
+      "size_emu": {
+        "cx": "5896500",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "137",
+      "label_zh": "受影响外显子缺失于有生物学意义的转录本",
+      "kind": "condition",
+      "next": [
+        "143"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "137",
+      "position_emu": {
+        "x": "4572900",
+        "y": "9090575"
+      },
+      "size_emu": {
+        "cx": "5868000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "138",
+      "label_zh": "该区域功能作用未知",
+      "kind": "condition",
+      "next": [
+        "139",
+        "203"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "138",
+      "position_emu": {
+        "x": "4572975",
+        "y": "9918775"
+      },
+      "size_emu": {
+        "cx": "1080900",
+        "cy": "1558200"
+      }
+    },
+    {
+      "id": "139",
+      "label_zh": "该外显子LoF在人群常见，和/或外显子不在相关转录本",
+      "kind": "condition",
+      "next": [
+        "145"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "139",
+      "position_emu": {
+        "x": "6217275",
+        "y": "9928700"
+      },
+      "size_emu": {
+        "cx": "4234500",
+        "cy": "461700"
+      }
+    },
+    {
+      "id": "140",
+      "label_zh": "PVS1（脚注d）",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "140",
+      "position_emu": {
+        "x": "10945225",
+        "y": "8253750"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "141",
+      "label_zh": "受截短/改变区域对蛋白功能关键",
+      "kind": "condition",
+      "next": [
+        "148"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "141",
+      "position_emu": {
+        "x": "4544400",
+        "y": "11562250"
+      },
+      "size_emu": {
+        "cx": "5907300",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "142",
+      "label_zh": "PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "142",
+      "position_emu": {
+        "x": "10945225",
+        "y": "8662000"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "143",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "143",
+      "position_emu": {
+        "x": "10945225",
+        "y": "9090575"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "144",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "144",
+      "position_emu": {
+        "x": "10945225",
+        "y": "9544325"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "145",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "145",
+      "position_emu": {
+        "x": "10945225",
+        "y": "9973850"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "371400"
+      }
+    },
+    {
+      "id": "146",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "146",
+      "position_emu": {
+        "x": "10945225",
+        "y": "10562425"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "324300"
+      }
+    },
+    {
+      "id": "147",
+      "label_zh": "PVS1_Moderate",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "147",
+      "position_emu": {
+        "x": "10945225",
+        "y": "11065050"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "371400"
+      }
+    },
+    {
+      "id": "148",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "148",
+      "position_emu": {
+        "x": "10945225",
+        "y": "11562250"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "149",
+      "label_zh": "重复：至少1个外显子，重复片段完全位于基因内",
+      "kind": "entry",
+      "next": [
+        "150",
+        "151",
+        "152"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "149",
+      "position_emu": {
+        "x": "80325",
+        "y": "12085325"
+      },
+      "size_emu": {
+        "cx": "1105800",
+        "cy": "1481100"
+      }
+    },
+    {
+      "id": "150",
+      "label_zh": "已证实串联",
+      "kind": "condition",
+      "next": [
+        "154",
+        "153"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "150",
+      "position_emu": {
+        "x": "1701200",
+        "y": "12052375"
+      },
+      "size_emu": {
+        "cx": "2327100",
+        "cy": "371400"
+      }
+    },
+    {
+      "id": "151",
+      "label_zh": "推定串联",
+      "kind": "condition",
+      "next": [
+        "154",
+        "155"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "151",
+      "position_emu": {
+        "x": "1701200",
+        "y": "12571475"
+      },
+      "size_emu": {
+        "cx": "2327100",
+        "cy": "450000"
+      }
+    },
+    {
+      "id": "152",
+      "label_zh": "已证实非串联",
+      "kind": "condition",
+      "next": [
+        "159"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "152",
+      "position_emu": {
+        "x": "1701200",
+        "y": "13068275"
+      },
+      "size_emu": {
+        "cx": "2327100",
+        "cy": "461700"
+      }
+    },
+    {
+      "id": "153",
+      "label_zh": "阅读框破坏且预测发生NMD",
+      "kind": "condition",
+      "next": [
+        "156"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "153",
+      "position_emu": {
+        "x": "4533725",
+        "y": "12051213"
+      },
+      "size_emu": {
+        "cx": "5907300",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "154",
+      "label_zh": "对阅读框及NMD无影响或影响未知",
+      "kind": "condition",
+      "next": [
+        "157"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "154",
+      "position_emu": {
+        "x": "4533625",
+        "y": "12418650"
+      },
+      "size_emu": {
+        "cx": "5907300",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "155",
+      "label_zh": "推定阅读框破坏且预测发生NMD",
+      "kind": "condition",
+      "next": [
+        "158"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "155",
+      "position_emu": {
+        "x": "4533750",
+        "y": "12818300"
+      },
+      "size_emu": {
+        "cx": "5907300",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "156",
+      "label_zh": "PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "156",
+      "position_emu": {
+        "x": "10945225",
+        "y": "12051213"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "157",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "157",
+      "position_emu": {
+        "x": "10945225",
+        "y": "12418650"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "158",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "158",
+      "position_emu": {
+        "x": "10945225",
+        "y": "12818300"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "159",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "159",
+      "position_emu": {
+        "x": "10945225",
+        "y": "13160675"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "160",
+      "label_zh": "起始密码子变异",
+      "kind": "entry",
+      "next": [
+        "162",
+        "161"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "160",
+      "position_emu": {
+        "x": "80325",
+        "y": "13755673"
+      },
+      "size_emu": {
+        "cx": "1105800",
+        "cy": "1075800"
+      }
+    },
+    {
+      "id": "161",
+      "label_zh": "另一功能性转录本使用替代起始密码子",
+      "kind": "condition",
+      "next": [
+        "167"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "161",
+      "position_emu": {
+        "x": "1659400",
+        "y": "14372150"
+      },
+      "size_emu": {
+        "cx": "2327100",
+        "cy": "555900"
+      }
+    },
+    {
+      "id": "162",
+      "label_zh": "其他转录本中无已知替代起始密码子",
+      "kind": "condition",
+      "next": [
+        "163",
+        "164"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "162",
+      "position_emu": {
+        "x": "1659400",
+        "y": "13779525"
+      },
+      "size_emu": {
+        "cx": "2327100",
+        "cy": "555900"
+      }
+    },
+    {
+      "id": "163",
+      "label_zh": "最近潜在框内起始密码子上游至少1个已知致病变异",
+      "kind": "condition",
+      "next": [
+        "166"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "163",
+      "position_emu": {
+        "x": "4533801",
+        "y": "13784050"
+      },
+      "size_emu": {
+        "cx": "5781600",
+        "cy": "274200"
+      }
+    },
+    {
+      "id": "164",
+      "label_zh": "最近潜在框内起始密码子上游无已知致病变异",
+      "kind": "condition",
+      "next": [
+        "165"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "164",
+      "position_emu": {
+        "x": "4533800",
+        "y": "14162050"
+      },
+      "size_emu": {
+        "cx": "5762700",
+        "cy": "274200"
+      }
+    },
+    {
+      "id": "165",
+      "label_zh": "PVS1_Supporting",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "165",
+      "position_emu": {
+        "x": "10945225",
+        "y": "14160700"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "166",
+      "label_zh": "PVS1_Moderate",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "166",
+      "position_emu": {
+        "x": "10945225",
+        "y": "13780400"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "167",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "167",
+      "position_emu": {
+        "x": "10945225",
+        "y": "14511650"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "276900"
+      }
+    },
+    {
+      "id": "168",
+      "label_zh": "单至多外显子缺失，破坏阅读框且预测不发生NMD",
+      "kind": "condition",
+      "next": [
+        "136",
+        "138"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "168",
+      "position_emu": {
+        "x": "1680250",
+        "y": "9768325"
+      },
+      "size_emu": {
+        "cx": "2327100",
+        "cy": "910200"
+      }
+    },
+    {
+      "id": "203",
+      "label_zh": "该外显子LoF在人群不常见，且外显子在相关转录本",
+      "kind": "condition",
+      "next": [
+        "204",
+        "205"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "203",
+      "position_emu": {
+        "x": "6217275",
+        "y": "10498225"
+      },
+      "size_emu": {
+        "cx": "2618100",
+        "cy": "978900"
+      }
+    },
+    {
+      "id": "204",
+      "label_zh": "去除蛋白比例>10%",
+      "kind": "condition",
+      "next": [
+        "146"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "204",
+      "position_emu": {
+        "x": "9220300",
+        "y": "10498225"
+      },
+      "size_emu": {
+        "cx": "1231500",
+        "cy": "452700"
+      }
+    },
+    {
+      "id": "205",
+      "label_zh": "去除蛋白比例<10%",
+      "kind": "condition",
+      "next": [
+        "147"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "205",
+      "position_emu": {
+        "x": "9220225",
+        "y": "11024400"
+      },
+      "size_emu": {
+        "cx": "1231500",
+        "cy": "452700"
+      }
+    },
+    {
+      "id": "210",
+      "label_zh": "该区域功能作用未知",
+      "kind": "condition",
+      "next": [
+        "211",
+        "212"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "210",
+      "position_emu": {
+        "x": "4536350",
+        "y": "6111113"
+      },
+      "size_emu": {
+        "cx": "1080900",
+        "cy": "1558200"
+      }
+    },
+    {
+      "id": "211",
+      "label_zh": "该外显子LoF在人群常见，和/或外显子不在相关转录本",
+      "kind": "condition",
+      "next": [
+        "214"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "211",
+      "position_emu": {
+        "x": "6180650",
+        "y": "6099400"
+      },
+      "size_emu": {
+        "cx": "4234500",
+        "cy": "461700"
+      }
+    },
+    {
+      "id": "212",
+      "label_zh": "该外显子LoF在人群不常见，且外显子在相关转录本",
+      "kind": "condition",
+      "next": [
+        "213",
+        "217"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "212",
+      "position_emu": {
+        "x": "6180650",
+        "y": "6668925"
+      },
+      "size_emu": {
+        "cx": "2618100",
+        "cy": "978900"
+      }
+    },
+    {
+      "id": "213",
+      "label_zh": "去除蛋白比例>10%",
+      "kind": "condition",
+      "next": [
+        "215"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "213",
+      "position_emu": {
+        "x": "9183675",
+        "y": "6668925"
+      },
+      "size_emu": {
+        "cx": "1231500",
+        "cy": "452700"
+      }
+    },
+    {
+      "id": "214",
+      "label_zh": "不适用PVS1",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "214",
+      "position_emu": {
+        "x": "10945225",
+        "y": "6144550"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "371400"
+      }
+    },
+    {
+      "id": "215",
+      "label_zh": "PVS1_Strong",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "215",
+      "position_emu": {
+        "x": "10945225",
+        "y": "6733125"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "324300"
+      }
+    },
+    {
+      "id": "216",
+      "label_zh": "PVS1_Moderate",
+      "kind": "output",
+      "next": [],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "216",
+      "position_emu": {
+        "x": "10945225",
+        "y": "7235750"
+      },
+      "size_emu": {
+        "cx": "1281000",
+        "cy": "371400"
+      }
+    },
+    {
+      "id": "217",
+      "label_zh": "去除蛋白比例<10%",
+      "kind": "condition",
+      "next": [
+        "216"
+      ],
+      "source": "ClinGen editable PPTX slide 2",
+      "shape_id": "217",
+      "position_emu": {
+        "x": "9183600",
+        "y": "7195100"
+      },
+      "size_emu": {
+        "cx": "1231500",
+        "cy": "452700"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "77",
+      "from": "74",
+      "to": "75",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "78",
+      "from": "74",
+      "to": "76",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "79",
+      "from": "60",
+      "to": "61",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "80",
+      "from": "60",
+      "to": "62",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "81",
+      "from": "61",
+      "to": "63",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "82",
+      "from": "61",
+      "to": "64",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "83",
+      "from": "62",
+      "to": "67",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "84",
+      "from": "62",
+      "to": "68",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "85",
+      "from": "68",
+      "to": "69",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "86",
+      "from": "68",
+      "to": "74",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "107",
+      "from": "87",
+      "to": "88",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "108",
+      "from": "87",
+      "to": "106",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "109",
+      "from": "87",
+      "to": "89",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "110",
+      "from": "88",
+      "to": "90",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "111",
+      "from": "88",
+      "to": "92",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "112",
+      "from": "106",
+      "to": "91",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "113",
+      "from": "106",
+      "to": "93",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "114",
+      "from": "93",
+      "to": "94",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "115",
+      "from": "93",
+      "to": "95",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "116",
+      "from": "95",
+      "to": "96",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "117",
+      "from": "95",
+      "to": "105",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "118",
+      "from": "63",
+      "to": "65",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "119",
+      "from": "64",
+      "to": "66",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "120",
+      "from": "67",
+      "to": "70",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "121",
+      "from": "69",
+      "to": "71",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "122",
+      "from": "75",
+      "to": "72",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "123",
+      "from": "76",
+      "to": "73",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "124",
+      "from": "90",
+      "to": "98",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "125",
+      "from": "92",
+      "to": "99",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "126",
+      "from": "91",
+      "to": "100",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "127",
+      "from": "94",
+      "to": "101",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "128",
+      "from": "96",
+      "to": "102",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "129",
+      "from": "105",
+      "to": "103",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "130",
+      "from": "97",
+      "to": "104",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "169",
+      "from": "131",
+      "to": "134",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "170",
+      "from": "131",
+      "to": "132",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "171",
+      "from": "131",
+      "to": "168",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "172",
+      "from": "131",
+      "to": "133",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "173",
+      "from": "134",
+      "to": "140",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "174",
+      "from": "132",
+      "to": "135",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "175",
+      "from": "132",
+      "to": "137",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "176",
+      "from": "168",
+      "to": "136",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "177",
+      "from": "168",
+      "to": "138",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "178",
+      "from": "133",
+      "to": "138",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "179",
+      "from": "133",
+      "to": "141",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "180",
+      "from": "138",
+      "to": "139",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "181",
+      "from": "138",
+      "to": "203",
+      "endpoint_status": "resolved_by_geometry_and_both_rendered_figures",
+      "raw_from": "138",
+      "raw_to": null
+    },
+    {
+      "id": "182",
+      "from": "135",
+      "to": "142",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "183",
+      "from": "137",
+      "to": "143",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "184",
+      "from": "136",
+      "to": "144",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "185",
+      "from": "139",
+      "to": "145",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "186",
+      "from": "141",
+      "to": "148",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "187",
+      "from": "149",
+      "to": "150",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "188",
+      "from": "149",
+      "to": "151",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "189",
+      "from": "149",
+      "to": "152",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "190",
+      "from": "150",
+      "to": "154",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "191",
+      "from": "151",
+      "to": "154",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "192",
+      "from": "151",
+      "to": "155",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "193",
+      "from": "153",
+      "to": "156",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "194",
+      "from": "154",
+      "to": "157",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "195",
+      "from": "155",
+      "to": "158",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "196",
+      "from": "162",
+      "to": "163",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "197",
+      "from": "162",
+      "to": "164",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "198",
+      "from": "161",
+      "to": "167",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "199",
+      "from": "163",
+      "to": "166",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "200",
+      "from": "164",
+      "to": "165",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "201",
+      "from": "160",
+      "to": "162",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "202",
+      "from": "160",
+      "to": "161",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "206",
+      "from": "203",
+      "to": "204",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "207",
+      "from": "203",
+      "to": "205",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "208",
+      "from": "204",
+      "to": "146",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "209",
+      "from": "205",
+      "to": "147",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "218",
+      "from": "210",
+      "to": "211",
+      "endpoint_status": "resolved_by_geometry_and_both_rendered_figures",
+      "raw_from": null,
+      "raw_to": "211"
+    },
+    {
+      "id": "219",
+      "from": "210",
+      "to": "212",
+      "endpoint_status": "resolved_by_geometry_and_both_rendered_figures",
+      "raw_from": null,
+      "raw_to": "212"
+    },
+    {
+      "id": "220",
+      "from": "212",
+      "to": "213",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "221",
+      "from": "212",
+      "to": "217",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "222",
+      "from": "211",
+      "to": "214",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "223",
+      "from": "213",
+      "to": "215",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "224",
+      "from": "217",
+      "to": "216",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "225",
+      "from": "89",
+      "to": "210",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "226",
+      "from": "89",
+      "to": "97",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "227",
+      "from": "152",
+      "to": "159",
+      "endpoint_status": "explicit_xml"
+    },
+    {
+      "id": "228",
+      "from": "150",
+      "to": "153",
+      "endpoint_status": "explicit_xml"
+    }
+  ],
+  "paths": [
+    {
+      "id": "N01",
+      "category": "无义/移码",
+      "nodes": [
+        "60",
+        "61",
+        "63",
+        "65"
+      ],
+      "conditions": [
+        "预测发生NMD",
+        "受影响外显子存在于有生物学意义的转录本"
+      ],
+      "tree_output": "PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "N02",
+      "category": "无义/移码",
+      "nodes": [
+        "60",
+        "61",
+        "64",
+        "66"
+      ],
+      "conditions": [
+        "预测发生NMD",
+        "受影响外显子缺失于有生物学意义的转录本"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "N03",
+      "category": "无义/移码",
+      "nodes": [
+        "60",
+        "62",
+        "67",
+        "70"
+      ],
+      "conditions": [
+        "预测不发生NMD",
+        "受截短/改变区域对蛋白功能关键"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "N04",
+      "category": "无义/移码",
+      "nodes": [
+        "60",
+        "62",
+        "68",
+        "69",
+        "71"
+      ],
+      "conditions": [
+        "预测不发生NMD",
+        "该区域功能作用未知",
+        "该外显子LoF在人群常见，和/或外显子不在相关转录本"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "N05",
+      "category": "无义/移码",
+      "nodes": [
+        "60",
+        "62",
+        "68",
+        "74",
+        "75",
+        "72"
+      ],
+      "conditions": [
+        "预测不发生NMD",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例>10%"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "N06",
+      "category": "无义/移码",
+      "nodes": [
+        "60",
+        "62",
+        "68",
+        "74",
+        "76",
+        "73"
+      ],
+      "conditions": [
+        "预测不发生NMD",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例<10%"
+      ],
+      "tree_output": "PVS1_Moderate",
+      "is_executable": false
+    },
+    {
+      "id": "S01",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "88",
+        "90",
+        "98"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接破坏阅读框，且预测NMD",
+        "受影响外显子存在于有生物学意义的转录本"
+      ],
+      "tree_output": "PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "S02",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "88",
+        "92",
+        "99"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接破坏阅读框，且预测NMD",
+        "受影响外显子缺失于有生物学意义的转录本"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "S03",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "106",
+        "91",
+        "100"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接破坏阅读框，且预测不发生NMD",
+        "受截短/改变区域对蛋白功能关键"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "S04",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "106",
+        "93",
+        "94",
+        "101"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接破坏阅读框，且预测不发生NMD",
+        "该区域功能作用未知",
+        "该外显子LoF在人群常见，和/或外显子不在相关转录本"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "S05",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "106",
+        "93",
+        "95",
+        "96",
+        "102"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接破坏阅读框，且预测不发生NMD",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例>10%"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "S06",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "106",
+        "93",
+        "95",
+        "105",
+        "103"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接破坏阅读框，且预测不发生NMD",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例<10%"
+      ],
+      "tree_output": "PVS1_Moderate",
+      "is_executable": false
+    },
+    {
+      "id": "S07",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "89",
+        "210",
+        "211",
+        "214"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接保持阅读框",
+        "该区域功能作用未知",
+        "该外显子LoF在人群常见，和/或外显子不在相关转录本"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "S08",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "89",
+        "210",
+        "212",
+        "213",
+        "215"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接保持阅读框",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例>10%"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "S09",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "89",
+        "210",
+        "212",
+        "217",
+        "216"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接保持阅读框",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例<10%"
+      ],
+      "tree_output": "PVS1_Moderate",
+      "is_executable": false
+    },
+    {
+      "id": "S10",
+      "category": "经典剪接",
+      "nodes": [
+        "87",
+        "89",
+        "97",
+        "104"
+      ],
+      "conditions": [
+        "外显子跳跃/隐蔽剪接保持阅读框",
+        "受截短/改变区域对蛋白功能关键"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "D01",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "134",
+        "140"
+      ],
+      "conditions": [
+        "全基因缺失"
+      ],
+      "tree_output": "PVS1（脚注d）",
+      "is_executable": false
+    },
+    {
+      "id": "D02",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "132",
+        "135",
+        "142"
+      ],
+      "conditions": [
+        "单至多外显子缺失，破坏阅读框且预测NMD",
+        "受影响外显子存在于有生物学意义的转录本"
+      ],
+      "tree_output": "PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "D03",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "132",
+        "137",
+        "143"
+      ],
+      "conditions": [
+        "单至多外显子缺失，破坏阅读框且预测NMD",
+        "受影响外显子缺失于有生物学意义的转录本"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "D04",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "168",
+        "136",
+        "144"
+      ],
+      "conditions": [
+        "单至多外显子缺失，破坏阅读框且预测不发生NMD",
+        "受截短/改变区域对蛋白功能关键"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "D05",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "168",
+        "138",
+        "139",
+        "145"
+      ],
+      "conditions": [
+        "单至多外显子缺失，破坏阅读框且预测不发生NMD",
+        "该区域功能作用未知",
+        "该外显子LoF在人群常见，和/或外显子不在相关转录本"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "D06",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "168",
+        "138",
+        "203",
+        "204",
+        "146"
+      ],
+      "conditions": [
+        "单至多外显子缺失，破坏阅读框且预测不发生NMD",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例>10%"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "D07",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "168",
+        "138",
+        "203",
+        "205",
+        "147"
+      ],
+      "conditions": [
+        "单至多外显子缺失，破坏阅读框且预测不发生NMD",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例<10%"
+      ],
+      "tree_output": "PVS1_Moderate",
+      "is_executable": false
+    },
+    {
+      "id": "D08",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "133",
+        "138",
+        "139",
+        "145"
+      ],
+      "conditions": [
+        "单至多外显子缺失，保持阅读框",
+        "该区域功能作用未知",
+        "该外显子LoF在人群常见，和/或外显子不在相关转录本"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "D09",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "133",
+        "138",
+        "203",
+        "204",
+        "146"
+      ],
+      "conditions": [
+        "单至多外显子缺失，保持阅读框",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例>10%"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "D10",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "133",
+        "138",
+        "203",
+        "205",
+        "147"
+      ],
+      "conditions": [
+        "单至多外显子缺失，保持阅读框",
+        "该区域功能作用未知",
+        "该外显子LoF在人群不常见，且外显子在相关转录本",
+        "去除蛋白比例<10%"
+      ],
+      "tree_output": "PVS1_Moderate",
+      "is_executable": false
+    },
+    {
+      "id": "D11",
+      "category": "缺失",
+      "nodes": [
+        "131",
+        "133",
+        "141",
+        "148"
+      ],
+      "conditions": [
+        "单至多外显子缺失，保持阅读框",
+        "受截短/改变区域对蛋白功能关键"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "U01",
+      "category": "重复",
+      "nodes": [
+        "149",
+        "150",
+        "154",
+        "157"
+      ],
+      "conditions": [
+        "已证实串联",
+        "对阅读框及NMD无影响或影响未知"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "U02",
+      "category": "重复",
+      "nodes": [
+        "149",
+        "150",
+        "153",
+        "156"
+      ],
+      "conditions": [
+        "已证实串联",
+        "阅读框破坏且预测发生NMD"
+      ],
+      "tree_output": "PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "U03",
+      "category": "重复",
+      "nodes": [
+        "149",
+        "151",
+        "154",
+        "157"
+      ],
+      "conditions": [
+        "推定串联",
+        "对阅读框及NMD无影响或影响未知"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "U04",
+      "category": "重复",
+      "nodes": [
+        "149",
+        "151",
+        "155",
+        "158"
+      ],
+      "conditions": [
+        "推定串联",
+        "推定阅读框破坏且预测发生NMD"
+      ],
+      "tree_output": "PVS1_Strong",
+      "is_executable": false
+    },
+    {
+      "id": "U05",
+      "category": "重复",
+      "nodes": [
+        "149",
+        "152",
+        "159"
+      ],
+      "conditions": [
+        "已证实非串联"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    },
+    {
+      "id": "I01",
+      "category": "起始密码子",
+      "nodes": [
+        "160",
+        "162",
+        "163",
+        "166"
+      ],
+      "conditions": [
+        "其他转录本中无已知替代起始密码子",
+        "最近潜在框内起始密码子上游至少1个已知致病变异"
+      ],
+      "tree_output": "PVS1_Moderate",
+      "is_executable": false
+    },
+    {
+      "id": "I02",
+      "category": "起始密码子",
+      "nodes": [
+        "160",
+        "162",
+        "164",
+        "165"
+      ],
+      "conditions": [
+        "其他转录本中无已知替代起始密码子",
+        "最近潜在框内起始密码子上游无已知致病变异"
+      ],
+      "tree_output": "PVS1_Supporting",
+      "is_executable": false
+    },
+    {
+      "id": "I03",
+      "category": "起始密码子",
+      "nodes": [
+        "160",
+        "161",
+        "167"
+      ],
+      "conditions": [
+        "另一功能性转录本使用替代起始密码子"
+      ],
+      "tree_output": "不适用PVS1",
+      "is_executable": false
+    }
+  ],
+  "coverage": {
+    "nodes": 86,
+    "edges": 83,
+    "output_nodes": 31,
+    "root_to_output_paths": 35,
+    "unresolved_xml_endpoints": 0,
+    "geometrically_resolved_edges": [
+      "181",
+      "218",
+      "219"
+    ]
+  },
+  "scope_note": "Graph preserves source tree only. Table 1, figure footnotes and global exclusions are separately documented in the report. Unknown data is never automatically false."
+}

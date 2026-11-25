@@ -1,0 +1,57 @@
+[
+  {
+    "id": "V4-01",
+    "feature": "Table2精确阈值",
+    "status": "test_only"
+  },
+  {
+    "id": "V4-02",
+    "feature": "限定等权分配",
+    "status": "test_only"
+  },
+  {
+    "id": "V4-03",
+    "feature": "分配后封顶",
+    "status": "test_only"
+  },
+  {
+    "id": "V4-04",
+    "feature": "已审联合小计与Table4",
+    "status": "test_only"
+  },
+  {
+    "id": "V4-05",
+    "feature": "精度/来源",
+    "status": "test_only"
+  },
+  {
+    "id": "V4-06",
+    "feature": "重复证据阻断",
+    "status": "test_only"
+  },
+  {
+    "id": "V4-07",
+    "feature": "十模块报告整合",
+    "status": "test_only"
+  },
+  {
+    "id": "V4-08",
+    "feature": "小数主评分",
+    "status": "disabled"
+  },
+  {
+    "id": "V4-09",
+    "feature": "不等权TableS1",
+    "status": "disabled"
+  },
+  {
+    "id": "V4-10",
+    "feature": "家系/BS4自动计算",
+    "status": "disabled"
+  },
+  {
+    "id": "V4-11",
+    "feature": "未核实本地参数",
+    "status": "disabled"
+  }
+]

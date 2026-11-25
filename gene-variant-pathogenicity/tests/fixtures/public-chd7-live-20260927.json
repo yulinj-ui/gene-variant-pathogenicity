@@ -1,0 +1,718 @@
+{
+  "responses": {
+    "variantvalidator": {
+      "NM_017780.4:c.2831G>A": {
+        "alt_genomic_loci": [],
+        "annotations": {
+          "chromosome": "8",
+          "db_xref": {
+            "CCDS": "CCDS47865.1",
+            "ensemblgene": null,
+            "hgnc": "HGNC:20626",
+            "ncbigene": "55636",
+            "select": "MANE"
+          },
+          "ensembl_select": false,
+          "mane_plus_clinical": false,
+          "mane_select": true,
+          "map": "8q12.2",
+          "note": "chromodomain helicase DNA binding protein 7",
+          "refseq_select": true,
+          "variant": "1"
+        },
+        "gene_ids": {
+          "ccds_ids": [
+            "CCDS47865",
+            "CCDS83299"
+          ],
+          "ensembl_gene_id": "ENSG00000171316",
+          "entrez_gene_id": "55636",
+          "hgnc_id": "HGNC:20626",
+          "omim_id": [
+            "608892"
+          ],
+          "ucsc_id": "uc003xue.4"
+        },
+        "gene_symbol": "CHD7",
+        "genome_context_intronic_sequence": "",
+        "hgvs_lrg_transcript_variant": "",
+        "hgvs_lrg_variant": "",
+        "hgvs_predicted_protein_consequence": {
+          "lrg_slr": "LRG_176p1:p.(R944H)",
+          "lrg_tlr": "LRG_176p1:p.(Arg944His)",
+          "slr": "NP_060250.2:p.(R944H)",
+          "tlr": "NP_060250.2:p.(Arg944His)"
+        },
+        "hgvs_refseqgene_variant": "",
+        "hgvs_transcript_variant": "NM_017780.4:c.2831G>A",
+        "lovd_corrections": null,
+        "lovd_messages": null,
+        "primary_assembly_loci": {
+          "grch37": {
+            "hgvs_genomic_description": "NC_000008.10:g.61734482G>A",
+            "vcf": {
+              "alt": "A",
+              "chr": "8",
+              "pos": "61734482",
+              "ref": "G"
+            }
+          },
+          "grch38": {
+            "hgvs_genomic_description": "NC_000008.11:g.60821923G>A",
+            "vcf": {
+              "alt": "A",
+              "chr": "8",
+              "pos": "60821923",
+              "ref": "G"
+            }
+          },
+          "hg19": {
+            "hgvs_genomic_description": "NC_000008.10:g.61734482G>A",
+            "vcf": {
+              "alt": "A",
+              "chr": "chr8",
+              "pos": "61734482",
+              "ref": "G"
+            }
+          },
+          "hg38": {
+            "hgvs_genomic_description": "NC_000008.11:g.60821923G>A",
+            "vcf": {
+              "alt": "A",
+              "chr": "chr8",
+              "pos": "60821923",
+              "ref": "G"
+            }
+          }
+        },
+        "reference_sequence_records": {
+          "protein": "https://www.ncbi.nlm.nih.gov/nuccore/NP_060250.2",
+          "transcript": "https://www.ncbi.nlm.nih.gov/nuccore/NM_017780.4"
+        },
+        "refseqgene_context_intronic_sequence": "",
+        "rna_variant_descriptions": null,
+        "selected_assembly": "GRCh38",
+        "submitted_variant": "NM_017780.4:c.2831G>A",
+        "transcript_description": "Homo sapiens chromodomain helicase DNA binding protein 7 (CHD7), transcript variant 1, mRNA",
+        "validation_warnings": [],
+        "variant_exonic_positions": {
+          "NC_000008.10": {
+            "end_exon": "10",
+            "start_exon": "10"
+          },
+          "NC_000008.11": {
+            "end_exon": "10",
+            "start_exon": "10"
+          }
+        }
+      },
+      "flag": "gene_variant",
+      "metadata": {
+        "variantvalidator_hgvs_version": "4.0.0",
+        "variantvalidator_version": "4.0.1.dev7+gbdab9c72f",
+        "vvdb_version": "vvdb_2025_3",
+        "vvseqrepo_db": "VV_SR_2025_02/master",
+        "vvta_version": "vvta_2025_02"
+      }
+    },
+    "genebe": {
+      "message": null,
+      "variants": [
+        {
+          "acmg_by_gene": [
+            {
+              "benign_score": 8,
+              "criteria": [
+                "BS2",
+                "BP6_Strong"
+              ],
+              "effects": [
+                "missense_variant"
+              ],
+              "gene_symbol": "CHD7",
+              "hgnc_id": 20626,
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "inheritance_mode": "AD+AR",
+              "pathogenic_score": 0,
+              "score": -8,
+              "transcript": "NM_017780.4",
+              "verdict": "Benign"
+            }
+          ],
+          "acmg_classification": "Benign",
+          "acmg_criteria": "BS2,BP6_Strong",
+          "acmg_score": -8,
+          "allele_count_reference_population": 432,
+          "alphamissense_prediction": null,
+          "alphamissense_score": 0.087907225,
+          "alt": "A",
+          "apogee2_prediction": null,
+          "apogee2_score": null,
+          "bayesdelnoaf_prediction": "Uncertain_significance",
+          "bayesdelnoaf_score": 0.13,
+          "chr": "8",
+          "clinvar_classification": "Benign/Likely benign",
+          "clinvar_disease": "CHARGE syndrome,CHD7-related disorder,Hypogonadotropic hypogonadism 5 with or without anosmia,Inborn genetic diseases,not provided,not specified",
+          "clinvar_review_status": "criteria provided, multiple submitters, no conflicts",
+          "clinvar_submissions_summary": "LB:3 B:5",
+          "computational_prediction_selected": "Uncertain_significance",
+          "computational_score_selected": 0.5210040211677551,
+          "computational_source_selected": "REVEL",
+          "consequences": [
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 2997,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 11606,
+              "cdna_start": 3348,
+              "cds_end": null,
+              "cds_length": 8994,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 38,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "NM_017780.4",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": "ENST00000423902.7",
+              "protein_coding": true,
+              "protein_id": "NP_060250.2",
+              "strand": true,
+              "transcript": "NM_017780.4",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 3027,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 11696,
+              "cdna_start": 3348,
+              "cds_end": null,
+              "cds_length": 9084,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 39,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "XM_011517553.3",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "XP_011515855.1",
+              "strand": true,
+              "transcript": "XM_011517553.3",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 3027,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 11650,
+              "cdna_start": 3302,
+              "cds_end": null,
+              "cds_length": 9084,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 39,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "XM_011517554.4",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "XP_011515856.1",
+              "strand": true,
+              "transcript": "XM_011517554.4",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 3027,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 11711,
+              "cdna_start": 3363,
+              "cds_end": null,
+              "cds_length": 9084,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 39,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "XM_017013612.2",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "XP_016869101.1",
+              "strand": true,
+              "transcript": "XM_017013612.2",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 3026,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 11693,
+              "cdna_start": 3348,
+              "cds_end": null,
+              "cds_length": 9081,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 39,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "XM_011517555.3",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "XP_011515857.1",
+              "strand": true,
+              "transcript": "XM_011517555.3",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 2996,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 11603,
+              "cdna_start": 3348,
+              "cds_end": null,
+              "cds_length": 8991,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 38,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "XM_017013613.2",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "XP_016869102.1",
+              "strand": true,
+              "transcript": "XM_017013613.2",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 2953,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 11474,
+              "cdna_start": 3348,
+              "cds_end": null,
+              "cds_length": 8862,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 38,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "XM_047421945.1",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "XP_047277901.1",
+              "strand": true,
+              "transcript": "XM_047421945.1",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 2952,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 11471,
+              "cdna_start": 3348,
+              "cds_end": null,
+              "cds_length": 8859,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 38,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "XM_047421946.1",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "XP_047277902.1",
+              "strand": true,
+              "transcript": "XM_047421946.1",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 2922,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 11381,
+              "cdna_start": 3348,
+              "cds_end": null,
+              "cds_length": 8769,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 37,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "XM_047421947.1",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "XP_047277903.1",
+              "strand": true,
+              "transcript": "XM_047421947.1",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": "H",
+              "aa_end": null,
+              "aa_length": 1621,
+              "aa_ref": "R",
+              "aa_start": 944,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 5470,
+              "cdna_start": 3348,
+              "cds_end": null,
+              "cds_length": 4866,
+              "cds_start": 2831,
+              "consequences": [
+                "missense_variant"
+              ],
+              "exon_count": 22,
+              "exon_rank": 10,
+              "exon_rank_end": null,
+              "feature": "XM_011517560.3",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.2831G>A",
+              "hgvs_p": "p.Arg944His",
+              "intron_rank": null,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "XP_011515862.1",
+              "strand": true,
+              "transcript": "XM_011517560.3",
+              "transcript_support_level": null
+            },
+            {
+              "aa_alt": null,
+              "aa_end": null,
+              "aa_length": 948,
+              "aa_ref": null,
+              "aa_start": null,
+              "biotype": "protein_coding",
+              "canonical": false,
+              "cdna_end": null,
+              "cdna_length": 5116,
+              "cdna_start": null,
+              "cds_end": null,
+              "cds_length": 2847,
+              "cds_start": null,
+              "consequences": [
+                "intron_variant"
+              ],
+              "exon_count": 5,
+              "exon_rank": null,
+              "exon_rank_end": null,
+              "feature": "NM_001316690.1",
+              "gene_hgnc_id": 20626,
+              "gene_symbol": "CHD7",
+              "hgvs_c": "c.1717-40306G>A",
+              "hgvs_p": null,
+              "intron_rank": 2,
+              "intron_rank_end": null,
+              "mane_plus": null,
+              "mane_select": null,
+              "protein_coding": true,
+              "protein_id": "NP_001303619.1",
+              "strand": true,
+              "transcript": "NM_001316690.1",
+              "transcript_support_level": null
+            }
+          ],
+          "custom_annotations": null,
+          "dbscsnv_ada_prediction": null,
+          "dbscsnv_ada_score": null,
+          "dbsnp": "rs117506164",
+          "effect": "missense_variant",
+          "frequency_reference_population": 0.0002677894,
+          "gene_hgnc_id": 20626,
+          "gene_symbol": "CHD7",
+          "gnomad_exomes_ac": 381,
+          "gnomad_exomes_af": 0.000260775,
+          "gnomad_exomes_homalt": 3,
+          "gnomad_genomes_ac": 51,
+          "gnomad_genomes_af": 0.000335138,
+          "gnomad_genomes_homalt": 0,
+          "gnomad_mito_heteroplasmic": null,
+          "gnomad_mito_homoplasmic": null,
+          "hom_count_reference_population": 3,
+          "mitotip_prediction": null,
+          "mitotip_score": null,
+          "pathogenicity_classification_combined": "Benign/Likely benign",
+          "phenotype_combined": "CHARGE syndrome|Hypogonadotropic hypogonadism 5 with or without anosmia|not specified|not provided|Inborn genetic diseases|CHD7-related disorder",
+          "phylop100way_prediction": "Uncertain_significance",
+          "phylop100way_score": 6.485,
+          "pos": 60821923,
+          "ref": "G",
+          "revel_prediction": "Uncertain_significance",
+          "revel_score": 0.521004,
+          "splice_prediction_selected": "Benign",
+          "splice_score_selected": 0.020004577934741974,
+          "splice_source_selected": "max_spliceai",
+          "spliceai_max_prediction": "Benign",
+          "spliceai_max_score": 0.020004578,
+          "transcript": "NM_017780.4",
+          "warning": null
+        }
+      ]
+    },
+    "worker": {
+      "query": {
+        "hgvs": "NM_017780.4:c.2831G>A",
+        "dataset": "gnomad_r4"
+      },
+      "coord": {
+        "chr": "8",
+        "pos": "60821923",
+        "ref": "G",
+        "alt": "A",
+        "variantId": "8-60821923-G-A",
+        "hgvsg": "NC_000008.11:g.60821923G>A",
+        "rsid": "rs117506164"
+      },
+      "gene": {
+        "symbol": "CHD7",
+        "protein_pos": 944,
+        "consequence": "missense_variant"
+      },
+      "gnomad": {
+        "global_af": 0.00026077457577931216,
+        "global_ac": 381,
+        "global_an": 1461032,
+        "global_source": "exome",
+        "eas_af": 0.007007461181689857,
+        "eas_ac": 278,
+        "eas_an": 39672
+      },
+      "constraint": {
+        "gene_id": "ENSG00000171316",
+        "symbol": "CHD7",
+        "pLI": 1,
+        "lof_z": 13.710347563950043,
+        "mis_z": 4.339147377342134,
+        "oe_lof": 0.07809384478792142,
+        "loeuf": 0.10982728927330272,
+        "oe_mis": 0.8333484627077177,
+        "oe_mis_upper": 0.8583676706370521
+      },
+      "merged_predictors": [
+        {
+          "id": "CADD",
+          "value": "22.9",
+          "source": "gnomAD"
+        },
+        {
+          "id": "REVEL_MAX",
+          "value": "0.521",
+          "source": "gnomAD"
+        },
+        {
+          "id": "SPLICEAI_DS_MAX",
+          "value": "0.0200",
+          "source": "gnomAD"
+        },
+        {
+          "id": "PANGOLIN_LARGEST_DS",
+          "value": "0.00",
+          "source": "gnomAD"
+        },
+        {
+          "id": "PHYLOP",
+          "value": "5.87",
+          "source": "gnomAD"
+        },
+        {
+          "id": "SIFT_MAX",
+          "value": "0.430",
+          "source": "gnomAD"
+        },
+        {
+          "id": "POLYPHEN_MAX",
+          "value": "0.0150",
+          "source": "gnomAD"
+        },
+        {
+          "id": "REVEL",
+          "value": 0.521,
+          "source": "dbNSFP"
+        },
+        {
+          "id": "METASVM",
+          "value": 0.6117,
+          "source": "dbNSFP"
+        },
+        {
+          "id": "SIFT",
+          "value": 0.06,
+          "source": "VEP",
+          "pred": "tolerated_low_confidence"
+        },
+        {
+          "id": "POLYPHEN",
+          "value": 0.015,
+          "source": "VEP",
+          "pred": "benign"
+        }
+      ],
+      "codon_landscape": null,
+      "sources": {
+        "recoder": "ok",
+        "gnomad_variant": "ok",
+        "gnomad_gene": "ok",
+        "myvariant": "ok",
+        "clinvar_codon": "error",
+        "vep": "ok"
+      },
+      "warnings": [
+        "ClinVar 同位点扫描失败: eutils esummary HTTP 429"
+      ]
+    }
+  },
+  "request_metadata": {
+    "variantvalidator": {
+      "url": "https://rest.variantvalidator.org/VariantValidator/variantvalidator/GRCh38/NM_017780.4%3Ac.2831G%3EA/all",
+      "payload_sha256": "7a681eebf85a430cfcd88b47eedb0eb61030aa37ed9234e6954c8388da935f6b",
+      "transport_status": "ok",
+      "retrieved_at": "2026-09-27T07:20:53.626135+00:00"
+    },
+    "genebe": {
+      "url": "https://api.genebe.net/cloud/api-public/v1/variant?chr=8&pos=60821923&ref=G&alt=A&genome=hg38&useEnsembl=False",
+      "payload_sha256": "541f27142084d7d28b817768cd584bbde48b401b8adb1226cda6deab54e04681",
+      "transport_status": "ok",
+      "retrieved_at": "2026-09-27T07:20:53.804192+00:00"
+    },
+    "worker": {
+      "url": "https://muddy-cake-9605.yulinj.workers.dev/annotate?hgvs=NM_017780.4%3Ac.2831G%3EA&dataset=gnomad_r4",
+      "payload_sha256": "69f8ad38b3b6cf0abaf18b0054c3f842fc6b74facdbd2620aa50b4aefd4835c4",
+      "transport_status": "ok",
+      "retrieved_at": "2026-09-27T07:18:51.356092+00:00"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2",
+  "input": "NM_000001.1:c.28C>T",
+  "protein_gate": {
+    "status": "unresolved",
+    "passed": false,
+    "usable_for_consequence_review": false,
+    "identity_status": "unresolved",
+    "crosscheck_status": "not_completed",
+    "transcript": null,
+    "hgvs_c": null,
+    "hgvs_p": null,
+    "hgvs_p_genebe": null,
+    "source": []
+  },
+  "coords": {
+    "hg38": null,
+    "hg19": null,
+    "rsid": null
+  },
+  "clinvar": {
+    "classification": null,
+    "stars": null,
+    "submissions": null,
+    "disease": null
+  },
+  "frequency": {
+    "global": {
+      "af": null,
+      "ac": null,
+      "an": null
+    },
+    "eas": {
+      "af": null,
+      "ac": null,
+      "an": null
+    }
+  },
+  "predictors": {},
+  "constraint": null,
+  "codon_landscape": null,
+  "acmg_benchmark": {
+    "tool": "GeneBe",
+    "classification": null,
+    "criteria": null,
+    "score": null,
+    "use": "benchmark_only"
+  },
+  "_sources": {
+    "variantvalidator": {
+      "status": "unavailable",
+      "reason": "response not supplied"
+    },
+    "genebe": {
+      "status": "blocked",
+      "reason": "no validated coordinate/transcript anchor"
+    },
+    "worker": {
+      "status": "blocked",
+      "reason": "no validated coordinate/transcript anchor"
+    }
+  },
+  "_warnings": [],
+  "_needs_manual": [
+    "frequency coverage/filters/dataset/FAF",
+    "current VCEP and source rules",
+    "field-level provenance",
+    "CNV uses separate workflow"
+  ],
+  "classification": null,
+  "report_status": "evidence_collection_only",
+  "_fetch_status": {
+    "all": "offline; supply --fixture or explicitly --online"
+  }
+}

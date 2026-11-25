@@ -1,0 +1,188 @@
+{
+  "schema_version": "1",
+  "input_sha256": "44183569566030b47e98b7a973da0654b55dda48369878c549be7e3f82d2b2a3",
+  "identity": {
+    "variant_id": "synthetic-cnv",
+    "gene": "SYNTHETIC",
+    "build": "GRCh38",
+    "disease": "synthetic disease",
+    "inheritance": "AD"
+  },
+  "reviewer": "",
+  "reviewer_role": "human_professional",
+  "reviewed_at": "",
+  "sections": {
+    "scope": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "constitutional_scope": "",
+        "clinical_question": "",
+        "applicable_rules": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "coordinates": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "assembly_and_convention": "",
+        "interval_and_uncertainty": "",
+        "assay_quality": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "annotation": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "genes_and_regions": "",
+        "transcripts_exons_utr": "",
+        "functional_consequences": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "dosage": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "hi_ts_axis": "",
+        "assessment_date_and_new_evidence": "",
+        "benign_evidence": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "section1": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "content": "",
+        "selected_and_rejected_items": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "section2": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "all_targets": "",
+        "opposing_evidence": "",
+        "single_contribution_rationale": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "section3": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "coding_gene_count": "",
+        "counting_method_and_exceptions": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "section4": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "search_scope_and_results": "",
+        "case_comparability": "",
+        "phenotype_match": "",
+        "case_deduplication": "",
+        "population_4O": "",
+        "skip_conditions": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "section5": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "parental_testing": "",
+        "phenotype_and_pedigree": "",
+        "inheritance_certainty": "",
+        "overlap_with_section4": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "integration": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "mutual_exclusions": "",
+        "caps": "",
+        "evidence_independence": "",
+        "conflicts": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "limitations": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "missing_information": "",
+        "service_failures": "",
+        "impact_on_conclusion": "",
+        "follow_up": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    },
+    "report": {
+      "status": "pending",
+      "conclusion": "",
+      "source": "",
+      "location": "",
+      "checks": {
+        "five_sections_accounted": "",
+        "variant_vs_patient_relevance": "",
+        "candidate_and_limitations": ""
+      },
+      "evidence_ids": [],
+      "exclusions": [],
+      "unresolved_issues": []
+    }
+  }
+}

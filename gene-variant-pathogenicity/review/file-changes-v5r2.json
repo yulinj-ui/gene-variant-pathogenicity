@@ -1,0 +1,187 @@
+[
+  {
+    "file": "SKILL.md",
+    "status": "modified",
+    "sha256": "f5ec9dde3c0966a57ceedf5afe0876c0623827130ccd91a3fc83ee4a0944191d"
+  },
+  {
+    "file": "references/cnv-section2-rules.json",
+    "status": "added",
+    "sha256": "74a4cc6eb20648e3839d4cbae74d3f1366ea51102ab65fc64132c9b38b876225"
+  },
+  {
+    "file": "references/CNV_CRITERIA.md",
+    "status": "added",
+    "sha256": "5339a3809aa601862f7740fae3cf9bc0353b33469ebda5d2f566fe2d0882f1b4"
+  },
+  {
+    "file": "references/sources/CNV-supplement.txt",
+    "status": "added",
+    "sha256": "069cd2ab94e678bb12f15968fce40fa788cd723948ba7961ed32c69660986d5c"
+  },
+  {
+    "file": "references/sources/CNV-loss.html",
+    "status": "added",
+    "sha256": "fc407f1918e5e1ffe41f6552284048ef64ec00edf02912129b03b88004c1222f"
+  },
+  {
+    "file": "references/sources/CNV-Riggs-Supplemental-Material-1.docx",
+    "status": "added",
+    "sha256": "29f4b181cf46c729fb14784703b744598fb9001776e4aafd8e9f0073b30649a3"
+  },
+  {
+    "file": "references/sources/CNV-gain.html",
+    "status": "added",
+    "sha256": "65a9190093972acd96438912b8346592024eba96d8d54fa8537ab437ee2cfc62"
+  },
+  {
+    "file": "tests/test_v5r2.py",
+    "status": "added",
+    "sha256": "9631a55dd422b60e1378a50336c14b1f94b3c9840031422782e73229d1819c15"
+  },
+  {
+    "file": "tests/fixtures/cnv-gain-2F-v5r2.json",
+    "status": "added",
+    "sha256": "6e47e0b1587a2a34e28e93207a463ecd86ca5c11dd21fdd7ef7a39a1473f7c47"
+  },
+  {
+    "file": "tests/fixtures/cnv-pipeline-v5r2.json",
+    "status": "added",
+    "sha256": "1f414b5d50dbb818a06b3aa2e132ef0cbf89cd5033ee6cadf17a11deae08ab0a"
+  },
+  {
+    "file": "tests/fixtures/cnv-gain-intragenic-v5r2.json",
+    "status": "added",
+    "sha256": "64213b5da7529edc50196af841fb122ee319f474309e451888e662b8d9b96573"
+  },
+  {
+    "file": "tests/fixtures/cnv-loss-intragenic-v5r2.json",
+    "status": "added",
+    "sha256": "50b7190cb36f0d13bdb4938b1f0b555e729e114557f947d985f3148f4c35d8bc"
+  },
+  {
+    "file": "tests/fixtures/cnv-loss-2A-v5r2.json",
+    "status": "added",
+    "sha256": "a8b88b6a5560d117c5aa79226a26a5d4be4664d69514f8728dc7fd8e4baaef54"
+  },
+  {
+    "file": "review/v0.5.1-package-manifest.json",
+    "status": "added",
+    "sha256": "7e595a15acaa7136c8f28a87c583809c7415917c9429c9d0b5b1098e5fb39088"
+  },
+  {
+    "file": "review/v0.5.1-MISSING_ITEMS.md",
+    "status": "added",
+    "sha256": "e627dc85961005ef602b183ee17b3b97ccff53a22217b4f3ea53b23be48879c1"
+  },
+  {
+    "file": "review/v0.5.1-official-validator.log",
+    "status": "added",
+    "sha256": "db349825903d66adffea3ecf1bd8e1803043e8a71cf1a051235dabc5371f5bb0"
+  },
+  {
+    "file": "review/offline-tests.log",
+    "status": "modified",
+    "sha256": "01de24c20631247766c51fa5b28d29c4b78487523ec017d28f66324957cfcd3d"
+  },
+  {
+    "file": "review/v0.5.1-ACCEPTANCE.md",
+    "status": "added",
+    "sha256": "5ef6f05cc475ca172c93b1a7dbdaa054c6f1695fb3ea8ef6a7ca55a03b1a4af6"
+  },
+  {
+    "file": "review/cnv-source-manifest.json",
+    "status": "added",
+    "sha256": "f2146eb8b23a5a7ad7ba38f26f76f4dce4ae4569d7a38602de7296f2eeae7bd9"
+  },
+  {
+    "file": "review/cnv-gain-intragenic-result.json",
+    "status": "added",
+    "sha256": "99aab75339f3268c97a5c3dacced3e50977047dacbfe18317aa5b7debf53dddf"
+  },
+  {
+    "file": "review/cnv-sample-report.md",
+    "status": "added",
+    "sha256": "5abf98f9035536b9db9d57a43155271c94c0b911c3c09f84486dc614d9544293"
+  },
+  {
+    "file": "review/v0.5.1-structure-validation.log",
+    "status": "added",
+    "sha256": "0a11245d63de337f3396be5b420fba057022ad2ef53733bf25496ac439ff5d96"
+  },
+  {
+    "file": "review/MISSING_ITEMS.md",
+    "status": "modified",
+    "sha256": "238dda1b64eb4637ead5978a09c2f344c363fbf43badc7ae0e2c2c8363f3f832"
+  },
+  {
+    "file": "review/cnv-gain-2F-result.json",
+    "status": "added",
+    "sha256": "3344d0b6790d2606a93c29d6849d2df5bf1faf1dd08d11c0b01c64cd34bc5362"
+  },
+  {
+    "file": "review/CNV_REVIEW_V5R2.md",
+    "status": "added",
+    "sha256": "9981290da7bb8331fb4161c932f69bfb1918b694e3e5946492bf376f4138a573"
+  },
+  {
+    "file": "review/RULE_STATUS_V5R2.md",
+    "status": "added",
+    "sha256": "fc165c70c4e354879d82c5c0e369153d19364e1e33a3f3a92e5d52dae99318e9"
+  },
+  {
+    "file": "review/cnv-loss-intragenic-result.json",
+    "status": "added",
+    "sha256": "8389c220b714adfabda86c3a10ae86278d9b74b396e112675b45e8c95d2202ba"
+  },
+  {
+    "file": "review/file-changes-v5r2.json",
+    "status": "added",
+    "sha256": "f89b3a95de07580067ba6d538ca842c5f9ddd4a600e642c3cc627c1dfd20c9d7"
+  },
+  {
+    "file": "review/cnv-loss-2A-result.json",
+    "status": "added",
+    "sha256": "99a101b27af0dee3f6aee950e494129da71e4733b8d0c5b8a4056ef335bbda23"
+  },
+  {
+    "file": "review/cnv-pipeline-result.json",
+    "status": "added",
+    "sha256": "8c47232ded6090508161e5bb9b5b8c0532b4b58868bab77b6a835994f9a4680e"
+  },
+  {
+    "file": "review/v0.5.1-offline-tests.log",
+    "status": "added",
+    "sha256": "014e9e6b66f05c3f1229fded92de67037e1b38a11af14ed37870a31142f995b8"
+  },
+  {
+    "file": "review/ACCEPTANCE.md",
+    "status": "modified",
+    "sha256": "1dbc7d76127b0dc8adffa297be113ac2bbe5deb0e4ca8f945cd69498ca3bdf67"
+  },
+  {
+    "file": "scripts/cnv_interval.py",
+    "status": "modified",
+    "sha256": "9508487d98251c5b0b1ac08f5dd518b0422edddfef59f8cec4cb60b347cdeb73"
+  },
+  {
+    "file": "scripts/cnv_section2.py",
+    "status": "added",
+    "sha256": "5d7992b4bde7c05e63fa95e65d68eed01338261bb2ac9e302e1694e1a4ce400b"
+  },
+  {
+    "file": "scripts/validate_package.py",
+    "status": "modified",
+    "sha256": "d3309a0eed0f9bc8305b53d4cc92fff74147e8f636ade17a367de352c809e3c7"
+  },
+  {
+    "file": "scripts/render_report.py",
+    "status": "modified",
+    "sha256": "bafaec25de1e0310ca367cf6f3de4c6ce1e7439fe77018ca70edc227c6567c23"
+  },
+  {
+    "file": "scripts/cnv_case.py",
+    "status": "added",
+    "sha256": "623c2dc8ec0b5d9105cc79157c566301eaa822b811c6eb3985012c38686199b7"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "tool": "functional",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6938631/",
+  "status": "test_calculation_only",
+  "blockers": [],
+  "evidence_code": null,
+  "classification": null,
+  "band": "PS3_Strong",
+  "odds_path": "18.7001"
+}

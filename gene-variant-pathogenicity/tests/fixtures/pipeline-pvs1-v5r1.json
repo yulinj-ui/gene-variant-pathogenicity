@@ -1,0 +1,211 @@
+{
+  "identity": {
+    "variant_id": "synthetic-v1",
+    "gene": "SYNTHETIC",
+    "disease": "synthetic disease",
+    "inheritance": "AD",
+    "subject_id": "synthetic-subject"
+  },
+  "scoring": {
+    "framework": "SNV",
+    "rules": {
+      "r0": {
+        "code": "PM2_Supporting",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          "1"
+        ]
+      },
+      "PVS1_VeryStrong": {
+        "code": "PVS1_VeryStrong",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          8
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "id": "e0",
+        "code": "PM2_Supporting",
+        "framework": "SNV",
+        "rule_id": "r0",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "1",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "b0"
+        ],
+        "rationale": "synthetic test"
+      }
+    ],
+    "combination_policy": {
+      "framework": "SNV",
+      "status": "reviewed",
+      "source": "synthetic",
+      "version": "test",
+      "reviewer": "test-harness",
+      "reviewed_at": "2026-09-26",
+      "mutually_exclusive": [],
+      "caps": []
+    }
+  },
+  "routing": {
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD",
+      "subject_id": "synthetic-subject"
+    },
+    "review": {
+      "approved": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic test NOT medical evidence",
+      "location": "fixture",
+      "rationale": "synthetic test only"
+    },
+    "search_completed": true,
+    "outcome": "none_found",
+    "searches": [
+      {
+        "url": "https://cspec.genome.network",
+        "query": "SYNTHETIC",
+        "accessed_at": "2026-09-27",
+        "result": "synthetic negative; not an actual search"
+      }
+    ]
+  },
+  "admissions": [
+    {
+      "id": "a1",
+      "kind": "pvs1",
+      "identity": {
+        "variant_id": "synthetic-v1",
+        "gene": "SYNTHETIC",
+        "disease": "synthetic disease",
+        "inheritance": "AD",
+        "subject_id": "synthetic-subject"
+      },
+      "approval": {
+        "approved": true,
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "source": "synthetic test NOT medical evidence",
+        "location": "fixture",
+        "rationale": "synthetic test only"
+      },
+      "source_ids": [
+        "fixture"
+      ],
+      "basis_ids": [
+        "synthetic-pvs1-basis"
+      ],
+      "selected_codes": [
+        "PVS1_VeryStrong"
+      ],
+      "rule_ids": {
+        "PVS1_VeryStrong": "PVS1_VeryStrong"
+      },
+      "input": {
+        "kind": "nonsense_frameshift",
+        "identity": {
+          "variant_id": "synthetic-v1",
+          "build": "GRCh38",
+          "genomic_change": "synthetic-only",
+          "transcript": "NM_TEST.1",
+          "gene": "SYNTHETIC",
+          "disease": "synthetic disease",
+          "inheritance": "AD"
+        },
+        "review": {
+          "identity_reviewed": true,
+          "disease_mechanism_reviewed": true,
+          "transcript_reviewed": true,
+          "exon_population_reviewed": true,
+          "vcep_reviewed": true,
+          "technical_quality_reviewed": true,
+          "reviewer": "synthetic reviewer",
+          "reviewed_at": "2026-09-27",
+          "source": "synthetic fixture",
+          "rationale": "synthetic calculation test; not a patient"
+        },
+        "source_version": "AbouTayoun_2018_generic",
+        "vcep_policy": "reviewed_generic_applicable",
+        "basis_ids": [
+          "synthetic-pvs1-basis"
+        ],
+        "facts_review": {
+          "nmd_or_frame": {
+            "source": "synthetic example, not patient evidence",
+            "location": "synthetic fact record",
+            "rationale": "engineering test only"
+          },
+          "exon_relevance": {
+            "source": "synthetic example, not patient evidence",
+            "location": "synthetic fact record",
+            "rationale": "engineering test only"
+          },
+          "population_tolerance": {
+            "source": "synthetic example, not patient evidence",
+            "location": "synthetic fact record",
+            "rationale": "engineering test only"
+          },
+          "critical_region_or_start": {
+            "source": "synthetic example, not patient evidence",
+            "location": "synthetic fact record",
+            "rationale": "engineering test only"
+          },
+          "mechanism": {
+            "source": "synthetic example, not patient evidence",
+            "location": "synthetic fact record",
+            "rationale": "engineering test only"
+          }
+        },
+        "mechanism": {
+          "lof_mechanism": "established",
+          "association": "definitive",
+          "independent_pathogenic_lof_count": 3,
+          "phenotype_lof_count": 3,
+          "phenotype_total_count": 10,
+          "associated_lof_count": 3,
+          "multiple_exons": true,
+          "single_exon_gene": false,
+          "null_mouse": false
+        },
+        "scenarios": [
+          {
+            "id": "scenario1",
+            "facts": {
+              "exon_present": true,
+              "lof_common": false,
+              "region": "assessed_unknown",
+              "removed_aa": 11,
+              "protein_length": 100,
+              "nmd": true
+            }
+          }
+        ]
+      },
+      "mechanism": "lof"
+    }
+  ]
+}

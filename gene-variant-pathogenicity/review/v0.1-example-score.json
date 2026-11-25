@@ -1,0 +1,31 @@
+{
+  "framework": "SNV",
+  "accepted": [
+    {
+      "id": "ev1",
+      "code": "TEST",
+      "framework": "SNV",
+      "rule_id": "test-rule",
+      "status": "reviewed",
+      "gate": "passed",
+      "points": "1",
+      "source_ids": [
+        "fixture"
+      ],
+      "basis_ids": [
+        "observation1"
+      ],
+      "rationale": "synthetic test"
+    }
+  ],
+  "excluded": [],
+  "net_points": "1",
+  "sandbox_partition": "VUS_range",
+  "classification": null,
+  "status": "test_only_not_clinically_validated",
+  "blockers": [],
+  "limitations": [
+    "point partitions are test constants, not an approved clinical rule pack",
+    "full ACMG combination rules, applicability, exceptions and case attribution require external review"
+  ]
+}

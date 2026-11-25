@@ -1,0 +1,114 @@
+[
+  {
+    "file": "SKILL.md",
+    "change": "modified"
+  },
+  {
+    "file": "references/LOCUS_V4.md",
+    "change": "added"
+  },
+  {
+    "file": "references/sources/biesecker2024.xml",
+    "change": "added"
+  },
+  {
+    "file": "references/table2-source-v4.json",
+    "change": "added"
+  },
+  {
+    "file": "review/ACCEPTANCE.md",
+    "change": "modified"
+  },
+  {
+    "file": "review/CHANGELOG_V4.md",
+    "change": "added"
+  },
+  {
+    "file": "review/MISSING_ITEMS.md",
+    "change": "modified"
+  },
+  {
+    "file": "review/RULE_STATUS_V4.md",
+    "change": "added"
+  },
+  {
+    "file": "review/example-locus-equal-v4.json",
+    "change": "added"
+  },
+  {
+    "file": "review/example-locus-joint-v4.json",
+    "change": "added"
+  },
+  {
+    "file": "review/example-report-v4.md",
+    "change": "added"
+  },
+  {
+    "file": "review/offline-tests.log",
+    "change": "modified"
+  },
+  {
+    "file": "review/rule-status-v4.json",
+    "change": "added"
+  },
+  {
+    "file": "review/structure-validation.log",
+    "change": "modified"
+  },
+  {
+    "file": "review/v0.3-ACCEPTANCE.md",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.3-MISSING_ITEMS.md",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.3-official-validator.log",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.3-offline-tests.log",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.3-package-manifest.json",
+    "change": "added"
+  },
+  {
+    "file": "review/v0.3-structure-validation.log",
+    "change": "added"
+  },
+  {
+    "file": "scripts/locus_review.py",
+    "change": "added"
+  },
+  {
+    "file": "scripts/render_report.py",
+    "change": "modified"
+  },
+  {
+    "file": "scripts/score.py",
+    "change": "modified"
+  },
+  {
+    "file": "scripts/validate_package.py",
+    "change": "modified"
+  },
+  {
+    "file": "tests/fixtures/case-v4.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/locus-equal-v4.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/fixtures/locus-joint-v4.json",
+    "change": "added"
+  },
+  {
+    "file": "tests/test_v4.py",
+    "change": "added"
+  }
+]

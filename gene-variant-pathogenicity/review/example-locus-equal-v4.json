@@ -1,0 +1,68 @@
+{
+  "tool": "locus_review",
+  "rule_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806742/",
+  "status": "test_calculation_only",
+  "packets": [
+    {
+      "packet_id": "demo-packet",
+      "subject_id": "synthetic-subject",
+      "allele_id": "paternal",
+      "variant_ids": [
+        "demo-v0",
+        "demo-v1"
+      ],
+      "basis_ids": [
+        "synthetic-observation"
+      ],
+      "mode": "pp4_equal",
+      "source": {
+        "kind": "published",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806742/",
+        "version": "2024",
+        "location": "Figure 2; synthetic fixture, not a patient",
+        "gene": "CTNS",
+        "disease": "synthetic cystinosis scenario",
+        "phenotype_definition": "synthetic matched phenotype",
+        "testing_method": "synthetic matched method"
+      },
+      "status": "test_calculation_only",
+      "blockers": [],
+      "results": [
+        {
+          "variant_id": "demo-v0",
+          "allocated_probability": "0.479",
+          "table2_points_before_cap": "2.5",
+          "review_points": "2.5",
+          "table4_maximum_options": null,
+          "evidence_code": null,
+          "classification": null
+        },
+        {
+          "variant_id": "demo-v1",
+          "allocated_probability": "0.479",
+          "table2_points_before_cap": "2.5",
+          "review_points": "2.5",
+          "table4_maximum_options": null,
+          "evidence_code": null,
+          "classification": null
+        }
+      ],
+      "automatic_score_import": false,
+      "evidence_code": null,
+      "classification": null,
+      "allocation": {
+        "input_probability": "0.958",
+        "allocated_sum": "0.958",
+        "method": "probability_first_equal_split_then_Table2_floor_then_per_variant_cap"
+      }
+    }
+  ],
+  "automatic_score_import": false,
+  "evidence_code": null,
+  "classification": null,
+  "limitations": [
+    "No automated pedigree counts, BS4, unequal allocation or main-score import",
+    "Printed Table2 bounds only; no formula extrapolation or invented zero/benign evidence",
+    "Review flags are caller attestations, not authentication or independent medical verification"
+  ]
+}

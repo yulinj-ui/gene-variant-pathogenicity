@@ -1,0 +1,134 @@
+{
+  "version": "0.3.0-test",
+  "date": "2026-09-27",
+  "rules": [
+    {
+      "id": "V3-01",
+      "feature": "Tavtigian 2020积分优先；2015组合并列",
+      "status": "source_checked_test_only",
+      "scope": "维持整数阈值；不改为ACGS",
+      "implementation": "score.py",
+      "source_location": "Tavtigian 2020 Tables 2–3"
+    },
+    {
+      "id": "V3-02",
+      "feature": "PVS1与PM4互斥",
+      "status": "implemented_guard",
+      "scope": "所有强度、两种输入顺序均阻断候选",
+      "implementation": "score.py",
+      "source_location": "Abou Tayoun 2018 PVS1 Strength Levels"
+    },
+    {
+      "id": "V3-03",
+      "feature": "PVS1完整决策树",
+      "status": "disabled_pending_validation",
+      "scope": "门槛与限制补充说明；全树自动赋值禁用",
+      "implementation": "references/RULES_V3.md",
+      "source_location": "Abou Tayoun 2018 Table 1/Figure 1"
+    },
+    {
+      "id": "V3-04",
+      "feature": "PM3病例小计",
+      "status": "source_checked_test_only",
+      "scope": "病例和家系标识、前提审核、P/LP区别、分类上限；不自动赋证据",
+      "implementation": "review_helpers.py pm3",
+      "source_location": "SVI PM3 v1.0 Tables 1–2"
+    },
+    {
+      "id": "V3-05",
+      "feature": "PS3/BS3 OddsPath查表",
+      "status": "source_checked_test_only",
+      "scope": "先审核校准与机制；不由物种或数量自动赋强度",
+      "implementation": "review_helpers.py functional",
+      "source_location": "Brnich 2020 Table 3"
+    },
+    {
+      "id": "V3-06",
+      "feature": "PS3/BS3实验充分性自动判断",
+      "status": "disabled_pending_validation",
+      "scope": "11对照不能单独放行；历史验证例外转人工",
+      "implementation": "references/RULES_V3.md",
+      "source_location": "Brnich Step 3"
+    },
+    {
+      "id": "V3-07",
+      "feature": "PP1/PP4 Table 4查表",
+      "status": "source_checked_test_only",
+      "scope": "仅接收已审核分配及封顶的小计；不自动选代码或导入",
+      "implementation": "review_helpers.py pp1pp4",
+      "source_location": "Biesecker 2024 Table 4"
+    },
+    {
+      "id": "V3-08",
+      "feature": "PP1/BS4/PP4完整家系算法",
+      "status": "disabled_pending_validation",
+      "scope": "概率分配、舍入、补充表及复杂家系统计仍禁用",
+      "implementation": "references/RULES_V3.md",
+      "source_location": "Biesecker 2024 Tables 2–4/Table S1"
+    },
+    {
+      "id": "V3-09",
+      "feature": "基因—疾病关联自动上限",
+      "status": "disabled_pending_policy",
+      "scope": "保留Moderate例外；查不到不等于Limited",
+      "implementation": "references/RULES_V3.md",
+      "source_location": "Bean 2020 Clinical validity; Clause 2023"
+    },
+    {
+      "id": "V3-10",
+      "feature": "BA1自动裁决及例外匹配",
+      "status": "disabled_pending_validation",
+      "scope": "历史清单有来源，未完成现行覆盖与标识匹配",
+      "implementation": "score.py",
+      "source_location": "Ghosh 2018; ClinGen July 2018 list"
+    },
+    {
+      "id": "V3-11",
+      "feature": "ACGS及本地积分配置",
+      "status": "disabled_pending_policy",
+      "scope": "显式非Tavtigian points_profile报错，不静默混用",
+      "implementation": "score.py",
+      "source_location": "ACGS 2024 pp8/15"
+    },
+    {
+      "id": "V3-12",
+      "feature": "本地样本质控和风险参数",
+      "status": "disabled_local_parameters",
+      "scope": "MCC/VAF/LOD/亲缘阈值和个体风险不自动应用",
+      "implementation": "report_audit.py",
+      "source_location": "需实验室验证"
+    },
+    {
+      "id": "V3-13",
+      "feature": "CNV自动条目选择/4O频率映射",
+      "status": "disabled_pending_validation",
+      "scope": "保留独立人工审核分值核算，不自动赋项",
+      "implementation": "score.py; cnv_interval.py",
+      "source_location": "Riggs 2020"
+    },
+    {
+      "id": "V3-14",
+      "feature": "外部服务",
+      "status": "degraded_offline",
+      "scope": "默认离线；缺失不补零、不生成阴性证据",
+      "implementation": "genebe_fields.py",
+      "source_location": "DATA_CONTRACT.md"
+    },
+    {
+      "id": "V3-15",
+      "feature": "报告及原始功能",
+      "status": "preserved",
+      "scope": "十模块/产前矩阵/逐条对照/原始文件保留；辅助结果单列",
+      "implementation": "render_report.py; original",
+      "source_location": "FEATURE_MAP.md"
+    },
+    {
+      "id": "V3-16",
+      "feature": "正式分类、签发及安装",
+      "status": "disabled",
+      "scope": "classification=null；无安装或服务配置修改",
+      "implementation": "all",
+      "source_location": "用户授权范围"
+    }
+  ]
+}

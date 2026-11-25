@@ -1,0 +1,52 @@
+{
+  "variantvalidator": {
+    "NM_000001.1:c.28C>T": {
+      "hgvs_transcript_variant": "NM_000001.1:c.28C>T",
+      "primary_assembly_loci": {
+        "grch38": {
+          "vcf": {
+            "chr": "1",
+            "pos": 101,
+            "ref": "C",
+            "alt": "T"
+          }
+        }
+      },
+      "hgvs_predicted_protein_consequence": {
+        "tlr": "NP_000001.1:p.(Arg10Trp)"
+      }
+    }
+  },
+  "genebe": {
+    "variants": [
+      {
+        "chr": "1",
+        "pos": 101,
+        "ref": "C",
+        "alt": "T",
+        "genome": "hg38",
+        "consequences": [
+          {
+            "transcript": "NM_000001.1",
+            "hgvs_p": "NP_000001.1:p.Arg10Trp"
+          }
+        ]
+      }
+    ]
+  },
+  "worker": {
+    "input": "NM_000001.1:c.28C>T",
+    "build": "GRCh38",
+    "coord": {
+      "chr": "1",
+      "pos": 101,
+      "ref": "C",
+      "alt": "T"
+    },
+    "gnomad": {
+      "global_af": 0,
+      "global_ac": 0,
+      "global_an": 2000
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "source": "https://www.clinicalgenome.org/docs/clingen-svi-pvs1-decision-tree-editable/",
+      "retrieved": "2026-09-27",
+      "local_evidence_file": "clingen-pvs1.pptx",
+      "sha256": "4fe449b4b3c793b39618746196f6526a180fa78f52e52f1b69d9fb3f06eba665",
+      "bytes": 51590,
+      "package_file": "references/sources/pvs1-template.pptx"
+    },
+    {
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6185798/",
+      "retrieved": "2026-09-27",
+      "local_evidence_file": "paper.html",
+      "sha256": "17928dc0a39cb1911480a3705e3a77b0716bff075ce28c7599626bf6b8e44d36",
+      "bytes": 162892,
+      "package_file": "references/sources/pvs1-2018.html"
+    },
+    {
+      "source": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/71d1/6185798/516cc22dae5c/nihms-986839-f0001.jpg",
+      "retrieved": "2026-09-27",
+      "local_evidence_file": "figure1.jpg",
+      "sha256": "2c33262764ca0d45889ddefe2a38bd077275866bc15420c8e01604c5f98b0bc1",
+      "bytes": 364213,
+      "package_file": "references/sources/pvs1-figure1.jpg"
+    }
+  ],
+  "checks": {
+    "nodes": 86,
+    "edges": 83,
+    "output_nodes": 31,
+    "root_to_output_paths": 35,
+    "unresolved_xml_endpoints": 0,
+    "geometrically_resolved_edges": [
+      "181",
+      "218",
+      "219"
+    ]
+  },
+  "checks_passed": [
+    "all extracted tree text shapes mapped",
+    "all connector endpoints resolved with documented exceptions",
+    "all nodes reachable from 5 roots",
+    "no directed cycle",
+    "35 root-to-output paths enumerated",
+    "paper figure and PPTX visually compared"
+  ],
+  "not_done": [
+    "clinical implementation",
+    "clinical validation",
+    "full later splicing/VCEP integration"
+  ],
+  "skill_package_changed": false
+}

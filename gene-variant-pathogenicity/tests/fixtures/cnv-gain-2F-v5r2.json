@@ -1,0 +1,61 @@
+{
+  "cnv_type": "GAIN",
+  "identity": {
+    "variant_id": "synthetic-cnv",
+    "gene": "SYNTHETIC",
+    "build": "GRCh38",
+    "disease": "synthetic disease",
+    "inheritance": "AD"
+  },
+  "target_id": "synthetic-target",
+  "target_kind": "gene",
+  "relation": "benign_larger_no_extra_coding",
+  "review": {
+    "approved": true,
+    "reviewer": "synthetic reviewer",
+    "reviewed_at": "2026-09-27",
+    "source": "synthetic test NOT medical evidence",
+    "location": "fixture",
+    "rationale": "synthetic test only"
+  },
+  "basis_ids": [
+    "synthetic-cnv-basis"
+  ],
+  "dosage": {
+    "axis": "TS",
+    "score": 40,
+    "source": "synthetic source NOT clinical evidence",
+    "record_id": "synthetic",
+    "evaluated_at": "2020-01-01",
+    "current_evidence_review": "synthetic review",
+    "assessment": "dosage_sensitivity_unlikely"
+  },
+  "fact_sources": {
+    "interval_and_breakpoints": {
+      "source": "synthetic",
+      "location": "fixture",
+      "rationale": "engineering test only"
+    },
+    "target_geometry": {
+      "source": "synthetic",
+      "location": "fixture",
+      "rationale": "engineering test only"
+    },
+    "dosage": {
+      "source": "synthetic",
+      "location": "fixture",
+      "rationale": "engineering test only"
+    },
+    "transcript_and_function": {
+      "source": "synthetic",
+      "location": "fixture",
+      "rationale": "engineering test only"
+    },
+    "platform": {
+      "source": "synthetic",
+      "location": "fixture",
+      "rationale": "engineering test only"
+    }
+  },
+  "facts": {}
+}

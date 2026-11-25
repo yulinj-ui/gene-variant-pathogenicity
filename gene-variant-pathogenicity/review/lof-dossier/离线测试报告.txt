@@ -1,0 +1,18 @@
+test_bad_source (__main__.main.<locals>.Tests) ... ok
+test_bool_is_not_count (__main__.main.<locals>.Tests) ... ok
+test_duplicate (__main__.main.<locals>.Tests) ... ok
+test_legacy_missing_count (__main__.main.<locals>.Tests) ... ok
+test_no_classification (__main__.main.<locals>.Tests) ... ok
+test_no_export (__main__.main.<locals>.Tests) ... ok
+test_no_independent_P_assumed (__main__.main.<locals>.Tests) ... ok
+test_original_variants (__main__.main.<locals>.Tests) ... ok
+test_real_dossier_blocked (__main__.main.<locals>.Tests) ... ok
+test_source_hashes (__main__.main.<locals>.Tests) ... ok
+test_transcript_difference (__main__.main.<locals>.Tests) ... ok
+test_unknown_not_false (__main__.main.<locals>.Tests) ... ok
+test_vcep_block (__main__.main.<locals>.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK

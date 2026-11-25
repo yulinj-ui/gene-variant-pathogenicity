@@ -1,0 +1,101 @@
+{
+  "variant_id": "demo-v0",
+  "subject_id": "synthetic-subject",
+  "scoring": {
+    "framework": "SNV",
+    "rules": {
+      "r0": {
+        "code": "PM2_Supporting",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          "1"
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "id": "e0",
+        "code": "PM2_Supporting",
+        "framework": "SNV",
+        "rule_id": "r0",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "1",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "b0"
+        ],
+        "rationale": "synthetic test"
+      }
+    ],
+    "combination_policy": {
+      "framework": "SNV",
+      "status": "reviewed",
+      "source": "synthetic",
+      "version": "test",
+      "reviewer": "test-harness",
+      "reviewed_at": "2026-09-26",
+      "mutually_exclusive": [],
+      "caps": []
+    }
+  },
+  "review_calculations": {
+    "locus_review": {
+      "packets": [
+        {
+          "packet_id": "demo-packet",
+          "subject_id": "synthetic-subject",
+          "allele_id": "paternal",
+          "variant_ids": [
+            "demo-v0",
+            "demo-v1"
+          ],
+          "basis_ids": [
+            "synthetic-observation"
+          ],
+          "mode": "pp4_equal",
+          "source": {
+            "kind": "published",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806742/",
+            "version": "2024",
+            "location": "Figure 2; synthetic fixture, not a patient",
+            "gene": "CTNS",
+            "disease": "synthetic cystinosis scenario",
+            "phenotype_definition": "synthetic matched phenotype",
+            "testing_method": "synthetic matched method"
+          },
+          "review": {
+            "applicability_reviewed": true,
+            "phase_reviewed": true,
+            "penetrance_reviewed": true,
+            "vcep_checked": true,
+            "basis_independence_reviewed": true,
+            "phenotype_matched": true,
+            "testing_method_matched": true,
+            "yield_source_verified": true,
+            "equal_plausibility_reviewed": true,
+            "single_locus_model_reviewed": true,
+            "reviewer": "synthetic reviewer",
+            "reviewed_at": "2026-09-27",
+            "source": "synthetic fixture",
+            "rationale": "synthetic calculation test; not a patient"
+          },
+          "diagnostic_yield": "0.958",
+          "inheritance": "AR",
+          "locus_model": "homogeneous",
+          "allocation": "equal",
+          "segregation_present": false
+        }
+      ]
+    }
+  }
+}

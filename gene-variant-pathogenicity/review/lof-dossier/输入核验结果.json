@@ -1,0 +1,30 @@
+{
+  "status": "blocked",
+  "blockers": [
+    "associated_lof_count:unknown",
+    "association:not_signed_off",
+    "independent_pathogenic_lof_count:unknown",
+    "lof_mechanism:not_signed_off",
+    "multiple_exons:unknown",
+    "null_mouse:unknown",
+    "phenotype_lof_count:unknown",
+    "phenotype_total_count:unknown",
+    "single_exon_gene:not_signed_off",
+    "denominator:incomplete",
+    "vcep:generic_not_approved",
+    "dossier:not_signed_off"
+  ],
+  "automatic_score_import": false,
+  "program_input": null,
+  "evidence_code": null,
+  "classification": null,
+  "existing_v5_mechanism_call": {
+    "status": "blocked",
+    "reason": "missing:independent_pathogenic_lof_count"
+  },
+  "tests": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  }
+}

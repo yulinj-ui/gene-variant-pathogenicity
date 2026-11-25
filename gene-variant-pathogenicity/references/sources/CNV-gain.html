@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CNV Pathogenicity Calculator</title>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js" integrity="sha256-ssw743RfM8cbNhwou26tmmPhiNhq3buUbRG/RevtfG4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css" integrity="sha256-WfuSLYdzGvlsFU6ImYYSE277WsjfyU30QeGuNIjeJEI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GPK8XH8JQH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GPK8XH8JQH');
+</script>
+<!-- END: Google tag (gtag.js) -->
+</head>
+<body>
+<div class="container">
+  
+<link href="/redmine/plugin_assets/genboree_generic/stylesheets/gb-alerts.css?1586354866" media="screen" rel="stylesheet" type="text/css" />
+<script src="/redmine/plugin_assets/genboree_generic/javascripts/gb-close-alerts.js?1595336586" type="text/javascript"></script>
+
+  <div class="row header-menu todisappear">
+    <div class="col-sm-4 col-xs-12">
+      <img src="https://actionability.clinicalgenome.org/redmine/attachments/download/242/clingen_logo_180x138.png" alt="Clinical Genome Resource" class="logo img-responsive">
+    </div>
+    <div class="col-sm-8 hidden-xs">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="reg-title" class="right-nav pull-right">
+            <a id="nav-link" href="/" >
+              ClinGen CNV Pathogenicity Calculator
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  <!-- end column-8 -->
+  </div> <!-- end row -->
+  <div class="row">
+    <div class="col-sm-12 text-right user-info">
+      <div>
+        <span class="btn btn-xs custom-signin-btn" id="gain-btn"><a class="inside-btn-link" href="cnv-gain">Switch to CNV-Gain</a></span>
+        <span class="btn btn-xs custom-signin-btn" id="loss-btn"><a class="inside-btn-link" href="cnv-loss">Switch to CNV-Loss</a></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="/redmine/plugin_assets/cnv_patho_calc/javascripts/common_scripts.js?1583247674" type="text/javascript"></script>
+<link href="/redmine/plugin_assets/cnv_patho_calc/stylesheets/print.css?1563286112" media="print" rel="stylesheet" type="text/css" />
+<link href="/redmine/plugin_assets/cnv_patho_calc/stylesheets/common.css?1583247674" media="screen" rel="stylesheet" type="text/css" />
+<body>
+  <div class="container">
+  <form accept-charset="UTF-8" action="" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="iI0CFX4ifQytlKygPNAw+xbtWAWwYdPrQDqzni/Hun4=" /></div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2>CNV Interpretation Scoring Rubric: Copy Number GAIN</h2>
+        <p class="qualification text-container">Full descriptions of each evidence category, including caveats to consider while scoring and illustrative examples, are provided in <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41436-019-0686-8/MediaObjects/41436_2019_686_MOESM2_ESM.docx">Supplemental Material 1 [Word Document]</a>, published in the <a href="https://doi.org/10.1038/s41436-019-0686-8" target="_blank"><i>ACMG Technical Standards</i></a>. Also visit the <a href=" https://clinicalgenome.org/tools/cnv-webinar/" target="_blank">CNV Web Series page</a> to access slides, webinars, examples, and FAQs.</p>
+      </div>
+      <div class="col-sm-12">
+        <table class="table table-condensed">
+          <thead>
+            <tr class="bg-info text-info">
+  <th colspan="6" class="text-center">
+    Section 1: Initial Assessment of Genomic Content
+    <br>
+    <i><small></small></i>
+  </th>
+</tr>
+
+            <tr>
+  <th> Evidence Type </th>
+  <th></th>
+  <th> Evidence </th>
+  <th> Suggested points </th>
+  <th> Max Score </th>
+  <th> Points Given </th>
+</tr>
+
+            <tr>
+  <!--td rowspan="2" style="vertical-align: middle;">Copy Number Gain Content</td-->
+  <td rowspan="2" style="vertical-align: middle;">
+    Copy Number Gain Content (For intragenic variants, use section 2I)
+  </td>
+  <td>
+      <input id="_cnv_gain_cnv_gain_content_contains_protein_coding_applied" name="@cnv_gain[cnv_gain_content][contains_protein_coding][applied]" type="hidden" value="false" />
+      <input class="cbg1" data-slider-to-disable-selector="#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" id="cbg1a" name="@cnv_gain[cnv_gain_content][contains_protein_coding][applied]" type="checkbox" value="true" />
+  </td>
+  <td>1A. Contains protein-coding or other known functionally important elements</td>
+  <td>0 (Continue Evaluation)</td>
+  <td>0</td>
+  <td></td>
+</tr>
+<tr>
+  <td>
+      <input id="_cnv_gain_cnv_gain_content_no_protein_coding_applied" name="@cnv_gain[cnv_gain_content][no_protein_coding][applied]" type="hidden" value="false" />
+      <input class="cbg1 row2 crossgrp3" data-slider-select="#ex1" data-slider-to-disable-selector="#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" data-slider="true" data-target-element="#ex1-value" id="cbg1b" name="@cnv_gain[cnv_gain_content][no_protein_coding][applied]" type="checkbox" value="true" />
+  </td>
+  <td>1B. Does NOT contain protein-coding or any known functionally important elements</td>
+  <td>-0.60</td>
+  <td>-0.60</td>
+  <td class="text-center">
+    <div class="italics">Assigned points: <span class="direct-score-update label label-success to-score" id="ex1-value">0</span></div>
+  </td>
+</tr>
+
+            <tr class="bg-info text-info">
+  <th colspan="6" class="text-center">
+    Section 2: Overlap with Established Triplosensitive (TS), Haploinsufficient (HI), or Benign Genes or Genomic Regions
+    <br>
+    <i><small>Skip to Section 3 if the copy number gain does not overlap these types of genes/regions</small></i>
+  </th>
+</tr>
+
+            <tr class="score-slider">
+  <td rowspan="2" style="vertical-align: middle;">Overlap with ESTABLISHED TS genes or genomic regions</td>
+  <td>
+    <input id="_cnv_gain_overlap_overlap_ts_complete_applied" name="@cnv_gain[overlap][overlap_ts][complete][applied]" type="hidden" value="false" />
+    <input class="cbg3 crossgrp3" data-slider-select="#ex3a" data-slider-to-disable-selector="#ex1,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" data-slider="true" id="cbg3a" name="@cnv_gain[overlap][overlap_ts][complete][applied]" type="checkbox" value="true" />
+  </td>
+  <td>2A. Complete overlap; the TS gene or minimal critical region is fully contained within the observed copy number gain</td>
+  <td>1</td>
+  <td>1</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex3aSlider" data-slider-max="1" data-slider-min="0" data-slider-step="0.1" data-slider-value="0" id="ex3a" name="@cnv_gain[overlap][overlap_ts][complete][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex3a-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>
+     <input id="_cnv_gain_overlap_overlap_ts_partial_applied" name="@cnv_gain[overlap][overlap_ts][partial][applied]" type="hidden" value="false" />
+     <input class="cbg3 crossgrp3" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" id="cbg3b" name="@cnv_gain[overlap][overlap_ts][partial][applied]" type="checkbox" value="true" />
+  </td>
+  <td>2B. Partial overlap of an established TS region <br><br><ul><li>The observed CNV does NOT contain the known causative gene or critical region for this established TS genomic region OR</li><li>Unclear if the known causative gene or critical region is affected OR</li><li>No specific causative gene or critical region has been established for this TS genomic region</li></ul></td>
+  <td>0 (Continue Evaluation)</td>
+  <td>0</td>
+  <td>
+  </td>
+</tr>
+
+            <tr class="score-slider">
+  <td rowspan="5" style="vertical-align: middle;">
+    Overlap with ESTABLISHED benign copy number gain genes or genomic regions
+  </td>
+  <td>
+    <input id="_cnv_gain_overlap_overlap_with_benign_identical_applied" name="@cnv_gain[overlap][overlap_with_benign][identical][applied]" type="hidden" value="false" />
+    <input class="cbg4 crossgrp3" data-slider-select="#ex3b1" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" data-slider="true" id="cbg4a" name="@cnv_gain[overlap][overlap_with_benign][identical][applied]" type="checkbox" value="true" />
+  </td>
+  <td>2C. Identical in gene content to the established benign copy number gain </td>
+  <td>-1</td>
+  <td>-1</td>
+  <td class="text-center">
+    <div class="hilite" >
+      <input data-slider-id="ex3b1Slider" data-slider-max="0" data-slider-min="-1" data-slider-step="0.1" data-slider-value="0" id="ex3b1" name="@cnv_gain[overlap][overlap_with_benign][identical][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex3b1-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_overlap_overlap_with_benign_smaller_nondisrupting_applied" name="@cnv_gain[overlap][overlap_with_benign][smaller_nondisrupting][applied]" type="hidden" value="false" />
+    <input class="cbg4 crossgrp3" data-slider-select="#ex3b2" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" data-slider="true" id="cbg4b" name="@cnv_gain[overlap][overlap_with_benign][smaller_nondisrupting][applied]" type="checkbox" value="true" />
+  </td>
+  <td>2D. Smaller than established benign copy number gain, breakpoint(s) does not interrupt protein-coding genes </td>
+  <td>-1</td>
+  <td>-1</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex3b2Slider" data-slider-max="0" data-slider-min="-1" data-slider-step="0.1" data-slider-value="0" id="ex3b2" name="@cnv_gain[overlap][overlap_with_benign][smaller_nondisrupting][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex3b2-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <input id="_cnv_gain_overlap_overlap_with_benign_smaller_disrupting_applied" name="@cnv_gain[overlap][overlap_with_benign][smaller_disrupting][applied]" type="hidden" value="false" />
+    <input class="cbg4 crossgrp3" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" id="cbg4c" name="@cnv_gain[overlap][overlap_with_benign][smaller_disrupting][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+  2E. Smaller than established benign copy number gain, breakpoint(s) potentially interrupts protein-coding gene
+  </td>
+  <td>0 (Continue Evaluation)</td>
+  <td>0</td>
+  <td class="text-center">
+  </td>
+</tr>
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_overlap_overlap_with_benign_larger_no_additional_genes_applied" name="@cnv_gain[overlap][overlap_with_benign][larger_no_additional_genes][applied]" type="hidden" value="false" />
+    <input class="cbg4 crossgrp3" data-slider-select="#ex3b3" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b2,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" data-slider="true" id="cbg4d" name="@cnv_gain[overlap][overlap_with_benign][larger_no_additional_genes][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+  2F. Larger than known benign copy number gain, does not include additional protein-coding genes 
+  </td>
+  <td>-0.90 (Range: 0 to -1.00)</td>
+  <td>-1</td>
+  <td class="text-center">
+    <div class="hilite" >
+    <input data-slider-id="ex3b3Slider" data-slider-max="0" data-slider-min="-1" data-slider-step="0.1" data-slider-value="0" id="ex3b3" name="@cnv_gain[overlap][overlap_with_benign][larger_no_additional_genes][score]" type="text" value="false" />
+    <div class="italics">Assigned points: <span class="label label-success to-score" id="ex3b3-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <input id="_cnv_gain_overlap_overlap_with_benign_larger_additional_genes_applied" name="@cnv_gain[overlap][overlap_with_benign][larger_additional_genes][applied]" type="hidden" value="false" />
+    <input class="cbg4 crossgrp3" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" id="cbg4e" name="@cnv_gain[overlap][overlap_with_benign][larger_additional_genes][applied]" type="checkbox" value="true" />
+  </td>
+  <!-- td>Overlaps a benign copy number gain but includes additional genomic material4</td -->
+  <td>
+  2G. Overlaps a benign copy number gain but includes additional genomic material
+  </td>
+  <td>0 (Continue Evaluation)</td>
+  <td>0</td>
+  <td class="text-center">
+  </td>
+</tr>
+
+            <tr>
+  <td style="vertical-align: middle;">
+    Overlap with ESTABLISHED HI gene(s)1
+  </td>
+  <td>
+    <input id="_cnv_gain_overlap_overlap_with_hi_contains_hi_genes_applied" name="@cnv_gain[overlap][overlap_with_hi][contains_hi_genes][applied]" type="hidden" value="false" />
+    <input class="cbg5 crossgrp3" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" id="cbg5a" name="@cnv_gain[overlap][overlap_with_hi][contains_hi_genes][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    2H. HI gene fully contained within observed copy number gain
+  </td>
+  <td>0 (Continue Evaluation)</td>
+  <td>0</td>
+  <td class="text-center">
+  </td>
+</tr>
+
+            <tr class="score-slider">
+  <td rowspan="3" style="vertical-align: middle;">
+    Breakpoint(s) within ESTABLISHED HI genes
+  </td>
+  <td>
+    <input id="_cnv_gain_overlap_breakpoint_in_hi_genes_breakpoint_in_same_gene_applied" name="@cnv_gain[overlap][breakpoint_in_hi_genes][breakpoint_in_same_gene][applied]" type="hidden" value="false" />
+    <input class="cbg6 crossgrp3" data-slider-select="#ex34a" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34b" data-slider-to-disable="true" data-slider="true" id="cbg6a" name="@cnv_gain[overlap][breakpoint_in_hi_genes][breakpoint_in_same_gene][applied]" type="checkbox" value="true" />
+  </td>
+  </td>
+  <td>
+    2I. Both breakpoints are within the same gene (gene-level sequence variant, possibly resulting in loss of function (LOF))
+  </td>
+  <td>
+    See ClinGen SVI working group PVS1 specifications
+    <li> PVS1 = 0.90 (Range: 0.45 to 0.90) </li>
+    <li> PVS1_Strong = 0.45 (Range: 0.30 to 0.90) </li>
+    <li> N/A = 0 (Continue Evaluation) </li>
+  </td>
+  <td class="bg-default">
+  </td>
+  <td class="text-center">
+    <div  class="hilite">
+      <input data-slider-id="ex34aSlider" data-slider-max="0.9" data-slider-min="0" data-slider-step="0.05" data-slider-value="0" id="ex34a" name="@cnv_gain[overlap][breakpoint_in_hi_genes][breakpoint_in_same_gene][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex34a-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <input id="_cnv_gain_overlap_breakpoint_in_hi_genes_no_coding_exons_involved_applied" name="@cnv_gain[overlap][breakpoint_in_hi_genes][no_coding_exons_involved][applied]" type="hidden" value="false" />
+    <input class="cbg6 crossgrp3" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" id="cbg6b" name="@cnv_gain[overlap][breakpoint_in_hi_genes][no_coding_exons_involved][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    2J. One breakpoint is within an established HI gene, patient’s phenotype is either inconsistent with what is expected for LOF of that gene OR unknown
+  </td>
+  <td>
+    0 (Continue evaluation)
+  </td>
+  <td>
+    0
+  </td>
+  <td class="text-center">
+  </td>
+</tr>
+
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_overlap_breakpoint_in_hi_genes_exons_involved_applied" name="@cnv_gain[overlap][breakpoint_in_hi_genes][exons_involved][applied]" type="hidden" value="false" />
+    <input class="cbg6 crossgrp3" data-slider-select="#ex34b" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a" data-slider-to-disable="true" data-slider="true" id="cbg6c" name="@cnv_gain[overlap][breakpoint_in_hi_genes][exons_involved][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    2K. One breakpoint is within an established HI gene, patient’s phenotype is highly specific and consistent with what is expected for LOF of that gene
+  </td>
+  <td>
+    0.45
+  </td>
+  <td>
+    0.45
+  </td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex34bSlider" data-slider-max="0.45" data-slider-min="0" data-slider-step="0.05" data-slider-value="0" id="ex34b" name="@cnv_gain[overlap][breakpoint_in_hi_genes][no_coding_exons_involved][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex34b-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+
+
+            <tr>
+  <td style="vertical-align: middle;">
+    Breakpoints within other gene(s)
+  </td>
+  <td>
+    <input id="_cnv_gain_overlap_breakpint_in_other_genes_one_or_more_bp_applied" name="@cnv_gain[overlap][breakpint_in_other_genes][one_or_more_bp][applied]" type="hidden" value="false" />
+    <input class="cbg7 crossgrp3" data-slider-to-disable-selector="#ex1,#ex3a,#ex3b1,#ex3b2,#ex3b3,#ex34c,#ex34a,#ex34b" data-slider-to-disable="true" id="cbg7a" name="@cnv_gain[overlap][breakpint_in_other_genes][one_or_more_bp][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    2L. One or both breakpoints are within gene(s) of no established <span data-toggle="tooltip" data-placement="bottom" title=""></span>  clinical significance
+  </td>
+  <td>0 (Continue evaluation)</td>
+  <td>0</td>
+  <td class="text-center">
+  </td>
+</tr>
+
+            <tr class="bg-info text-info">
+  <th colspan="6" class="text-center">
+    Section 3: Evaluation of Gene Number
+    <br>
+    <i><small></small></i>
+  </th>
+</tr>
+
+            <tr>
+  <!-- td rowspan="1" style="vertical-align: middle;">Minimum number of protein-coding RefSeq genes in the copy number gain</td -->
+  <td rowspan="1" style="vertical-align: middle;">Number of protein-coding RefSeq genes wholly or partially included in the copy number gain</td>
+  <td>
+      <input id="_cnv_gain_gene_number_min_no_genes_applied" name="@cnv_gain[gene_number][min_no_genes][applied]" type="hidden" value="false" />
+      <input class="cbg2" id="cbg2a" name="@cnv_gain[gene_number][min_no_genes][applied]" select-to-disable-selector="button[data-id=&#x27;number-of-genes&#x27;], button[data-id=&#x27;number-of-genes-points&#x27;]" type="checkbox" value="true" />
+  </td>
+  <td>
+    <select id="number-of-genes" class="selectpicker gain-gene gene-numbers" name="@cnv_gain[gene_number][min_no_genes][number]" disabled="disabled">
+      <option selected disabled value="undefined">Select From Menu</option>
+      <option value="3A.  0-34 genes">3A.  0-34 genes</option>
+      <option value="3B.  35-49 genes">3B.  35-49 genes</option>
+      <option value="3C.  50 or more genes">3C.  50 or more genes</option>
+    </select>
+  </td>
+  <td id="no-genes-suggested-points">Select number of genes from the pull-down menu</td>
+  <td id="no-genes-max-score">Select number of genes from the pull-down menu</td>
+  <td class="text-center">
+    <select id="number-of-genes-points" class="selectpicker gain-gene gene-numbers-score" name="@cnv_gain[gene_number][min_no_genes][score]" disabled="disabled">
+      <option selected disabled value="undefined">Select From Menu</option>
+      <option class="gt0" value="0">0</option>
+      <option class="gt1"  value="0.05">0.05</option>
+      <option class="gt1"  value="0.1">0.1</option>
+      <option class="gt1"  value="0.15">0.15</option>
+      <option class="gt1"  value="0.2">0.2</option>
+      <option class="gt1"  value="0.25">0.25</option>
+      <option class="gt1"  value="0.3">0.3</option>
+      <option class="gt1"  value="0.35">0.35</option>
+      <option class="gt1"  value="0.4">0.4</option>
+      <option class="gt1"  value="0.45">0.45</option>
+      <option class="gt2"  value="0.5">0.5</option>
+      <option class="gt2"  value="0.55">0.55</option>
+      <option class="gt2"  value="0.6">0.6</option>
+      <option class="gt2"  value="0.65">0.65</option>
+      <option class="gt2"  value="0.7">0.7</option>
+      <option class="gt2"  value="0.75">0.75</option>
+      <option class="gt2"  value="0.8">0.8</option>
+      <option class="gt2"  value="0.85">0.85</option>
+      <option class="gt2"  value="0.9">0.9</option>
+    </select>
+    <div class="italics">Assigned points: <span class="label label-success to-score" id="selected-number-of-genes-points">0</span></div>
+  </td>
+</tr>
+
+            <tr class="bg-info text-info">
+  <th colspan="6" class="text-center">
+    Section 4: Detailed Evaluation of Genomic Content Using Published Literature, Public Databases, and/or Internal Lab Data
+    <br>
+    <i><small>Note: If there have been no reports associating either the copy number gain or any of the genes therein with human phenotypes caused by triplosensitivity, skip to Section 5.</small></i>
+  </th>
+</tr>
+
+            <tr>
+  <td rowspan="4" style="vertical-align: middle;">
+    Individual case evidence – de novo occurrences
+  </td>
+  <td>
+ 
+  </td>
+  <td>
+    Reported proband has either: <br> <ul> <li> complete duplication of one or more genes within the observed copy number gain OR </li> <li> an overlapping copy number gain similar in genomic content to the observed copy number gain AND… </li><ul>
+  </td>
+  <td>See categories below<br>
+  </td>
+  <td></td>
+  <td class="text-center">
+  </td>
+</tr>
+
+<!-- ------------------------------------------------------------------ -->
+
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_genomic_case_report_denovo_consistent_with_genes_or_genomic_region_highly_specific_applied" name="@cnv_gain[genomic][case_report_denovo][consistent_with_genes_or_genomic_region][highly_specific][applied]" type="hidden" value="false" />
+    <input class="cbg8" data-slider-select="#ex4a1" data-slider-to-disable-selector="#ex4a2,#ex4a3,#ex4a4" data-slider-to-disable="true" data-slider="true" id="cbg8a" name="@cnv_gain[genomic][case_report_denovo][consistent_with_genes_or_genomic_region][highly_specific][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4A. …the reported phenotype is highly specific and relatively unique  to the gene or genomic region
+  </td>
+  <td>Confirmed de novo: 0.45 points each<br>Assumed de novo: 0.30 points each (Range: 0.15 to 0.45) </td>
+  <td>0.90 (Total)</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex4a1Slider" data-slider-max="0.90" data-slider-min="0" data-slider-step="0.05" data-slider-value="0.00" id="ex4a1" name="@cnv_gain[genomic][case_report_denovo][consistent_with_genes_or_genomic_region][highly_specific][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4a1-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+<!-- ------------------------------------------------------------------ -->
+
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_genomic_case_report_denovo_consistent_with_genes_or_genomic_region_not_highly_specific_applied" name="@cnv_gain[genomic][case_report_denovo][consistent_with_genes_or_genomic_region][not_highly_specific][applied]" type="hidden" value="false" />
+    <input class="cbg8" data-slider-select="#ex4a2" data-slider-to-disable-selector="#ex4a1,#ex4a3,#ex4a4" data-slider-to-disable="true" data-slider="true" id="cbg8b" name="@cnv_gain[genomic][case_report_denovo][consistent_with_genes_or_genomic_region][not_highly_specific][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4B. …the reported phenotype is consistent with the gene/genomic region, is highly specific, but is not necessarily unique  to the gene/genomic region 
+  </td>
+  <td>Confirmed de novo: 0.30 points each<br>Assumed de novo: 0.15 points each (Range: 0 to 0.45) </td>
+  <td>0.90 (Total)</td>
+    <td class="text-center">
+      <div class="hilite">
+        <input data-slider-id="ex4a2Slider" data-slider-max="0.90" data-slider-min="0" data-slider-step="0.05" data-slider-value="0.00" id="ex4a2" name="@cnv_gain[genomic][case_report_denovo][consistent_with_genes_or_genomic_region][score]" type="text" value="0" />
+        <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4a2-value"></span></div>
+      </div>
+    </td>
+</tr>
+
+<!-- ------------------------------------------------------------------ -->
+
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_genomic_case_report_denovo_consistent_with_genes_or_genomic_region_not_highly_specific_with_heterogenity_applied" name="@cnv_gain[genomic][case_report_denovo][consistent_with_genes_or_genomic_region][not_highly_specific_with_heterogenity][applied]" type="hidden" value="false" />
+    <input class="cbg8" data-slider-select="#ex4a3" data-slider-to-disable-selector="#ex4a1,#ex4a2,#ex4a4" data-slider-to-disable="true" data-slider="true" id="cbg8c" name="@cnv_gain[genomic][case_report_denovo][consistent_with_genes_or_genomic_region][not_highly_specific_with_heterogenity][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4C. …the reported phenotype is consistent with the gene/genomic region, but not highly specific and/or with high genetic heterogeneity
+  </td>
+  <td>Confirmed de novo: 0.15 point each<br>Assumed de novo: 0.10 points each (Range: 0 to 0.30) </td>
+  <td>0.90 (Total)</td>
+    <td class="text-center">
+      <div class="hilite">
+        <input data-slider-id="ex4a3Slider" data-slider-max="0.90" data-slider-min="0" data-slider-step="0.05" data-slider-value="0.00" id="ex4a3" name="@cnv_gain[genomic][case_report_denovo][consistent_with_genes_or_genomic_region][not_highly_specific_with_heterogenity][score]" type="text" value="0" />
+        <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4a3-value"></span></div>
+      </div>
+    </td>
+</tr>
+
+<!-- ------------------------------------------------------------------ -->
+            <tr class="score-slider">
+  <td style="vertical-align: middle;">
+    Individual case evidence - inconsistent phenotype
+  </td>
+  <td>
+    <input id="_cnv_gain_genomic_case_report_denovo_inconsistent_with_genes_or_genomic_region_applied" name="@cnv_gain[genomic][case_report_denovo][inconsistent_with_genes_or_genomic_region][applied]" type="hidden" value="false" />
+    <input class="cbg8" data-slider-select="#ex4a4" data-slider-to-disable-selector="#ex4a1,#ex4a2,#ex4a3" data-slider-to-disable="true" data-slider="true" id="cbg8d" name="@cnv_gain[genomic][case_report_denovo][inconsistent_with_genes_or_genomic_region][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4D. …the reported phenotype is NOT consistent with the gene/genomic region or not consistent in general
+  </td>
+  <td>
+    0 points each (Range: 0 to -0.30)
+  </td>
+  <td>
+    -0.30 (total)
+  </td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex4a4Slider" data-slider-max="0" data-slider-min="-0.30" data-slider-step="0.05" data-slider-value="0" id="ex4a4" name="@cnv_gain[genomic][case_report_denovo][inconsistent_with_genes_or_genomic_region][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4a4-value"></span></div>
+    </div>
+  </td>
+</tr>
+            <tr class="score-slider">
+  <td style="vertical-align: middle;">
+    Individual case evidence – unknown inheritance
+  </td>
+  <td>
+    <input id="_cnv_gain_genomic_case_report_with_unknown_inheritance_applied" name="@cnv_gain[genomic][case_report_with_unknown_inheritance][applied]" type="hidden" value="false" />
+    <input class="cbg14" data-slider-select="#ex4a10" data-slider="true" id="cbg14" name="@cnv_gain[genomic][case_report_with_unknown_inheritance][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4E. Reported proband has a highly specific phenotype consistent with the gene/genomic region, but the inheritance of the variant is unknown.
+  </td>
+  <td>0.10 points each (Range:0-0.15)
+  </td>
+  <td>0.30 (total)</td>
+  <td class="text-center">
+    <div class="hilite">
+       <input data-slider-id="ex4a10Slider" data-slider-max="0.30" data-slider-min="0" data-slider-step="0.05" data-slider-value="0" id="ex4a10" name="@cnv_gain[genomic][case_report_denovo][case_report_with_unknown_inheritance][score]" type="text" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4a10-value"></span></div>
+    </div>
+  </td>
+</tr>
+            <tr>
+  <td rowspan="1" style="vertical-align: middle;">
+    Individual case evidence – segregation among similarly affected family members
+  </td>
+  <td>
+    <input id="_cnv_gain_genomic_no_segregation_applied" name="@cnv_gain[genomic][no_segregation][applied]" type="hidden" value="false" />
+    <input class="cbg9" id="cbg9a" name="@cnv_gain[genomic][no_segregation][applied]" select-to-disable-selector="button[data-id=&#x27;number-of-segregation&#x27;], button[data-id=&#x27;number-of-segregation-points&#x27;]" type="checkbox" value="true" />
+  </td>
+  <td>
+    <select id="number-of-segregation" class="selectpicker gain-segregation seg-numbers" name="@cnv_gain[genomic][no_segregation][number]" disabled="disabled">
+      <option selected disabled>Select From Menu</option>
+      <option value="4F.  3-4 observed segregations">4F.  3-4 observed segregations</option>
+      <option value="4G.  5-6 observed segregations">4G.  5-6 observed segregations</option>
+      <option value="4H.  7 or more observed segregations">4H.  7 or more observed segregations</option>
+    </select>
+  </td>
+  <td id="no-segregation-suggested-points">Select number of segregations from the pull-down menu</td>
+  <td id="no-segregation-max-score">Select number of segregations from the pull-down menu,</td>
+  <td class="text-center">
+    <select id="number-of-segregation-points" class="selectpicker gain-segregation seg-numbers-score" name="@cnv_gain[genomic][no_segregation][score]" disabled="disabled">
+      <option selected disabled>Select From Menu</option>
+      <option class="st0" value="0.05">0.05</option>
+      <option class="st0" value="0.1">0.1</option>
+      <option class="st0" value="0.15">0.15</option>
+      <option class="st1" value="0.2">0.2</option>
+      <option class="st1" value="0.25">0.25</option>
+      <option class="st1" value="0.3">0.3</option>
+      <option class="st2" value="0.35">0.35</option>
+      <option class="st2" value="0.4">0.4</option>
+      <option class="st2" value="0.45">0.45</option>
+    </select>
+    <div class="italics">Assigned points: <span class="label label-success to-score" id="selected-number-of-segregation-points">0</span></div>
+  </td>
+</tr>
+
+            <tr class="score-slider">
+  <td rowspan="3" style="vertical-align: middle;">
+    Individual case evidence - Non-Segregations
+  </td>
+  <td>
+    <input id="_cnv_gain_genomic_case_report_non_segregation_not_found_in_other_individual_but_affected_and_specific_phenotype_applied" name="@cnv_gain[genomic][case_report_non_segregation][not_found_in_other_individual_but_affected_and_specific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg15 cgb15subgrp1 cgb15subgrp2" data-slider-select="#ex4d1" data-slider-to-disable-selector="#ex4d2,#ex4d3" data-slider-to-disable="true" data-slider="true" id="cbg15a" name="@cnv_gain[genomic][case_report_non_segregation][not_found_in_other_individual_but_affected_and_specific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4I. Variant is NOT found in another individual in the proband’s family AFFECTED with a consistent, specific, well-defined phenotype (no known phenocopies)
+  </td>
+  <td>
+  -0.45 points per family<br> (Range: 0 to -0.45)
+  </td>
+  <td class="bg-default">
+    -0.90 (Total)
+  </td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex4d1Slider" data-slider-max="0" data-slider-min="-0.90" data-slider-step="0.05" data-slider-value="0" id="ex4d1" name="@cnv_gain[genomic][case_report_non_segregation][not_found_in_other_individual_but_affected_and_specific_phenotype][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4d1-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_genomic_case_report_non_segregation_found_in_other_individual_but_unaffected_and_specific_phenotype_applied" name="@cnv_gain[genomic][case_report_non_segregation][found_in_other_individual_but_unaffected_and_specific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg15 cgb15subgrp1 cgb15subgrp3" data-slider-select="#ex4d2" data-slider-to-disable-selector="#ex4d1,#ex4d3" data-slider-to-disable="true" data-slider="true" id="cbg15b" name="@cnv_gain[genomic][case_report_non_segregation][found_in_other_individual_but_unaffected_and_specific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4J. Variant IS found in another individual in the proband’s family UNAFFECTED with the specific, well-defined phenotype observed in the proband
+  </td>
+  <td>
+   -0.30 points per family <br> (Range: 0 to -0.30)
+  </td>
+  <td>
+    -0.90 (Total)
+  </td>
+  <td class="text-center">
+    <div class="hilite">
+    <input data-slider-id="ex4d2Slider" data-slider-max="0" data-slider-min="-0.90" data-slider-step="0.05" data-slider-value="0" id="ex4d2" name="@cnv_gain[genomic][case_report_non_segregation][found_in_other_individual_but_unaffected_and_specific_phenotype][score]" type="text" value="0" />
+    <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4d2-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_genomic_case_report_non_segregation_found_in_other_individual_but_unaffected_and_nonspecific_phenotype_applied" name="@cnv_gain[genomic][case_report_non_segregation][found_in_other_individual_but_unaffected_and_nonspecific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg15 cgb15subgrp1 cgb15subgrp2 cgb15subgrp3" data-slider-select="#ex4d3" data-slider-to-disable-selector="#ex4d1,#ex4d2" data-slider-to-disable="true" data-slider="true" id="cbg15c" name="@cnv_gain[genomic][case_report_non_segregation][found_in_other_individual_but_unaffected_and_nonspecific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4K. Variant IS found in another individual in the proband’s family UNAFFECTED with the non-specific phenotype observed in the proband
+  </td>
+  <td>
+    -0.15 points per family <br> (Range: 0 to - 0.15)
+  </td>
+  <td>
+    -0.30 (Total)
+  </td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex4d3Slider" data-slider-max="0" data-slider-min="-0.30" data-slider-step="0.05" data-slider-value="0" id="ex4d3" name="@cnv_gain[genomic][case_report_non_segregation][found_in_other_individual_but_unaffected_and_nonspecific_phenotype][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4d3-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+            <tr class="score-slider">
+  <td rowspan="4" style="vertical-align: middle;">
+    Case-Control and Population Evidence
+  </td>
+  <td>
+    <input id="_cnv_gain_genomic_case_control_significant_with_specific_phenotype_applied" name="@cnv_gain[genomic][case_control][significant_with_specific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg10 cbg10subgrp1" data-slider-select="#ex4c1" data-slider-to-disable-selector="#ex4c2" data-slider-to-disable="true" data-slider="true" id="cbg10a" name="@cnv_gain[genomic][case_control][significant_with_specific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4L. Statistically significant increase amongst observations in cases (with a consistent, specific, well-defined phenotype) compared to controls
+  </td>
+  <td>0.45 per study <br> (Range: 0 to 0.45 per study)</td>
+  <td>0.45 (total)</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex4c1Slider" data-slider-max="0.45" data-slider-min="0" data-slider-step="0.05" data-slider-value="0" id="ex4c1" name="@cnv_gain[genomic][case_control][significant_with_specific_phenotype][score]" type="text" value="0" />
+      <!--input id="ex4c1" class="form-input" data-slider-id='ex4c1Slider' type="text" data-slider-min="0" data-slider-max="4" data-slider-step="0.5" data-slider-value="0"></input-->
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4c1-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_genomic_case_control_significant_with_nonspecific_phenotype_applied" name="@cnv_gain[genomic][case_control][significant_with_nonspecific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg10 cbg10subgrp1" data-slider-select="#ex4c2" data-slider-to-disable-selector="#ex4c1" data-slider-to-disable="true" data-slider="true" id="cbg10b" name="@cnv_gain[genomic][case_control][significant_with_nonspecific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4M. Statistically significant increase amongst observations in cases (with a consistent, non-specific phenotype or unknown phenotype) compared to controls
+  </td>
+  <td>0.30 per study <br> (Range: 0 to 0.30 per study)</td>
+  <td>0.45 (total)</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex4c2Slider" data-slider-max="0.45" data-slider-min="0" data-slider-step="0.05" data-slider-value="0" id="ex4c2" name="@cnv_gain[genomic][case_control][significant_with_nonspecific_phenotype][score]" type="text" value="0" />
+      <!--input id="ex4c2" class="form-input" data-slider-id='ex4c2Slider' type="text" data-slider-min="0" data-slider-max="3" data-slider-step="0.5" data-slider-value="0"></input -->
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4c2-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_genomic_case_control_insignificant_applied" name="@cnv_gain[genomic][case_control][insignificant][applied]" type="hidden" value="false" />
+    <input class="cbg10" data-slider-select="#ex4c3" data-slider-to-disable-selector="#ex4c1,#ex4c2,#ex4c4" data-slider-to-disable="true" data-slider="true" id="cbg10c" name="@cnv_gain[genomic][case_control][insignificant][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4N. No statistically significant difference between observations in cases and controls
+  </td>
+  <td>-0.90 per study <br> (Range: 0 to -0.90 per study)</td>
+  <td>-0.90 (total)</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex4c3Slider" data-slider-max="0" data-slider-min="-0.90" data-slider-step="0.05" data-slider-value="0" id="ex4c3" name="@cnv_gain[genomic][case_control][insignificant][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4c3-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_genomic_case_control_overlap_with_common_variations_applied" name="@cnv_gain[genomic][case_control][overlap_with_common_variations][applied]" type="hidden" value="false" />
+    <input class="cbg10" data-slider-select="#ex4c4" data-slider-to-disable-selector="#ex4c1,#ex4c2,#ex4c3" data-slider-to-disable="true" data-slider="true" id="cbg10d" name="@cnv_gain[genomic][case_control][overlap_with_common_variations][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    4O. Overlap with common population variation
+  </td>
+  <td>-1.00 per study <br> (Range: 0 to -1.00 per study)</td>
+  <td>-1.00 (total)</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex4c4Slider" data-slider-max="0" data-slider-min="-1.00" data-slider-step="0.05" data-slider-value="0" id="ex4c4" name="@cnv_gain[genomic][case_control][overlap_with_common_variations][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex4c4-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+            <tr class="bg-info text-info">
+  <th colspan="6" class="text-center">
+    Section 5: Evaluation of Inheritance Patterns/Family History for Patient Being Studied
+    <br>
+    <i><small></small></i>
+  </th>
+</tr>
+
+            <tr class="score-slider">
+  <td rowspan="1" style="vertical-align: middle;">
+    Observed copy number gain is DE NOVO
+  </td>
+  <td>
+    <input id="_cnv_gain_family_history_denovo_no_family_history_mp_confirmed_applied" name="@cnv_gain[family_history][denovo][no_family_history_mp_confirmed][applied]" type="hidden" value="false" />
+    <input class="cbg12 crossgrp4" data-slider-select="#ex5b1" data-slider-to-disable-selector="#ex5a1,#ex5a2,#ex5a3,#ex5d1,#ex5e1,#ex5e2" data-slider-to-disable="true" data-slider="true" id="cbg12a" name="@cnv_gain[family_history][denovo][no_family_history_mp_confirmed][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    5A. Use appropriate category from de novo scoring section in Section 4.
+  </td>
+  <td>Use de novo scoring categories from Section 4 (4A-4D) to determine score.</td>
+  <td>0.45</td>
+  <td class="text-center">
+    <div class="hilite">
+    <input data-slider-id="ex5b1Slider" data-slider-max="0.45" data-slider-min="0" data-slider-step="0.05" data-slider-value="0" id="ex5b1" name="@cnv_gain[family_history][denovo][no_family_history_mp_confirmed][score]" type="text" value="0" />
+        <div class="italics">Assigned points: <span class="label label-success to-score" id="ex5b1-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+            <tr class="score-slider">
+  <td rowspan="3" style="vertical-align: middle;">
+    Observed copy number gain is INHERITED
+  </td>
+  <td>
+    <input id="_cnv_gain_family_history_inherited_specific_phenotype_applied" name="@cnv_gain[family_history][inherited][specific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg11 crossgrp4" data-slider-select="#ex5a1" data-slider-to-disable-selector="#ex5b1,#ex5a2,#ex5a3,#ex5d1,#ex5e1,#ex5e2" data-slider-to-disable="true" data-slider="true" id="cbg11a" name="@cnv_gain[family_history][inherited][specific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    5B. Patient with a specific, well-defined phenotype and no family history. Copy number gain is inherited from an apparently unaffected parent.
+  </td>
+  <td>-0.30 (Range: 0 to -0.45)</td>
+  <td>-0.45</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex5a1Slider" data-slider-max="0" data-slider-min="-0.45" data-slider-step="0.05" data-slider-value="0" id="ex5a1" name="@cnv_gain[family_history][inherited][specific_phenotype][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex5a1-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_family_history_inherited_nonspecific_phenotype_applied" name="@cnv_gain[family_history][inherited][nonspecific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg11 crossgrp4" data-slider-select="#ex5a2" data-slider-to-disable-selector="#ex5b1,#ex5a1,#ex5a3,#ex5d1,#ex5e1,#ex5e2" data-slider-to-disable="true" data-slider="true" id="cbg11b" name="@cnv_gain[family_history][inherited][nonspecific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    5C. Patient with non-specific phenotype and no family history. Copy number gain is inherited from an apparently unaffected parent.
+  </td>
+  <td>-0.15 (Range: 0 to -0.30)</td>
+  <td>-0.30</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex5a2Slider" data-slider-max="0" data-slider-min="-0.30" data-slider-step="0.05" data-slider-value="0" id="ex5a2" name="@cnv_gain[family_history][inherited][nonspecific_phenotype][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex5a2-value"></span></div>
+    </div>
+  </td>
+</tr>
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_family_history_inherited_seggregates_with_specific_phenotype_applied" name="@cnv_gain[family_history][inherited][seggregates_with_specific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg11 crossgrp4" data-slider-select="#ex5a3" data-slider-to-disable-selector="#ex5b1,#ex5a1,#ex5a2,#ex5d1,#ex5e1,#ex5e2" data-slider-to-disable="true" data-slider="true" id="cbg11c" name="@cnv_gain[family_history][inherited][seggregates_with_specific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    5D. CNV segregates with consistent phenotype observed in the patient’s family
+  </td>
+  <td>Use segregation scoring categories from in Section 4 (4F-4H) to determine score.</td>
+  <td>0.45</td>
+  <td class="text-center">
+   <div class="hilite">
+      <input data-slider-id="ex5a3Slider" data-slider-max="0.45" data-slider-min="0" data-slider-step="0.05" data-slider-value="0" id="ex5a3" name="@cnv_gain[family_history][inherited][seggregates_with_specific_phenotype][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex5a3-value"></span></div>
+   </div>
+  </td>
+</tr>
+
+
+
+
+
+
+
+            <tr class="score-slider">
+  <td rowspan="1" style="vertical-align: middle;">
+    Observed copy number gain – Non-SEGREGATIONS
+  </td>
+  <td>
+    <input id="_cnv_gain_family_history_non_segregating_category_section_3_applied" name="@cnv_gain[family_history][non_segregating][category_section_3][applied]" type="hidden" value="false" />
+    <input class="cbg13 crossgrp4" data-slider-select="#ex5d1" data-slider-to-disable-selector="#ex5b1,#ex5a1,#ex5a2,#ex5a3,#ex5e1,#ex5e2" data-slider-to-disable="true" data-slider="true" id="cbg13a" name="@cnv_gain[family_history][non_segregating][category_section_3][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    5E.  Use appropriate category from non-segregation section in Section 4.
+  </td>
+  <td>Use non-segregation scoring categories from Section 4 (4I-4K) to determine score.</td>
+  <td>-0.45</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex5d1Slider" data-slider-max="0" data-slider-min="-0.45" data-slider-step="0.05" data-slider-value="0" id="ex5d1" name="@cnv_gain[family_history][non_segregating][category_section_3][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex5d1-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+            <tr>
+  <td rowspan="3" style="vertical-align: middle;">
+    
+  </td>
+  <td>
+    <input id="_cnv_gain_family_history_other_unavailable_applied" name="@cnv_gain[family_history][other][unavailable][applied]" type="hidden" value="false" />
+    <input class="cbg16 crossgrp4" data-slider-to-disable-selector="#ex5b1,#ex5a1,#ex5a2,#ex5a3,#ex5d1,#ex5e1,#ex5e2" data-slider-to-disable="true" id="cbg16a" name="@cnv_gain[family_history][other][unavailable][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    5F.  Inheritance information is unavailable or uninformative
+  </td>
+  <td>0</td>
+  <td>0</td>
+  <td class="text-center">
+  </td>
+</tr>
+
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_family_history_other_nonspecific_phenotype_applied" name="@cnv_gain[family_history][other][nonspecific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg16 crossgrp4" data-slider-select="#ex5e1" data-slider-to-disable-selector="#ex5b1,#ex5a1,#ex5a2,#ex5a3,#ex5d1,#ex5e2" data-slider-to-disable="true" data-slider="true" id="cbg16b" name="@cnv_gain[family_history][other][nonspecific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    5G. Inheritance information is unavailable or uninformative.  The patient phenotype is non-specific, but is consistent with what has been described in similar cases.
+  </td>
+  <td>0.10 (Range: 0 to 0.15)</td>
+  <td>0.15</td>
+  <td class="text-center">
+    <div class="hilite" >
+      <input data-slider-id="ex5e1Slider" data-slider-max="0.15" data-slider-min="0" data-slider-step="0.05" data-slider-value="0" id="ex5e1" name="@cnv_gain[family_history][other][nonspecific_phenotype][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex5e1-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+<tr class="score-slider">
+  <td>
+    <input id="_cnv_gain_family_history_other_specific_phenotype_applied" name="@cnv_gain[family_history][other][specific_phenotype][applied]" type="hidden" value="false" />
+    <input class="cbg16 crossgrp4" data-slider-select="#ex5e2" data-slider-to-disable-selector="#ex5b1,#ex5a1,#ex5a2,#ex5a3,#ex5d1,#ex5e1" data-slider-to-disable="true" data-slider="true" id="cbg16c" name="@cnv_gain[family_history][other][specific_phenotype][applied]" type="checkbox" value="true" />
+  </td>
+  <td>
+    5H. Inheritance information is unavailable or uninformative.  The patient phenotype is highly specific and consistent with what has been described in similar cases.
+  </td>
+  <td>0.15 (Range: 0 to 0.30)</td>
+  <td>0.30</td>
+  <td class="text-center">
+    <div class="hilite">
+      <input data-slider-id="ex5e2Slider" data-slider-max="0.30" data-slider-min="0" data-slider-step="0.05" data-slider-value="0" id="ex5e2" name="@cnv_gain[family_history][other][specific_phenotype][score]" type="text" value="0" />
+      <div class="italics">Assigned points: <span class="label label-success to-score" id="ex5e2-value"></span></div>
+    </div>
+  </td>
+</tr>
+
+          </thead>
+        </table>
+      </div>
+    </div>
+    <div id="fixed-assertion" class ="well qualification text-container">
+      <div class ="row">
+        <div class="text-center">
+          <span id="finalCall1" class="h5 assertion">Variant of Uncertain Significance</span>
+          <br>
+          <i style="font-size:0.8em">Total score: </i>
+          <span id="totalScore1" class="label label-success assertion-score" style="font-size:0.8em">0</span>
+        </div>
+      </div>
+    </div>
+    <div id="bottom-assertion" class ="well qualification text-container">
+      <div class ="row">
+        <div class="text-center">
+          <span id="finalCall2" class="h5 assertion">Variant of Uncertain Significance</span>
+          <br>
+          <i style="font-size:0.8em">Total score: </i>
+          <span id="totalScore2" class="label label-success assertion-score" style="font-size:0.8em">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</form></body>
+<style>
+  .make-me-faint {
+    color: #b9b9b9
+  }
+  #fixed-assertion {
+    position: fixed;
+    top: 136px;
+    left: 0%;
+    max-width: 90px;
+    border-radius: 0px 15px 15px 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-width: 3px 3px 3px 0px;
+  }
+</style>
+
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-md-8 col-sm-7 powered text-right">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 powered text-right">
+        <a href="https://www.genboree.org" class="xnavbar-brand">
+          <i class="fa fa-plug"></i>Powered By Genboree</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+<style>
+  html {
+    margin: 0px;
+  }
+  .header-menu {
+    height: 136px;
+    background: #3a9ee0;
+  }
+  .logo {
+    max-width: 225px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 120px;
+    float: left;
+  }
+  .right-nav {
+    color: #ffffff;
+    font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 2em;
+  }
+  .gray-font {
+    color: #666666;
+  }
+  #nav-link {
+    color: #fff
+  }
+  .custom-signin-btn, .custom-signin-btn:hover, .custom-signin-btn:focus {
+    background-color: #3a9ee0;
+    border: 1px solid #3a9ee0;
+    border-radius: 0px;
+  }
+
+  .user-info {
+    margin-top: -4px;
+  }
+  .inside-btn-link, .inside-btn-link:hover, .inside-btn-link:focus  {
+    color: white;
+  }
+</style>
+<link href="/redmine/plugin_assets/cnv_patho_calc/stylesheets/notices.css?1586354865" media="screen" rel="stylesheet" type="text/css" />

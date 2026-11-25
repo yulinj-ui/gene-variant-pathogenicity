@@ -1,0 +1,99 @@
+{
+  "identity": {
+    "variant_id": "synthetic-cnv",
+    "gene": "SYNTHETIC",
+    "build": "GRCh38",
+    "disease": "synthetic disease",
+    "inheritance": "AD"
+  },
+  "section2_input": {
+    "cnv_type": "LOSS",
+    "identity": {
+      "variant_id": "synthetic-cnv",
+      "gene": "SYNTHETIC",
+      "build": "GRCh38",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "target_id": "synthetic-target",
+    "target_kind": "gene",
+    "relation": "full_cover",
+    "review": {
+      "approved": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic test NOT medical evidence",
+      "location": "fixture",
+      "rationale": "synthetic test only"
+    },
+    "basis_ids": [
+      "synthetic-cnv-basis"
+    ],
+    "dosage": {
+      "axis": "HI",
+      "score": 3,
+      "source": "synthetic source NOT clinical evidence",
+      "record_id": "synthetic",
+      "evaluated_at": "2020-01-01",
+      "current_evidence_review": "synthetic review"
+    },
+    "fact_sources": {
+      "interval_and_breakpoints": {
+        "source": "synthetic",
+        "location": "fixture",
+        "rationale": "engineering test only"
+      },
+      "target_geometry": {
+        "source": "synthetic",
+        "location": "fixture",
+        "rationale": "engineering test only"
+      },
+      "dosage": {
+        "source": "synthetic",
+        "location": "fixture",
+        "rationale": "engineering test only"
+      },
+      "transcript_and_function": {
+        "source": "synthetic",
+        "location": "fixture",
+        "rationale": "engineering test only"
+      },
+      "platform": {
+        "source": "synthetic",
+        "location": "fixture",
+        "rationale": "engineering test only"
+      }
+    },
+    "facts": {}
+  },
+  "integration_review": {
+    "approved": true,
+    "reviewer": "synthetic reviewer",
+    "reviewed_at": "2026-09-27",
+    "source": "synthetic test NOT medical evidence",
+    "location": "fixture",
+    "rationale": "synthetic test only",
+    "all_targets_and_transcripts_reviewed": true,
+    "uncertain_breakpoints_reviewed": true,
+    "other_sections_reviewed": true,
+    "section4_skip_rule_reviewed": true,
+    "independence_and_caps_reviewed": true,
+    "dosage_date_reviewed": true,
+    "clinical_context_reviewed": true
+  },
+  "scoring": {
+    "framework": "CNV_LOSS",
+    "rules": {},
+    "evidence": [],
+    "combination_policy": {
+      "status": "reviewed",
+      "framework": "CNV_LOSS",
+      "source": "synthetic",
+      "version": "test",
+      "reviewer": "synthetic",
+      "reviewed_at": "2026-09-27",
+      "mutually_exclusive": [],
+      "caps": []
+    }
+  }
+}

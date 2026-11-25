@@ -1,0 +1,247 @@
+[
+  {
+    "file": "SKILL.md",
+    "status": "modified",
+    "sha256": "1782de2a79e1d1a12a84e87007f2a5110f5ae44d07c940c940dd09472af0c30b"
+  },
+  {
+    "file": "references/ba1-exceptions-2018.json",
+    "status": "added",
+    "sha256": "3fa8e16e824131e93cefbc235b90b401a33a967b616048c897d9257c92974315"
+  },
+  {
+    "file": "references/INTEGRATED_V5R1.md",
+    "status": "added",
+    "sha256": "dd3883b5d83d7388d3f23fc687193f0c583e09a3caa575c1b50aaee31a6925da"
+  },
+  {
+    "file": "references/sources/Walker2023.html",
+    "status": "added",
+    "sha256": "190259f8291728d692d1e0fa10d5fb5af91e81b3ad7bf58111ef17cc41e68742"
+  },
+  {
+    "file": "references/sources/Ghosh2018.html",
+    "status": "added",
+    "sha256": "62b71e4ce47c9755673724ddd743d24a3d102fed3a1b35d8075aab9fb582970d"
+  },
+  {
+    "file": "references/sources/PMC6938631.xml",
+    "status": "added",
+    "sha256": "a4777d5676c2d229f600c2fad21f63ba75e2a92913b3e57e7ec787598821913a"
+  },
+  {
+    "file": "references/sources/BA1-exceptions-2018.pdf",
+    "status": "added",
+    "sha256": "5b41f97e7cf47e1c97587c39d55361eda9b94abe16ab2cf26218178fa314a0a9"
+  },
+  {
+    "file": "references/sources/Riggs2020.html",
+    "status": "added",
+    "sha256": "f2c35d1feeac542b8e3ee69ca23e596c55e2b054525e6fd50a3486cc023f9760"
+  },
+  {
+    "file": "tests/test_v5r1.py",
+    "status": "added",
+    "sha256": "0d57c56f07ebdfeda538c5e8e97c5eafaf69ce4b701019e44e2af1c5d0da62c2"
+  },
+  {
+    "file": "tests/fixtures/pipeline-functional-v5r1.json",
+    "status": "added",
+    "sha256": "ba9c973b7d56cb13a1e4895846969708d97a4144b7b7953cbd834babd83e9692"
+  },
+  {
+    "file": "tests/fixtures/pipeline-pvs1-v5r1.json",
+    "status": "added",
+    "sha256": "a824fcad818888ed6ef09e336a5668fd607357a0eda69c6926078824f44d085b"
+  },
+  {
+    "file": "tests/fixtures/pipeline-locus-v5r1.json",
+    "status": "added",
+    "sha256": "e20857e3bf1a5fd9018554f5cce1f2b3c388877ac90caccc89a6c0d4d023692a"
+  },
+  {
+    "file": "review/v0.5-package-manifest.json",
+    "status": "added",
+    "sha256": "5424b6b95d18ed19b7314a6561a0f5a82e5a3d4741e95957a47c9d206970d8fb"
+  },
+  {
+    "file": "review/v0.5-official-validator.log",
+    "status": "added",
+    "sha256": "641ead298dd6cffe5ef08313ccb2d21d88d1994336329d03c7c8fe7ac0637ebd"
+  },
+  {
+    "file": "review/v0.5-MISSING_ITEMS.md",
+    "status": "added",
+    "sha256": "779af785140091dfaefee79cc1a7577ffca6cafb1c4be66f18a740e3a3c3af67"
+  },
+  {
+    "file": "review/offline-tests.log",
+    "status": "modified",
+    "sha256": "014e9e6b66f05c3f1229fded92de67037e1b38a11af14ed37870a31142f995b8"
+  },
+  {
+    "file": "review/pipeline-locus-result.json",
+    "status": "added",
+    "sha256": "879ecc16123fc0211f94830c1b922863c4be36e064fd1b92bd85d29517ed796b"
+  },
+  {
+    "file": "review/MISSING_ITEMS.md",
+    "status": "modified",
+    "sha256": "e627dc85961005ef602b183ee17b3b97ccff53a22217b4f3ea53b23be48879c1"
+  },
+  {
+    "file": "review/source-checks-v5r1.json",
+    "status": "added",
+    "sha256": "f53fb7030ea05d0430a669ad1e61ab661eb8ec49aaea92b50519afd6f90f66b6"
+  },
+  {
+    "file": "review/pipeline-pvs1-result.json",
+    "status": "added",
+    "sha256": "e22d9fdf932626c26d9510cb061903999779c94c6d71fe5d672d9a61cf8d8788"
+  },
+  {
+    "file": "review/CHANGELOG_V5R1.md",
+    "status": "added",
+    "sha256": "4e8fbe3c0a2e05f958e9d306accbe4ffb98136d4a65a38d504e59721f1126c81"
+  },
+  {
+    "file": "review/RULE_STATUS_V5R1.md",
+    "status": "added",
+    "sha256": "05fde8fd03896e7f827e0bea637e0f27781c47dec34306ad26fcdf9a7252cd7b"
+  },
+  {
+    "file": "review/v0.5-offline-tests.log",
+    "status": "added",
+    "sha256": "c3710b7bcbf2d4ee39a62c1c8b70ff108eb3d0d32c160fd48e9e1278d6f7b29b"
+  },
+  {
+    "file": "review/pipeline-functional-result.json",
+    "status": "added",
+    "sha256": "eeb503d23f4dd64c3e863b63b313e13f704a9572be526a6244540690104e4b30"
+  },
+  {
+    "file": "review/official-validator.log",
+    "status": "modified",
+    "sha256": "db349825903d66adffea3ecf1bd8e1803043e8a71cf1a051235dabc5371f5bb0"
+  },
+  {
+    "file": "review/pipeline-sample-report.md",
+    "status": "added",
+    "sha256": "2f59111f54add918ff00ccfaa1620cbf21c0f18e96f524adc397cad308c9e549"
+  },
+  {
+    "file": "review/v0.5-structure-validation.log",
+    "status": "added",
+    "sha256": "0a11245d63de337f3396be5b420fba057022ad2ef53733bf25496ac439ff5d96"
+  },
+  {
+    "file": "review/v0.5-ACCEPTANCE.md",
+    "status": "added",
+    "sha256": "7b5cd6d7057a8f081d1dbbae01a4260c97a23d1e4dc9ccdaa77330532e5ac6e5"
+  },
+  {
+    "file": "review/ACCEPTANCE.md",
+    "status": "modified",
+    "sha256": "5ef6f05cc475ca172c93b1a7dbdaa054c6f1695fb3ea8ef6a7ca55a03b1a4af6"
+  },
+  {
+    "file": "review/lof-dossier/包完整性.json",
+    "status": "added",
+    "sha256": "fb83e1f0df72697dea97fbfe7c0bd3496ea9e8ce17341e865618a435dc1672a7"
+  },
+  {
+    "file": "review/lof-dossier/离线测试报告.txt",
+    "status": "added",
+    "sha256": "a5b146f928e23f26a46be1791dfbfb2aab3c26b586d62f941a170eed695bf5a8"
+  },
+  {
+    "file": "review/lof-dossier/空白档案模板.json",
+    "status": "added",
+    "sha256": "e9c9be80406238bb1804965766771953df14c7d937d79d2d2d737c88e48e522b"
+  },
+  {
+    "file": "review/lof-dossier/来源登记.json",
+    "status": "added",
+    "sha256": "bcd9dc0ade543cd684c93449f85af17848f90bce573b05bc55c0300177258819"
+  },
+  {
+    "file": "review/lof-dossier/输入核验结果.json",
+    "status": "added",
+    "sha256": "5255a4fc80352ec16886dcabb50b861a868ae7ab8590e6da6129501e1c132578"
+  },
+  {
+    "file": "review/lof-dossier/人工填写模板.md",
+    "status": "added",
+    "sha256": "e5c733a7e13102f19daa959416499d81856058b7178dad0e4dfcefaac5574a37"
+  },
+  {
+    "file": "review/lof-dossier/档案说明与核验结论.md",
+    "status": "added",
+    "sha256": "682994c3c7f2235c178a6b40f2b0255c36f0a5e0d3750f50e19225ac8c6b25c9"
+  },
+  {
+    "file": "review/lof-dossier/validate_dossier.py",
+    "status": "added",
+    "sha256": "ec90cfee0bf98b8423c77e25305c5afa314982cecff2a7600c39e9137adadd5e"
+  },
+  {
+    "file": "review/lof-dossier/MSH2_Lynch机制档案.json",
+    "status": "added",
+    "sha256": "939d5b29e1aa3d412c2f3c009540611ddf729f18ac3334c27b604775fa618623"
+  },
+  {
+    "file": "review/lof-dossier/sources/mouse-7628020.xml",
+    "status": "added",
+    "sha256": "09cc961bdf0f5e1c4fd90ff121fcb21abd55e1f7b26707f1e51076878b9794e3"
+  },
+  {
+    "file": "review/lof-dossier/sources/nilbert-18566915.xml",
+    "status": "added",
+    "sha256": "ac44775b5186b492aa240abe5091c40493e79cfea54d6e6aa6955a8273fc4039"
+  },
+  {
+    "file": "review/lof-dossier/sources/MSH2-CSpec.html",
+    "status": "added",
+    "sha256": "33d9ed424f029da53f5bdf621db6537fc263a062d271d2a46f8e78d6810004cf"
+  },
+  {
+    "file": "review/lof-dossier/sources/PMC7051253.xml",
+    "status": "added",
+    "sha256": "87188e64999fef632d5c0d1e977098333a4fcd77bfd534654f14f56db27e5aef"
+  },
+  {
+    "file": "review/lof-dossier/sources/pvs1-2018.html",
+    "status": "added",
+    "sha256": "17928dc0a39cb1911480a3705e3a77b0716bff075ce28c7599626bf6b8e44d36"
+  },
+  {
+    "file": "review/lof-dossier/sources/clingen-MSH2.html",
+    "status": "added",
+    "sha256": "9ad91fa71065d5270bbc6229496f5fddec19a935047b5c3f4c09890672b6987f"
+  },
+  {
+    "file": "scripts/ba1_review.py",
+    "status": "added",
+    "sha256": "1989c354be74beb2ea64200c53cd35eaab6108917a1d18b24461aca8ad093e8f"
+  },
+  {
+    "file": "scripts/case_pipeline.py",
+    "status": "added",
+    "sha256": "949c2e3b16d806c68ac46655940c34fdf96da9d8ebcaa92efc32c9f813a43534"
+  },
+  {
+    "file": "scripts/validate_package.py",
+    "status": "modified",
+    "sha256": "68c05cb025938d797ba96f9b91ac16cb383e31246cfe64ad7b7c77de68a9d24b"
+  },
+  {
+    "file": "scripts/render_report.py",
+    "status": "modified",
+    "sha256": "da2e03243eed84f89bdd3465ad5be82f9712eacc244bfc4913f94be808aa578d"
+  },
+  {
+    "file": "assets/assessment-templates-v5r1.json",
+    "status": "added",
+    "sha256": "bb019ea8b4f94d7690fef645880b047f800902796cfe00709003dced421c0a12"
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "status": "reviewed_section2_candidate",
+  "blockers": [],
+  "code": "2I",
+  "default_points": "0.45",
+  "allowed_range": [
+    "0.30",
+    "0.90"
+  ],
+  "assigned_points": "0.45",
+  "classification": null,
+  "automatic_score_import": false,
+  "pvs1_audit": {
+    "strength": "Strong",
+    "pvs1": {
+      "tool": "pvs1_review",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6185798/",
+      "status": "test_calculation_only",
+      "blockers": [],
+      "path_results": [
+        {
+          "scenario_id": "scenario1",
+          "path_id": "U04",
+          "nodes": [
+            "149",
+            "151",
+            "155",
+            "158"
+          ],
+          "source_tree_output": "PVS1_Strong",
+          "tree_strength": "Strong",
+          "global_exclusions": []
+        }
+      ],
+      "tree_strength": "Strong",
+      "adjusted_strength": "Strong",
+      "mechanism_tier": "G1",
+      "automatic_score_import": false,
+      "evidence_code": null,
+      "classification": null
+    }
+  }
+}

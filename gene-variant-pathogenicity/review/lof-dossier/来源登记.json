@@ -1,0 +1,56 @@
+[
+  {
+    "id": "S01",
+    "title": "ClinGen CCID:005427",
+    "url": "https://search.clinicalgenome.org/CCID:005427",
+    "accessed_at": "2026-09-27",
+    "verification": "specific_entry_checked",
+    "snapshot": "sources/clingen-MSH2.html",
+    "sha256": "9ad91fa71065d5270bbc6229496f5fddec19a935047b5c3f4c09890672b6987f"
+  },
+  {
+    "id": "S02",
+    "title": "Shao 2020 PMID:32161499",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7051253/",
+    "accessed_at": "2026-09-27",
+    "verification": "full_text_xml_checked",
+    "snapshot": "sources/PMC7051253.xml",
+    "sha256": "87188e64999fef632d5c0d1e977098333a4fcd77bfd534654f14f56db27e5aef"
+  },
+  {
+    "id": "S03",
+    "title": "Nilbert PMID:18566915",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18566915/",
+    "accessed_at": "2026-09-27",
+    "verification": "abstract_only",
+    "snapshot": "sources/nilbert-18566915.xml",
+    "sha256": "ac44775b5186b492aa240abe5091c40493e79cfea54d6e6aa6955a8273fc4039"
+  },
+  {
+    "id": "S04",
+    "title": "de Wind 1995 PMID:7628020",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7628020/",
+    "accessed_at": "2026-09-27",
+    "verification": "abstract_only",
+    "snapshot": "sources/mouse-7628020.xml",
+    "sha256": "09cc961bdf0f5e1c4fd90ff121fcb21abd55e1f7b26707f1e51076878b9794e3"
+  },
+  {
+    "id": "S05",
+    "title": "MSH2 CSpec GN137 version 2.0",
+    "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN137",
+    "accessed_at": "2026-09-27",
+    "verification": "web_rule_text_checked_appendix_pending",
+    "snapshot": "sources/MSH2-CSpec.html",
+    "sha256": "33d9ed424f029da53f5bdf621db6537fc263a062d271d2a46f8e78d6810004cf"
+  },
+  {
+    "id": "S06",
+    "title": "Abou Tayoun 2018 Table 1",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6185798/",
+    "accessed_at": "2026-09-27",
+    "verification": "previous_full_text_snapshot",
+    "snapshot": "sources/pvs1-2018.html",
+    "sha256": "17928dc0a39cb1911480a3705e3a77b0716bff075ce28c7599626bf6b8e44d36"
+  }
+]

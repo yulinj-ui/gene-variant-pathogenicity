@@ -1,0 +1,167 @@
+[
+  {
+    "file": "SKILL.md",
+    "change": "modified",
+    "sha256": "52f165239bad5bbab8400d1a04b04266445afc985e769e3db82620672225482c"
+  },
+  {
+    "file": "references/DATA_CONTRACT.md",
+    "change": "modified",
+    "sha256": "64e7ca0511d222af4a9166cc48933c62dc9c9d93a3b7195eb15bebc11e3750a6"
+  },
+  {
+    "file": "references/HELPERS_V3.md",
+    "change": "added",
+    "sha256": "d2a9aefd952994b986648c8e839013b2bf1913bfd67c27af22d99bb7b305fa01"
+  },
+  {
+    "file": "references/RULES_V3.md",
+    "change": "added",
+    "sha256": "3eb94319322293c34aa289b8fde855d62c9f11e01b7f3c2f31c181a20f1c97d1"
+  },
+  {
+    "file": "references/WORKFLOW.md",
+    "change": "modified",
+    "sha256": "a355eadc9af1294847ba7c7e4096b7b8838b77bd8cf9b4bdf1bb9b61ae82f1f9"
+  },
+  {
+    "file": "review/ACCEPTANCE.md",
+    "change": "modified",
+    "sha256": "a776504f46aff1433030cbbb23659195b614a8f3e9cd98da80fb2bfd78fd1e31"
+  },
+  {
+    "file": "review/CHANGELOG_V3.md",
+    "change": "added",
+    "sha256": "eef92a549021b3dedca440ee4708e343ad2ce27d9eb9ee4a07a549e7f1f9eae8"
+  },
+  {
+    "file": "review/LITERATURE_REVIEW_V3.md",
+    "change": "added",
+    "sha256": "3a00e1e6211cf2162784caf1857cb149be8248b66a712b47542b79944f3d4522"
+  },
+  {
+    "file": "review/MISSING_ITEMS.md",
+    "change": "modified",
+    "sha256": "2a97160cd536a8e2911992ad07aa3307b38ca58181159ec368295f5a1e99329c"
+  },
+  {
+    "file": "review/RULE_STATUS_V3.md",
+    "change": "added",
+    "sha256": "73ba497806940cbe73a1e5c2d95c2dbd138777280508995f9f7336970d3e1a52"
+  },
+  {
+    "file": "review/SOURCE_CHECKS.md",
+    "change": "modified",
+    "sha256": "6a25360131198db97c27c3baebb584eab94455f280923c4210622977b7aa1122"
+  },
+  {
+    "file": "review/cli-smoke-v3.json",
+    "change": "added",
+    "sha256": "4cb2b4591a4c02599f766fb3684ecce630f83a4da6294f7b09abeb917dfce060"
+  },
+  {
+    "file": "review/example-functional-v3.json",
+    "change": "added",
+    "sha256": "06660cfb4e04f349aa0e656c9cefa17380988cc196072975283eb4e92c34f245"
+  },
+  {
+    "file": "review/example-pm3-v3.json",
+    "change": "added",
+    "sha256": "71bd01f0657d28f9d4e8af4428a7a5800b3ed055e1af8adf19337a9e61bb1616"
+  },
+  {
+    "file": "review/example-pp1pp4-v3.json",
+    "change": "added",
+    "sha256": "761eec85c3266d1a17c8a902f3a07d2e1dc64b808e2322caee868abd6abe6abd"
+  },
+  {
+    "file": "review/example-report-v3.md",
+    "change": "added",
+    "sha256": "9f1e150969f209bea6282ec30d0109b5c88dd5f31a867b4a5719cf9852f701b6"
+  },
+  {
+    "file": "review/example-unavailable-v3.json",
+    "change": "added",
+    "sha256": "7c6d7712f59a6e17aabd64c9ae84ddd9c55dd0e1f369ea9c760ec4c79e2b0257"
+  },
+  {
+    "file": "review/offline-tests.log",
+    "change": "modified",
+    "sha256": "a0783d47e30a330f8a3752f29c1c5ea6ea20055df056c78d0686be2c88e7d6bb"
+  },
+  {
+    "file": "review/rule-status-v3.json",
+    "change": "added",
+    "sha256": "e1a335824e63772d918d6adaf954f35bec64fce7a2e8f554bc3186453dd54e19"
+  },
+  {
+    "file": "review/v0.2-ACCEPTANCE.md",
+    "change": "added",
+    "sha256": "eb389a7cd78816d2327a3c4a77932d0d5b69c65609be1360ae62f0040420d905"
+  },
+  {
+    "file": "review/v0.2-MISSING_ITEMS.md",
+    "change": "added",
+    "sha256": "919eca430fc098b6f5c21f1d27a5b39f236e21029d34226a007b6ff92dc75095"
+  },
+  {
+    "file": "review/v0.2-official-validator.log",
+    "change": "added",
+    "sha256": "641ead298dd6cffe5ef08313ccb2d21d88d1994336329d03c7c8fe7ac0637ebd"
+  },
+  {
+    "file": "review/v0.2-offline-tests.log",
+    "change": "added",
+    "sha256": "2047bb1466cd488afbff180c629c098dd149aa1380e89704c09b5ce69c97222e"
+  },
+  {
+    "file": "review/v0.2-structure-validation.log",
+    "change": "added",
+    "sha256": "e88c7748e3ed403cfe82d273e99a82a4ac56f6f4d32c6381f9a78d315fc07926"
+  },
+  {
+    "file": "scripts/render_report.py",
+    "change": "modified",
+    "sha256": "c1565008a32992da0d9a0c46cf07c9b95e928d5d719ea5edd112a366f6a37d24"
+  },
+  {
+    "file": "scripts/review_helpers.py",
+    "change": "added",
+    "sha256": "83f9a770dc06c14e9ab2cfa7181f57b3fed0aac85ee7ffbee7c1a79a7d1f3fbe"
+  },
+  {
+    "file": "scripts/score.py",
+    "change": "modified",
+    "sha256": "1c851eca47400142d4c0a79b92cb7d8ec8040541ea3ad7a520dbda4a99f369c0"
+  },
+  {
+    "file": "scripts/validate_package.py",
+    "change": "modified",
+    "sha256": "2980a254dffb58445d6d4d21cebbe06825eda400fbc97842cfa3ac6bd617b02a"
+  },
+  {
+    "file": "tests/fixtures/case-v3.json",
+    "change": "added",
+    "sha256": "662ae0d387084791a801f620363cdb7d3097bcfadb46917a4be4351a0bc0c629"
+  },
+  {
+    "file": "tests/fixtures/helper-functional-v3.json",
+    "change": "added",
+    "sha256": "2d7ff3e08d4deb543775fad0fad4fe0d49fe9791fa881a50cb7322cf63d87e05"
+  },
+  {
+    "file": "tests/fixtures/helper-pm3-v3.json",
+    "change": "added",
+    "sha256": "63e88c89ba89dc8fbc2cde37f9dd4c5be4eb023bbfd64dab87c963c46bd612d5"
+  },
+  {
+    "file": "tests/fixtures/helper-pp1pp4-v3.json",
+    "change": "added",
+    "sha256": "bd1a2a1923b7119b53edcec22a8e3f0ca47206aa93ca0f8d6c520076597fa8cb"
+  },
+  {
+    "file": "tests/test_v3.py",
+    "change": "added",
+    "sha256": "a1540b727c8a12e7c8b7840810c8d518cf999f1b6a9d6e29cecd4ab27c4c371d"
+  }
+]

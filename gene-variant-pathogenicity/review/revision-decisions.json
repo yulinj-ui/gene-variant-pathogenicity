@@ -1,0 +1,216 @@
+[
+  {
+    "id": "R01",
+    "change": "失败不赋PM2；缺失频率null；本地库停用",
+    "status": "source_checked_workflow",
+    "sources": [
+      "S03"
+    ],
+    "implementation": "注释/缺失测试；WORKFLOW",
+    "remaining": "数据版本、覆盖、过滤及疾病频率阈值逐例核查",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R02",
+    "change": "检索结论限定日期和范围；不称首次报道",
+    "status": "engineering_enabled",
+    "sources": [],
+    "implementation": "report_audit.search_statement",
+    "remaining": "无",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R03",
+    "change": "单源允许复核、身份与双源一致分开",
+    "status": "engineering_enabled",
+    "sources": [],
+    "implementation": "genebe_fields；单源/冲突测试",
+    "remaining": "线上VV/GeneBe契约待实时核验；VEP/Mutalyzer未新增连接器",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R04",
+    "change": "分类/关联/样本可信度三栏",
+    "status": "workflow_enabled_limits_pending",
+    "sources": [],
+    "implementation": "两类报告模板及生成器",
+    "remaining": "Limited上限等自动裁决继续禁用",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R05",
+    "change": "积分优先+2015组合对照，CNV独立",
+    "status": "source_checked_test_only",
+    "sources": [
+      "S01",
+      "S02",
+      "S03",
+      "S07"
+    ],
+    "implementation": "score/compare_frameworks；各组合与边界测试",
+    "remaining": "BA1例外、疾病规则、小数积分未实现",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R06",
+    "change": "未知插入位点不默认0；保留完整前提",
+    "status": "source_checked_manual_only",
+    "sources": [
+      "S08",
+      "S07"
+    ],
+    "implementation": "RULES_V2；CNV模板",
+    "remaining": "具体断点、长度、转录本、NMD/LoF逐例审核",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R07",
+    "change": "删除低外显率自动降级",
+    "status": "workflow_enabled",
+    "sources": [
+      "S07"
+    ],
+    "implementation": "CNV报告：分类/预后分开",
+    "remaining": "易感CNV主报告仅建议，机构政策待补",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R08",
+    "change": "删除物种上限和只凭对照数自动赋值",
+    "status": "source_checked_manual_only",
+    "sources": [
+      "S09"
+    ],
+    "implementation": "RULES_V2",
+    "remaining": "实验清单、性能、VCEP与适用性",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R09",
+    "change": "PM1和/或路径；PM1+PP3上限保护",
+    "status": "source_checked_test_only",
+    "sources": [
+      "S01",
+      "S06"
+    ],
+    "implementation": "score上限阻断测试",
+    "remaining": "热点/功能域和反证仍须人工证据",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R10",
+    "change": "de novo连续门槛和高异质性上限；更正PM3简表",
+    "status": "source_checked_test_only",
+    "sources": [
+      "S04",
+      "S05"
+    ],
+    "implementation": "evidence_helpers与测试；PM3仅文档",
+    "remaining": "亲缘SOP及遗传模式例外，PM3不自动赋值",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R11",
+    "change": "删除线性乘分；暂不实现小数/取整方案",
+    "status": "disabled_pending",
+    "sources": [
+      "S10"
+    ],
+    "implementation": "score拒绝小数测试",
+    "remaining": "完整2024框架、去重、上限验证",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R12",
+    "change": "本地阈值关闭，只留值与提示",
+    "status": "disabled_local_policy",
+    "sources": [
+      "S12"
+    ],
+    "implementation": "report_audit.sample_qc测试",
+    "remaining": "本地方法验证与SOP；文献不能代替本地验证",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R13",
+    "change": "咨询模块保留，自动再发数值关闭",
+    "status": "disabled_local_policy",
+    "sources": [],
+    "implementation": "产前模板、sample_qc",
+    "remaining": "具体家系、组织、方法、审核责任",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R14",
+    "change": "资料三态+n/N/年龄/来源；不推个体风险",
+    "status": "workflow_enabled",
+    "sources": [],
+    "implementation": "产前模板",
+    "remaining": "适用队列和个体模型缺失时未评估",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R15",
+    "change": "VUS内部亚档；报告仅建议；2026来源确认",
+    "status": "workflow_enabled_policy_pending",
+    "sources": [
+      "S12"
+    ],
+    "implementation": "两类报告模板",
+    "remaining": "机构SOP、知情同意、MDT流程",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R16",
+    "change": "规则来源分层与限定核查状态",
+    "status": "engineering_enabled",
+    "sources": [],
+    "implementation": "source-checks.json、RULES_V2",
+    "remaining": "逐疾病VCEP与本地中文共识版本",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R17",
+    "change": "保留1B；关闭家族合并/4O固定映射/内部HI冒充官方",
+    "status": "source_checked_manual_only",
+    "sources": [
+      "S07"
+    ],
+    "implementation": "CNV −0.60边界测试；模板",
+    "remaining": "CNV补充材料、病例级条目适用性；自动−1仍关闭",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R18",
+    "change": "同一数据源生成证据/分数，实际核验率，REVEL互斥区间",
+    "status": "source_checked_test_only",
+    "sources": [
+      "S01",
+      "S06",
+      "S11"
+    ],
+    "implementation": "render_report/report_audit/evidence_helpers；边界/报告测试",
+    "remaining": "极低REVEL强度上限及VCEP逐例声明",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R19",
+    "change": "删除框内插入永久禁令，保留机制复核",
+    "status": "source_checked_manual_only",
+    "sources": [
+      "S11"
+    ],
+    "implementation": "RULES_V2",
+    "remaining": "RNA原始实验、组织、比例和蛋白数据",
+    "clinical_enabled": false
+  },
+  {
+    "id": "R20",
+    "change": "上传资料登记；固定版本，不自动增信",
+    "status": "engineering_enabled",
+    "sources": [],
+    "implementation": "USER_REVIEW归档、SOURCE_CHECKS",
+    "remaining": "完整规范附件与版本更新流程",
+    "clinical_enabled": false
+  }
+]

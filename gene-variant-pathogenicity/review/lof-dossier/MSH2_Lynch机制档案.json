@@ -1,0 +1,329 @@
+{
+  "schema_version": "0.1-audit",
+  "dossier_id": "MSH2-Lynch-20260927",
+  "identity": {
+    "gene": "MSH2",
+    "hgnc": "HGNC:7325",
+    "disease": "Lynch syndrome",
+    "disease_id": "MONDO:0005835",
+    "inheritance": "AD",
+    "transcript": "NM_000251.3"
+  },
+  "fields": {
+    "lof_mechanism": {
+      "value": "established",
+      "status": "source_checked",
+      "source_ids": [
+        "S01",
+        "S02"
+      ],
+      "location": "S01 summary; S02 Results/Figures 5-7",
+      "rationale": "Human truncating variant evidence supports LoF; this does not establish PVS1-independent Pathogenic counts",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "association": {
+      "value": "definitive",
+      "status": "source_checked",
+      "source_ids": [
+        "S01"
+      ],
+      "location": "header: classification 2022-06-20",
+      "rationale": "ClinGen specific gene-disease assertion; clinical signoff pending",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "independent_pathogenic_lof_count": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "phenotype_lof_count": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "phenotype_total_count": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "associated_lof_count": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "multiple_exons": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "single_exon_gene": {
+      "value": false,
+      "status": "source_checked",
+      "source_ids": [
+        "S02"
+      ],
+      "location": "Results: A Frameshift INDEL Mutation in MSH2 Was Found in the Pedigree",
+      "rationale": "Paper describes stop in exon 3; multi-exon gene does not prove distribution of the counted variants",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "null_mouse": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    }
+  },
+  "variants": [
+    {
+      "id": "V01",
+      "reported_hgvs": "NM_000251.3:c.420dup",
+      "source_ids": [
+        "S01",
+        "S02"
+      ],
+      "location": "S01 Case Level Variants: c.420dup",
+      "primary_review": "full_text",
+      "original_transcript": "NM_000251.2",
+      "normalized_allele": null,
+      "exon": null,
+      "exon_status": "pending",
+      "associated_with_phenotype": "reported",
+      "independent_pathogenic_without_pvs1": null,
+      "independent_evidence_codes": [],
+      "count_eligible": false,
+      "reason": "Coordinate normalization, exon mapping and independent classification pending; do not infer P from gene validity points"
+    },
+    {
+      "id": "V02",
+      "reported_hgvs": "NM_000251.3:c.832G>T",
+      "source_ids": [
+        "S01",
+        "S03"
+      ],
+      "location": "S01 Case Level Variants: c.832G>T",
+      "primary_review": "abstract_only",
+      "original_transcript": null,
+      "normalized_allele": null,
+      "exon": null,
+      "exon_status": "pending",
+      "associated_with_phenotype": "reported",
+      "independent_pathogenic_without_pvs1": null,
+      "independent_evidence_codes": [],
+      "count_eligible": false,
+      "reason": "Coordinate normalization, exon mapping and independent classification pending; do not infer P from gene validity points"
+    },
+    {
+      "id": "V03",
+      "reported_hgvs": "NM_000251.3:c.892C>T",
+      "source_ids": [
+        "S01",
+        "S03"
+      ],
+      "location": "S01 Case Level Variants: c.892C>T",
+      "primary_review": "abstract_only",
+      "original_transcript": null,
+      "normalized_allele": null,
+      "exon": null,
+      "exon_status": "pending",
+      "associated_with_phenotype": "reported",
+      "independent_pathogenic_without_pvs1": null,
+      "independent_evidence_codes": [],
+      "count_eligible": false,
+      "reason": "Coordinate normalization, exon mapping and independent classification pending; do not infer P from gene validity points"
+    },
+    {
+      "id": "V04",
+      "reported_hgvs": "NM_000251.3:c.942+3A>T",
+      "source_ids": [
+        "S01",
+        "S03"
+      ],
+      "location": "S01 Case Level Variants: c.942+3A>T",
+      "primary_review": "abstract_only",
+      "original_transcript": null,
+      "normalized_allele": null,
+      "exon": null,
+      "exon_status": "pending",
+      "associated_with_phenotype": "reported",
+      "independent_pathogenic_without_pvs1": null,
+      "independent_evidence_codes": [],
+      "count_eligible": false,
+      "reason": "Coordinate normalization, exon mapping and independent classification pending; do not infer P from gene validity points"
+    },
+    {
+      "id": "V05",
+      "reported_hgvs": "NM_000251.3:c.1609A>T",
+      "source_ids": [
+        "S01",
+        "S03"
+      ],
+      "location": "S01 Case Level Variants: c.1609A>T",
+      "primary_review": "abstract_only",
+      "original_transcript": null,
+      "normalized_allele": null,
+      "exon": null,
+      "exon_status": "pending",
+      "associated_with_phenotype": "reported",
+      "independent_pathogenic_without_pvs1": null,
+      "independent_evidence_codes": [],
+      "count_eligible": false,
+      "reason": "Coordinate normalization, exon mapping and independent classification pending; do not infer P from gene validity points"
+    },
+    {
+      "id": "V06",
+      "reported_hgvs": "NM_000251.3:c.942+1G>T",
+      "source_ids": [
+        "S01",
+        "S03"
+      ],
+      "location": "S01 Case Level Variants: c.942+1G>T",
+      "primary_review": "abstract_only",
+      "original_transcript": null,
+      "normalized_allele": null,
+      "exon": null,
+      "exon_status": "pending",
+      "associated_with_phenotype": "reported",
+      "independent_pathogenic_without_pvs1": null,
+      "independent_evidence_codes": [],
+      "count_eligible": false,
+      "reason": "Coordinate normalization, exon mapping and independent classification pending; do not infer P from gene validity points"
+    },
+    {
+      "id": "V07",
+      "reported_hgvs": "NM_000251.3:c.888del",
+      "source_ids": [
+        "S01",
+        "S03"
+      ],
+      "location": "S01 Case Level Variants: c.888del",
+      "primary_review": "abstract_only",
+      "original_transcript": null,
+      "normalized_allele": null,
+      "exon": null,
+      "exon_status": "pending",
+      "associated_with_phenotype": "reported",
+      "independent_pathogenic_without_pvs1": null,
+      "independent_evidence_codes": [],
+      "count_eligible": false,
+      "reason": "Coordinate normalization, exon mapping and independent classification pending; do not infer P from gene validity points"
+    },
+    {
+      "id": "V08",
+      "reported_hgvs": "NM_000251.3:c.1390del",
+      "source_ids": [
+        "S01",
+        "S03"
+      ],
+      "location": "S01 Case Level Variants: c.1390del",
+      "primary_review": "abstract_only",
+      "original_transcript": null,
+      "normalized_allele": null,
+      "exon": null,
+      "exon_status": "pending",
+      "associated_with_phenotype": "reported",
+      "independent_pathogenic_without_pvs1": null,
+      "independent_evidence_codes": [],
+      "count_eligible": false,
+      "reason": "Coordinate normalization, exon mapping and independent classification pending; do not infer P from gene validity points"
+    },
+    {
+      "id": "V09",
+      "reported_hgvs": "NM_000251.3:c.1165C>T",
+      "source_ids": [
+        "S01",
+        "S03"
+      ],
+      "location": "S01 Case Level Variants: c.1165C>T",
+      "primary_review": "abstract_only",
+      "original_transcript": null,
+      "normalized_allele": null,
+      "exon": null,
+      "exon_status": "pending",
+      "associated_with_phenotype": "reported",
+      "independent_pathogenic_without_pvs1": null,
+      "independent_evidence_codes": [],
+      "count_eligible": false,
+      "reason": "Coordinate normalization, exon mapping and independent classification pending; do not infer P from gene validity points"
+    }
+  ],
+  "denominator": {
+    "definition": null,
+    "inclusion": null,
+    "exclusion": "Do not use ClinGen selected null rows, all-gene cohort totals, family counts, or the previous 48 missense assay controls as this denominator.",
+    "deduplication": null,
+    "cutoff": null,
+    "variant_ids": [],
+    "complete": false
+  },
+  "animal_models": [
+    {
+      "id": "A01",
+      "source_ids": [
+        "S04",
+        "S01"
+      ],
+      "genotype": "Msh2 deficient; ClinGen summary describes homozygous Msh2-/-",
+      "phenotypes": [
+        "early lymphoma",
+        "MMR deficiency/MSI"
+      ],
+      "match": "supports mechanism; AD human Lynch phenotype/zygosity match requires review",
+      "full_text_checked": false,
+      "eligible_for_null_mouse": null
+    }
+  ],
+  "vcep": {
+    "status": "gene_specific_review_required",
+    "source_ids": [
+      "S05"
+    ],
+    "version": "2.0",
+    "generic_applicable": false,
+    "reason": "MSH2 has gene-specific PVS1 specifications; appendix and disease scope mapping pending"
+  },
+  "signoff": {
+    "reviewer": null,
+    "date": null,
+    "approved": false
+  },
+  "automatic_score_import": false,
+  "identity_provenance": {
+    "source_ids": [
+      "S01"
+    ],
+    "location": "Gene-Disease Validity Details; classification 2022-06-20",
+    "mapping_issue": "S05 uses MONDO:0007356; retain both scopes; no automatic identifier equivalence"
+  },
+  "count_discrepancy": {
+    "summary_unique_variants": 8,
+    "case_table_distinct_hgvs": 9,
+    "status": "pending_reconciliation",
+    "action": "Neither 8 nor 9 exported as a reviewed count"
+  }
+}

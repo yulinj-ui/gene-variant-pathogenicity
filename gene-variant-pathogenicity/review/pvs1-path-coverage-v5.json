@@ -1,0 +1,514 @@
+[
+  {
+    "path_id": "N01",
+    "source_nodes": [
+      "60",
+      "61",
+      "63",
+      "65"
+    ],
+    "source_tree_output": "PVS1",
+    "status": "test_calculation_only",
+    "adjusted_strength": "VeryStrong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "N02",
+    "source_nodes": [
+      "60",
+      "61",
+      "64",
+      "66"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "N03",
+    "source_nodes": [
+      "60",
+      "62",
+      "67",
+      "70"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "N04",
+    "source_nodes": [
+      "60",
+      "62",
+      "68",
+      "69",
+      "71"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "N05",
+    "source_nodes": [
+      "60",
+      "62",
+      "68",
+      "74",
+      "75",
+      "72"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "N06",
+    "source_nodes": [
+      "60",
+      "62",
+      "68",
+      "74",
+      "76",
+      "73"
+    ],
+    "source_tree_output": "PVS1_Moderate",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Moderate",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S01",
+    "source_nodes": [
+      "87",
+      "88",
+      "90",
+      "98"
+    ],
+    "source_tree_output": "PVS1",
+    "status": "test_calculation_only",
+    "adjusted_strength": "VeryStrong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S02",
+    "source_nodes": [
+      "87",
+      "88",
+      "92",
+      "99"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S03",
+    "source_nodes": [
+      "87",
+      "106",
+      "91",
+      "100"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S04",
+    "source_nodes": [
+      "87",
+      "106",
+      "93",
+      "94",
+      "101"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S05",
+    "source_nodes": [
+      "87",
+      "106",
+      "93",
+      "95",
+      "96",
+      "102"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S06",
+    "source_nodes": [
+      "87",
+      "106",
+      "93",
+      "95",
+      "105",
+      "103"
+    ],
+    "source_tree_output": "PVS1_Moderate",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Moderate",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S07",
+    "source_nodes": [
+      "87",
+      "89",
+      "210",
+      "211",
+      "214"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S08",
+    "source_nodes": [
+      "87",
+      "89",
+      "210",
+      "212",
+      "213",
+      "215"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S09",
+    "source_nodes": [
+      "87",
+      "89",
+      "210",
+      "212",
+      "217",
+      "216"
+    ],
+    "source_tree_output": "PVS1_Moderate",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Moderate",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "S10",
+    "source_nodes": [
+      "87",
+      "89",
+      "97",
+      "104"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D01",
+    "source_nodes": [
+      "131",
+      "134",
+      "140"
+    ],
+    "source_tree_output": "PVS1（脚注d）",
+    "status": "test_calculation_only",
+    "adjusted_strength": "VeryStrong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D02",
+    "source_nodes": [
+      "131",
+      "132",
+      "135",
+      "142"
+    ],
+    "source_tree_output": "PVS1",
+    "status": "test_calculation_only",
+    "adjusted_strength": "VeryStrong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D03",
+    "source_nodes": [
+      "131",
+      "132",
+      "137",
+      "143"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D04",
+    "source_nodes": [
+      "131",
+      "168",
+      "136",
+      "144"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D05",
+    "source_nodes": [
+      "131",
+      "168",
+      "138",
+      "139",
+      "145"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D06",
+    "source_nodes": [
+      "131",
+      "168",
+      "138",
+      "203",
+      "204",
+      "146"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D07",
+    "source_nodes": [
+      "131",
+      "168",
+      "138",
+      "203",
+      "205",
+      "147"
+    ],
+    "source_tree_output": "PVS1_Moderate",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Moderate",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D08",
+    "source_nodes": [
+      "131",
+      "133",
+      "138",
+      "139",
+      "145"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D09",
+    "source_nodes": [
+      "131",
+      "133",
+      "138",
+      "203",
+      "204",
+      "146"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D10",
+    "source_nodes": [
+      "131",
+      "133",
+      "138",
+      "203",
+      "205",
+      "147"
+    ],
+    "source_tree_output": "PVS1_Moderate",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Moderate",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "D11",
+    "source_nodes": [
+      "131",
+      "133",
+      "141",
+      "148"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "U01",
+    "source_nodes": [
+      "149",
+      "150",
+      "154",
+      "157"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "U02",
+    "source_nodes": [
+      "149",
+      "150",
+      "153",
+      "156"
+    ],
+    "source_tree_output": "PVS1",
+    "status": "test_calculation_only",
+    "adjusted_strength": "VeryStrong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "U03",
+    "source_nodes": [
+      "149",
+      "151",
+      "154",
+      "157"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "U04",
+    "source_nodes": [
+      "149",
+      "151",
+      "155",
+      "158"
+    ],
+    "source_tree_output": "PVS1_Strong",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Strong",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "U05",
+    "source_nodes": [
+      "149",
+      "152",
+      "159"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "I01",
+    "source_nodes": [
+      "160",
+      "162",
+      "163",
+      "166"
+    ],
+    "source_tree_output": "PVS1_Moderate",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Moderate",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "I02",
+    "source_nodes": [
+      "160",
+      "162",
+      "164",
+      "165"
+    ],
+    "source_tree_output": "PVS1_Supporting",
+    "status": "test_calculation_only",
+    "adjusted_strength": "Supporting",
+    "fixture_kind": "synthetic",
+    "passed": true
+  },
+  {
+    "path_id": "I03",
+    "source_nodes": [
+      "160",
+      "161",
+      "167"
+    ],
+    "source_tree_output": "不适用PVS1",
+    "status": "not_applicable",
+    "adjusted_strength": null,
+    "fixture_kind": "synthetic",
+    "passed": true
+  }
+]

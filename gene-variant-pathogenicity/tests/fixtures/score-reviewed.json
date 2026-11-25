@@ -1,0 +1,47 @@
+{
+  "framework": "SNV",
+  "rules": {
+    "test-rule": {
+      "code": "TEST",
+      "status": "reviewed",
+      "framework": "SNV",
+      "source": "synthetic fixture; NOT a medical authority",
+      "version": "test-1",
+      "location": "fixture",
+      "reviewer": "test-harness",
+      "reviewed_at": "2026-09-26",
+      "applicability": "synthetic arithmetic only",
+      "allowed_points": [
+        "1"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev1",
+      "code": "TEST",
+      "framework": "SNV",
+      "rule_id": "test-rule",
+      "status": "reviewed",
+      "gate": "passed",
+      "points": "1",
+      "source_ids": [
+        "fixture"
+      ],
+      "basis_ids": [
+        "observation1"
+      ],
+      "rationale": "synthetic test"
+    }
+  ],
+  "combination_policy": {
+    "framework": "SNV",
+    "status": "reviewed",
+    "source": "synthetic",
+    "version": "test",
+    "reviewer": "test-harness",
+    "reviewed_at": "2026-09-26",
+    "mutually_exclusive": [],
+    "caps": []
+  }
+}

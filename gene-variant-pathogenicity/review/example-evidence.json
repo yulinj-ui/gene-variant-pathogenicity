@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1",
+  "input": "NM_000001.1:c.28C>T",
+  "protein_gate": {
+    "status": "verified",
+    "passed": true,
+    "transcript": "NM_000001.1",
+    "hgvs_c": "NM_000001.1:c.28C>T",
+    "hgvs_p": "NP_000001.1:p.(Arg10Trp)",
+    "hgvs_p_genebe": "NP_000001.1:p.Arg10Trp",
+    "source": [
+      "VariantValidator",
+      "GeneBe"
+    ]
+  },
+  "coords": {
+    "hg38": {
+      "chr": "1",
+      "pos": 101,
+      "ref": "C",
+      "alt": "T"
+    },
+    "hg19": null,
+    "rsid": null
+  },
+  "clinvar": {
+    "classification": null,
+    "stars": null,
+    "submissions": null,
+    "disease": null
+  },
+  "frequency": {
+    "global": {
+      "af": 0,
+      "ac": 0,
+      "an": 2000
+    },
+    "eas": {
+      "af": null,
+      "ac": null,
+      "an": null
+    }
+  },
+  "predictors": {},
+  "constraint": null,
+  "codon_landscape": null,
+  "acmg_benchmark": {
+    "tool": "GeneBe",
+    "classification": null,
+    "criteria": null,
+    "score": null,
+    "use": "benchmark_only"
+  },
+  "_sources": {
+    "variantvalidator": {
+      "status": "validated",
+      "reason": "identity validated; field completeness checked separately"
+    },
+    "genebe": {
+      "status": "validated",
+      "reason": "identity validated; field completeness checked separately"
+    },
+    "worker": {
+      "status": "validated",
+      "reason": "identity validated; field completeness checked separately"
+    }
+  },
+  "_warnings": [],
+  "_needs_manual": [
+    "frequency coverage/filters/dataset/FAF",
+    "current VCEP and source rules",
+    "field-level provenance",
+    "CNV uses separate workflow"
+  ],
+  "classification": null,
+  "report_status": "evidence_collection_only",
+  "_provenance": {
+    "mode": "offline_fixture",
+    "source_file": "tests/fixtures/sources.json"
+  }
+}

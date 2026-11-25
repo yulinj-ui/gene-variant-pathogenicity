@@ -1,0 +1,30 @@
+{
+  "tool": "pm3",
+  "source": "https://www.clinicalgenome.org/site/assets/files/3717/svi_proposal_for_pm3_criterion_-_version_1.pdf",
+  "status": "test_calculation_only",
+  "blockers": [],
+  "evidence_code": null,
+  "classification": null,
+  "case_audit": [
+    {
+      "id": "case0",
+      "category": "plp",
+      "case_points": "0.25",
+      "blockers": []
+    },
+    {
+      "id": "case1",
+      "category": "plp",
+      "case_points": "0.25",
+      "blockers": []
+    }
+  ],
+  "uncapped_subtotals": {
+    "plp": "0.50",
+    "homozygous": "0",
+    "vus": "0"
+  },
+  "case_points": "0.50",
+  "strength": "Supporting",
+  "bayesian_weight": 1
+}

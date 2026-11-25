@@ -1,0 +1,222 @@
+{
+  "functional": {
+    "mechanism": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "assay_class": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "sample_system": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "controls": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "replicates": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "calibration": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "variant_readout": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "coverage_of_normal_result": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "conflict_resolution": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "review": {
+      "approved": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "source": null,
+      "location": null,
+      "rationale": null
+    },
+    "readout_kind": null,
+    "variant_result": null,
+    "conflict_status": null
+  },
+  "pedigree": {
+    "pedigree": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "phenotypes_and_ages": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "genotypes_and_phase": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "inheritance": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "penetrance": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "phenocopies": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "ascertainment": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "independent_meioses": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "alternative_causes": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "method_and_source": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "probability_allocation": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "code_conversion": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "review": {
+      "approved": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "source": null,
+      "location": null,
+      "rationale": null
+    },
+    "complexity": null
+  },
+  "rna": {
+    "tissue_and_transcript": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "assay_design": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "controls": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "allelic_origin": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "nmd_inhibition": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "transcript_quantification": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "lof_consequences": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "rescue_transcripts": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "code_and_strength": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "overlap_with_predictions": {
+      "finding": null,
+      "source": null,
+      "location": null,
+      "conclusion": null
+    },
+    "review": {
+      "approved": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "source": null,
+      "location": null,
+      "rationale": null
+    }
+  }
+}

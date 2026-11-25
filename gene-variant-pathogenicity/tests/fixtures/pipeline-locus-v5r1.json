@@ -1,0 +1,274 @@
+{
+  "identity": {
+    "variant_id": "synthetic-v1",
+    "gene": "SYNTHETIC",
+    "disease": "synthetic disease",
+    "inheritance": "AD",
+    "subject_id": "synthetic-subject"
+  },
+  "scoring": {
+    "framework": "SNV",
+    "rules": {
+      "r0": {
+        "code": "PM2_Supporting",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          "1"
+        ]
+      },
+      "PP1_Strong": {
+        "code": "PP1_Strong",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          4
+        ]
+      },
+      "PP4_Supporting": {
+        "code": "PP4_Supporting",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          1
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "id": "e0",
+        "code": "PM2_Supporting",
+        "framework": "SNV",
+        "rule_id": "r0",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "1",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "b0"
+        ],
+        "rationale": "synthetic test"
+      }
+    ],
+    "combination_policy": {
+      "framework": "SNV",
+      "status": "reviewed",
+      "source": "synthetic",
+      "version": "test",
+      "reviewer": "test-harness",
+      "reviewed_at": "2026-09-26",
+      "mutually_exclusive": [],
+      "caps": []
+    }
+  },
+  "routing": {
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD",
+      "subject_id": "synthetic-subject"
+    },
+    "review": {
+      "approved": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic test NOT medical evidence",
+      "location": "fixture",
+      "rationale": "synthetic test only"
+    },
+    "search_completed": true,
+    "outcome": "none_found",
+    "searches": [
+      {
+        "url": "https://cspec.genome.network",
+        "query": "SYNTHETIC",
+        "accessed_at": "2026-09-27",
+        "result": "synthetic negative; not an actual search"
+      }
+    ]
+  },
+  "admissions": [
+    {
+      "id": "a1",
+      "kind": "locus",
+      "identity": {
+        "variant_id": "synthetic-v1",
+        "gene": "SYNTHETIC",
+        "disease": "synthetic disease",
+        "inheritance": "AD",
+        "subject_id": "synthetic-subject"
+      },
+      "approval": {
+        "approved": true,
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "source": "synthetic test NOT medical evidence",
+        "location": "fixture",
+        "rationale": "synthetic test only"
+      },
+      "source_ids": [
+        "fixture"
+      ],
+      "basis_ids": [
+        "synthetic-observation"
+      ],
+      "selected_codes": [
+        "PP1_Strong",
+        "PP4_Supporting"
+      ],
+      "rule_ids": {
+        "PP1_Strong": "PP1_Strong",
+        "PP4_Supporting": "PP4_Supporting"
+      },
+      "input": {
+        "packets": [
+          {
+            "packet_id": "demo-packet",
+            "subject_id": "synthetic-subject",
+            "allele_id": "paternal",
+            "variant_ids": [
+              "synthetic-v1"
+            ],
+            "basis_ids": [
+              "synthetic-observation"
+            ],
+            "mode": "reviewed_joint_cap",
+            "source": {
+              "kind": "published",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806742/",
+              "version": "2024",
+              "location": "Figure 2; synthetic fixture, not a patient",
+              "gene": "SYNTHETIC",
+              "disease": "synthetic disease",
+              "phenotype_definition": "synthetic matched phenotype",
+              "testing_method": "synthetic matched method"
+            },
+            "review": {
+              "applicability_reviewed": true,
+              "phase_reviewed": true,
+              "penetrance_reviewed": true,
+              "vcep_checked": true,
+              "basis_independence_reviewed": true,
+              "joint_points_reviewed": true,
+              "allocation_already_completed": true,
+              "joint_independence_reviewed": true,
+              "cap_applicable": true,
+              "reviewer": "synthetic reviewer",
+              "reviewed_at": "2026-09-27",
+              "source": "synthetic fixture",
+              "rationale": "synthetic calculation test; not a patient"
+            },
+            "joint_points": "6.5"
+          }
+        ]
+      },
+      "assessment": {
+        "pedigree": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "phenotypes_and_ages": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "genotypes_and_phase": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "inheritance": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "penetrance": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "phenocopies": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "ascertainment": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "independent_meioses": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "alternative_causes": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "method_and_source": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "probability_allocation": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "code_conversion": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "review": {
+          "approved": true,
+          "reviewer": "synthetic reviewer",
+          "reviewed_at": "2026-09-27",
+          "source": "synthetic test NOT medical evidence",
+          "location": "fixture",
+          "rationale": "synthetic test only"
+        },
+        "readout_kind": "protein_function",
+        "variant_result": "abnormal",
+        "conflict_status": "none",
+        "complexity": "simple_reviewed"
+      }
+    }
+  ]
+}

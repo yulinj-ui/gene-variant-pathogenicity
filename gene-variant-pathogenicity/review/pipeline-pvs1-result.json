@@ -1,0 +1,231 @@
+{
+  "status": "reviewed_candidate_only",
+  "classification": null,
+  "authoritative_candidate": "LP",
+  "authoritative_framework": "Tavtigian_2020_points",
+  "routing": {
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD",
+      "subject_id": "synthetic-subject"
+    },
+    "review": {
+      "approved": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic test NOT medical evidence",
+      "location": "fixture",
+      "rationale": "synthetic test only"
+    },
+    "search_completed": true,
+    "outcome": "none_found",
+    "searches": [
+      {
+        "url": "https://cspec.genome.network",
+        "query": "SYNTHETIC",
+        "accessed_at": "2026-09-27",
+        "result": "synthetic negative; not an actual search"
+      }
+    ]
+  },
+  "score_comparison": {
+    "primary_framework": "Tavtigian_2020_points",
+    "point_candidate": "LP",
+    "acmg_2015_comparison": {
+      "framework": "ACMG_2015_Table5_on_reviewed_strengths",
+      "candidate": "VUS",
+      "matched_rules": [],
+      "status": "test_only",
+      "reasons": [],
+      "note": "2015 combining structure on supplied strengths; no automatic strength restoration or later combination amendments"
+    },
+    "framework_disagreement": true,
+    "difference_note": "Compare strengths and framework versions; do not select the higher category",
+    "framework": "SNV",
+    "accepted": [
+      {
+        "id": "e0",
+        "code": "PM2_Supporting",
+        "framework": "SNV",
+        "rule_id": "r0",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "1",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "b0"
+        ],
+        "rationale": "synthetic test"
+      },
+      {
+        "id": "admitted:a1:0",
+        "framework": "SNV",
+        "rule_id": "PVS1_VeryStrong",
+        "code": "PVS1_VeryStrong",
+        "points": "8",
+        "status": "reviewed",
+        "gate": "passed",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "synthetic-pvs1-basis"
+        ],
+        "underlying_basis_ids": [
+          "synthetic-pvs1-basis"
+        ],
+        "joint_allocation_id": null,
+        "mechanism": "lof",
+        "rationale": "synthetic test only",
+        "admitted_from": "a1"
+      }
+    ],
+    "excluded": [],
+    "net_points": "9",
+    "sandbox_partition": "LP_range",
+    "classification": null,
+    "status": "test_only_not_clinically_validated",
+    "blockers": [],
+    "limitations": [
+      "source-checked arithmetic is not clinical validation; classification stays null",
+      "Table 5 comparison uses supplied strengths; BA1 exceptions, VCEP and fractional SNV framework are not automated"
+    ]
+  },
+  "admission_audit": [
+    {
+      "id": "a1",
+      "kind": "pvs1",
+      "recomputed": {
+        "tool": "pvs1_review",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6185798/",
+        "status": "test_calculation_only",
+        "blockers": [],
+        "path_results": [
+          {
+            "scenario_id": "scenario1",
+            "path_id": "N01",
+            "nodes": [
+              "60",
+              "61",
+              "63",
+              "65"
+            ],
+            "source_tree_output": "PVS1",
+            "tree_strength": "VeryStrong",
+            "global_exclusions": []
+          }
+        ],
+        "tree_strength": "VeryStrong",
+        "adjusted_strength": "VeryStrong",
+        "mechanism_tier": "G1",
+        "automatic_score_import": false,
+        "evidence_code": null,
+        "classification": null
+      },
+      "selected_codes": [
+        "PVS1_VeryStrong"
+      ],
+      "blockers": [],
+      "basis_ids": [
+        "synthetic-pvs1-basis"
+      ],
+      "source_ids": [
+        "fixture"
+      ]
+    }
+  ],
+  "ba1_exception_check": null,
+  "blockers": [],
+  "assembled_scoring": {
+    "framework": "SNV",
+    "rules": {
+      "r0": {
+        "code": "PM2_Supporting",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          "1"
+        ]
+      },
+      "PVS1_VeryStrong": {
+        "code": "PVS1_VeryStrong",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          8
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "id": "e0",
+        "code": "PM2_Supporting",
+        "framework": "SNV",
+        "rule_id": "r0",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "1",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "b0"
+        ],
+        "rationale": "synthetic test"
+      },
+      {
+        "id": "admitted:a1:0",
+        "framework": "SNV",
+        "rule_id": "PVS1_VeryStrong",
+        "code": "PVS1_VeryStrong",
+        "points": 8,
+        "status": "reviewed",
+        "gate": "passed",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "synthetic-pvs1-basis"
+        ],
+        "underlying_basis_ids": [
+          "synthetic-pvs1-basis"
+        ],
+        "joint_allocation_id": null,
+        "mechanism": "lof",
+        "rationale": "synthetic test only",
+        "admitted_from": "a1"
+      }
+    ],
+    "combination_policy": {
+      "framework": "SNV",
+      "status": "reviewed",
+      "source": "synthetic",
+      "version": "test",
+      "reviewer": "test-harness",
+      "reviewed_at": "2026-09-26",
+      "mutually_exclusive": [],
+      "caps": []
+    }
+  },
+  "limitations": [
+    "Review attestations are not authentication or clinical validation",
+    "VCEP combination candidate is manually reviewed, not universally computed",
+    "BA1 matcher does not issue a benign classification"
+  ]
+}

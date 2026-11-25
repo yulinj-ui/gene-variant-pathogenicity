@@ -1,0 +1,136 @@
+{
+  "status": "reviewed_candidate_only",
+  "classification": null,
+  "authoritative_candidate": "P",
+  "authoritative_framework": "Riggs_2020",
+  "score_comparison": {
+    "primary_framework": "Riggs_2020",
+    "point_candidate": "P",
+    "acmg_2015_comparison": {
+      "candidate": null,
+      "status": "not_applicable",
+      "reasons": []
+    },
+    "framework_disagreement": null,
+    "difference_note": null,
+    "framework": "CNV_LOSS",
+    "accepted": [
+      {
+        "id": "cnv-section2",
+        "code": "2A",
+        "framework": "CNV_LOSS",
+        "rule_id": "cnv-section2-source-rule",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "1.00",
+        "source_ids": [
+          "synthetic test NOT medical evidence"
+        ],
+        "basis_ids": [
+          "synthetic-cnv-basis"
+        ],
+        "rationale": "synthetic test only",
+        "admitted_from": "cnv_section2"
+      }
+    ],
+    "excluded": [],
+    "net_points": "1.00",
+    "sandbox_partition": "P_range",
+    "classification": null,
+    "status": "test_only_not_clinically_validated",
+    "blockers": [],
+    "limitations": [
+      "source-checked arithmetic is not clinical validation; classification stays null",
+      "Table 5 comparison uses supplied strengths; BA1 exceptions, VCEP and fractional SNV framework are not automated"
+    ]
+  },
+  "blockers": [],
+  "assembled_scoring": {
+    "framework": "CNV_LOSS",
+    "rules": {
+      "cnv-section2-source-rule": {
+        "code": "2A",
+        "framework": "CNV_LOSS",
+        "status": "reviewed",
+        "source": "Riggs2020 Supplemental Material1 and official CNV calculator",
+        "version": "Riggs2020; checked 2026-09-27",
+        "location": "Section2 2A",
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "applicability": "synthetic test only",
+        "allowed_points": [
+          "1.00"
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "id": "cnv-section2",
+        "code": "2A",
+        "framework": "CNV_LOSS",
+        "rule_id": "cnv-section2-source-rule",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "1.00",
+        "source_ids": [
+          "synthetic test NOT medical evidence"
+        ],
+        "basis_ids": [
+          "synthetic-cnv-basis"
+        ],
+        "rationale": "synthetic test only",
+        "admitted_from": "cnv_section2"
+      }
+    ],
+    "combination_policy": {
+      "status": "reviewed",
+      "framework": "CNV_LOSS",
+      "source": "synthetic",
+      "version": "test",
+      "reviewer": "synthetic",
+      "reviewed_at": "2026-09-27",
+      "mutually_exclusive": [],
+      "caps": []
+    }
+  },
+  "admission_audit": [
+    {
+      "status": "reviewed_section2_candidate",
+      "blockers": [],
+      "code": "2A",
+      "default_points": "1.00",
+      "allowed_range": [
+        "1.00",
+        "1.00"
+      ],
+      "assigned_points": "1.00",
+      "classification": null,
+      "automatic_score_import": false,
+      "pvs1_audit": null
+    }
+  ],
+  "routing": {
+    "framework": "CNV_LOSS",
+    "integration_review": {
+      "approved": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic test NOT medical evidence",
+      "location": "fixture",
+      "rationale": "synthetic test only",
+      "all_targets_and_transcripts_reviewed": true,
+      "uncertain_breakpoints_reviewed": true,
+      "other_sections_reviewed": true,
+      "section4_skip_rule_reviewed": true,
+      "independence_and_caps_reviewed": true,
+      "dosage_date_reviewed": true,
+      "clinical_context_reviewed": true
+    }
+  },
+  "ba1_exception_check": null,
+  "limitations": [
+    "One reviewed Section2 contribution, not automated whole-CNV classification",
+    "No automatic transcript/coordinate/NMD annotation",
+    "Other CNV sections, conflicts and caps remain under documented review"
+  ]
+}

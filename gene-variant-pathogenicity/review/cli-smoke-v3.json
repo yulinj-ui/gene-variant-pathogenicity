@@ -1,0 +1,22 @@
+[
+  {
+    "command": "review_helpers.py pm3",
+    "exit_code": 0,
+    "status": "test_calculation_only"
+  },
+  {
+    "command": "review_helpers.py pp1pp4",
+    "exit_code": 0,
+    "status": "test_calculation_only"
+  },
+  {
+    "command": "review_helpers.py functional",
+    "exit_code": 0,
+    "status": "test_calculation_only"
+  },
+  {
+    "command": "genebe_fields.py default offline",
+    "exit_code": 0,
+    "status": "offline_output_recorded"
+  }
+]

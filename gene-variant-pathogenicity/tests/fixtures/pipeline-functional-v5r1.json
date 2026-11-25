@@ -1,0 +1,213 @@
+{
+  "identity": {
+    "variant_id": "synthetic-v1",
+    "gene": "SYNTHETIC",
+    "disease": "synthetic disease",
+    "inheritance": "AD",
+    "subject_id": "synthetic-subject"
+  },
+  "scoring": {
+    "framework": "SNV",
+    "rules": {
+      "r0": {
+        "code": "PM2_Supporting",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          "1"
+        ]
+      },
+      "PS3_Strong": {
+        "code": "PS3_Strong",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          4
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "id": "e0",
+        "code": "PM2_Supporting",
+        "framework": "SNV",
+        "rule_id": "r0",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "1",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "b0"
+        ],
+        "rationale": "synthetic test"
+      }
+    ],
+    "combination_policy": {
+      "framework": "SNV",
+      "status": "reviewed",
+      "source": "synthetic",
+      "version": "test",
+      "reviewer": "test-harness",
+      "reviewed_at": "2026-09-26",
+      "mutually_exclusive": [],
+      "caps": []
+    }
+  },
+  "routing": {
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD",
+      "subject_id": "synthetic-subject"
+    },
+    "review": {
+      "approved": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic test NOT medical evidence",
+      "location": "fixture",
+      "rationale": "synthetic test only"
+    },
+    "search_completed": true,
+    "outcome": "none_found",
+    "searches": [
+      {
+        "url": "https://cspec.genome.network",
+        "query": "SYNTHETIC",
+        "accessed_at": "2026-09-27",
+        "result": "synthetic negative; not an actual search"
+      }
+    ]
+  },
+  "admissions": [
+    {
+      "id": "a1",
+      "kind": "functional",
+      "identity": {
+        "variant_id": "synthetic-v1",
+        "gene": "SYNTHETIC",
+        "disease": "synthetic disease",
+        "inheritance": "AD",
+        "subject_id": "synthetic-subject"
+      },
+      "approval": {
+        "approved": true,
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "source": "synthetic test NOT medical evidence",
+        "location": "fixture",
+        "rationale": "synthetic test only"
+      },
+      "source_ids": [
+        "fixture"
+      ],
+      "basis_ids": [
+        "b-new"
+      ],
+      "selected_codes": [
+        "PS3_Strong"
+      ],
+      "rule_ids": {
+        "PS3_Strong": "PS3_Strong"
+      },
+      "input": {
+        "odds_path": "18.7001",
+        "review": {
+          "mechanism_matched": true,
+          "assay_validated": true,
+          "controls_independently_classified": true,
+          "replicates_reviewed": true,
+          "calibration_reviewed": true,
+          "vcep_checked": true,
+          "reviewer": "synthetic reviewer",
+          "reviewed_at": "2026-09-27",
+          "source": "synthetic fixture",
+          "rationale": "synthetic calculation test; not a patient"
+        }
+      },
+      "assessment": {
+        "mechanism": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "assay_class": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "sample_system": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "controls": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "replicates": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "calibration": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "variant_readout": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "coverage_of_normal_result": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "conflict_resolution": {
+          "finding": "synthetic",
+          "source": "fixture",
+          "location": "fixture",
+          "conclusion": "synthetic reviewed"
+        },
+        "review": {
+          "approved": true,
+          "reviewer": "synthetic reviewer",
+          "reviewed_at": "2026-09-27",
+          "source": "synthetic test NOT medical evidence",
+          "location": "fixture",
+          "rationale": "synthetic test only"
+        },
+        "readout_kind": "protein_function",
+        "variant_result": "abnormal",
+        "conflict_status": "none",
+        "complexity": "simple_reviewed"
+      }
+    }
+  ]
+}

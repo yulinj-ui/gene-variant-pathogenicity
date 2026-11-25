@@ -1,0 +1,171 @@
+{
+  "LOSS": {
+    "2A": {
+      "default": "1.00",
+      "min": "1.00",
+      "max": "1.00"
+    },
+    "2B": {
+      "default": "0",
+      "min": "0",
+      "max": "0"
+    },
+    "2C-1": {
+      "default": "0.90",
+      "min": "0.45",
+      "max": "1.00"
+    },
+    "2C-2": {
+      "default": "0",
+      "min": "0",
+      "max": "0.45"
+    },
+    "2D-1": {
+      "default": "0",
+      "min": "0",
+      "max": "0"
+    },
+    "2D-2": {
+      "default": "0.90",
+      "min": "0.45",
+      "max": "0.90"
+    },
+    "2D-3": {
+      "default": "0.30",
+      "min": "0",
+      "max": "0.45"
+    },
+    "2D-4": {
+      "default": "0.90",
+      "min": "0.45",
+      "max": "1.00"
+    },
+    "2F": {
+      "default": "-1.00",
+      "min": "-1.00",
+      "max": "-1.00"
+    },
+    "2G": {
+      "default": "0",
+      "min": "0",
+      "max": "0"
+    },
+    "2H": {
+      "default": "0.15",
+      "min": "0.15",
+      "max": "0.15"
+    },
+    "2E": {
+      "mapping": {
+        "VeryStrong": {
+          "default": "0.90",
+          "min": "0.45",
+          "max": "0.90"
+        },
+        "Strong": {
+          "default": "0.45",
+          "min": "0.30",
+          "max": "0.90"
+        },
+        "Moderate": {
+          "default": "0.30",
+          "min": "0.15",
+          "max": "0.45"
+        },
+        "Supporting": {
+          "default": "0.15",
+          "min": "0",
+          "max": "0.30"
+        },
+        "NA": {
+          "default": "0",
+          "min": "0",
+          "max": "0"
+        }
+      },
+      "manual_only_source_option": "PM4 (in-frame indels): default0.30, range0.15-0.45; not inferred by this helper"
+    }
+  },
+  "GAIN": {
+    "2A": {
+      "default": "1.00",
+      "min": "1.00",
+      "max": "1.00"
+    },
+    "2B": {
+      "default": "0",
+      "min": "0",
+      "max": "0"
+    },
+    "2C": {
+      "default": "-1.00",
+      "min": "-1.00",
+      "max": "-1.00"
+    },
+    "2D": {
+      "default": "-1.00",
+      "min": "-1.00",
+      "max": "-1.00"
+    },
+    "2E": {
+      "default": "0",
+      "min": "0",
+      "max": "0"
+    },
+    "2F": {
+      "default": "-0.90",
+      "min": "-1.00",
+      "max": "0"
+    },
+    "2G": {
+      "default": "0",
+      "min": "0",
+      "max": "0"
+    },
+    "2H": {
+      "default": "0",
+      "min": "0",
+      "max": "0"
+    },
+    "2J": {
+      "default": "0",
+      "min": "0",
+      "max": "0"
+    },
+    "2K": {
+      "default": "0.45",
+      "min": "0.45",
+      "max": "0.45"
+    },
+    "2L": {
+      "default": "0",
+      "min": "0",
+      "max": "0"
+    },
+    "2I": {
+      "mapping": {
+        "VeryStrong": {
+          "default": "0.90",
+          "min": "0.45",
+          "max": "0.90"
+        },
+        "Strong": {
+          "default": "0.45",
+          "min": "0.30",
+          "max": "0.90"
+        },
+        "NA": {
+          "default": "0",
+          "min": "0",
+          "max": "0"
+        }
+      }
+    }
+  },
+  "source_urls": [
+    "https://cnvcalc.clinicalgenome.org/cnvcalc/cnv-loss",
+    "https://cnvcalc.clinicalgenome.org/cnvcalc/cnv-gain"
+  ],
+  "source_version": "Riggs2020; fetched2026-09-27",
+  "scope": "Section2 only; score suggestions and ranges, not autonomous classification"
+}

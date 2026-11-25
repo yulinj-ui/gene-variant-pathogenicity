@@ -1,0 +1,14 @@
+{
+  "status": "reviewed_section2_candidate",
+  "blockers": [],
+  "code": "2F",
+  "default_points": "-0.90",
+  "allowed_range": [
+    "-1.00",
+    "0"
+  ],
+  "assigned_points": "-0.90",
+  "classification": null,
+  "automatic_score_import": false,
+  "pvs1_audit": null
+}

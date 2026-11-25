@@ -1,0 +1,2869 @@
+{
+  "N01": {
+    "kind": "nonsense_frameshift",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "nmd": true
+        }
+      }
+    ]
+  },
+  "N02": {
+    "kind": "nonsense_frameshift",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": false,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "nmd": true
+        }
+      }
+    ]
+  },
+  "N03": {
+    "kind": "nonsense_frameshift",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "critical",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "nmd": false
+        }
+      }
+    ]
+  },
+  "N04": {
+    "kind": "nonsense_frameshift",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": true,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "nmd": false
+        }
+      }
+    ]
+  },
+  "N05": {
+    "kind": "nonsense_frameshift",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "nmd": false
+        }
+      }
+    ]
+  },
+  "N06": {
+    "kind": "nonsense_frameshift",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 9,
+          "protein_length": 100,
+          "nmd": false
+        }
+      }
+    ]
+  },
+  "S01": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_nmd"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "S02": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": false,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_nmd"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "S03": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "critical",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_no_nmd"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "S04": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": true,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_no_nmd"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "S05": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_no_nmd"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "S06": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 9,
+          "protein_length": 100,
+          "consequence": "out_of_frame_no_nmd"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "S07": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": true,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "in_frame"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "S08": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "in_frame"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "S09": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 9,
+          "protein_length": 100,
+          "consequence": "in_frame"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "S10": {
+    "kind": "canonical_splice",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "critical",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "in_frame"
+        }
+      }
+    ],
+    "splice_review": {
+      "canonical_gt_ag_plusminus_1_2": true,
+      "cryptic_sites_within_20nt_reviewed": true,
+      "scenarios_complete": true,
+      "later_splicing_guidance_reviewed": true,
+      "rna_data_present": false
+    }
+  },
+  "D01": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "whole_gene"
+        }
+      }
+    ]
+  },
+  "D02": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_nmd"
+        }
+      }
+    ]
+  },
+  "D03": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": false,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_nmd"
+        }
+      }
+    ]
+  },
+  "D04": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "critical",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_no_nmd"
+        }
+      }
+    ]
+  },
+  "D05": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": true,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_no_nmd"
+        }
+      }
+    ]
+  },
+  "D06": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "out_of_frame_no_nmd"
+        }
+      }
+    ]
+  },
+  "D07": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 9,
+          "protein_length": 100,
+          "consequence": "out_of_frame_no_nmd"
+        }
+      }
+    ]
+  },
+  "D08": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": true,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "in_frame"
+        }
+      }
+    ]
+  },
+  "D09": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "in_frame"
+        }
+      }
+    ]
+  },
+  "D10": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "assessed_unknown",
+          "removed_aa": 9,
+          "protein_length": 100,
+          "consequence": "in_frame"
+        }
+      }
+    ]
+  },
+  "D11": {
+    "kind": "deletion",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "region": "critical",
+          "removed_aa": 11,
+          "protein_length": 100,
+          "consequence": "in_frame"
+        }
+      }
+    ]
+  },
+  "U01": {
+    "kind": "duplication",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "length_known": true,
+          "whole_gene": false,
+          "external_insertion": false,
+          "tandem": "confirmed",
+          "effect": "no_effect"
+        }
+      }
+    ]
+  },
+  "U02": {
+    "kind": "duplication",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "length_known": true,
+          "whole_gene": false,
+          "external_insertion": false,
+          "tandem": "confirmed",
+          "effect": "disrupts_frame_and_nmd"
+        }
+      }
+    ]
+  },
+  "U03": {
+    "kind": "duplication",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "length_known": true,
+          "whole_gene": false,
+          "external_insertion": false,
+          "tandem": "presumed",
+          "effect": "assessed_unknown"
+        }
+      }
+    ]
+  },
+  "U04": {
+    "kind": "duplication",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "length_known": true,
+          "whole_gene": false,
+          "external_insertion": false,
+          "tandem": "presumed",
+          "effect": "disrupts_frame_and_nmd"
+        }
+      }
+    ]
+  },
+  "U05": {
+    "kind": "duplication",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "length_known": true,
+          "whole_gene": false,
+          "external_insertion": false,
+          "tandem": "non_tandem"
+        }
+      }
+    ]
+  },
+  "I01": {
+    "kind": "initiation",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "alternative_start": false,
+          "upstream_pathogenic": true
+        }
+      }
+    ]
+  },
+  "I02": {
+    "kind": "initiation",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "alternative_start": false,
+          "upstream_pathogenic": false
+        }
+      }
+    ]
+  },
+  "I03": {
+    "kind": "initiation",
+    "identity": {
+      "variant_id": "synthetic-v1",
+      "build": "GRCh38",
+      "genomic_change": "synthetic-only",
+      "transcript": "NM_TEST.1",
+      "gene": "SYNTHETIC",
+      "disease": "synthetic disease",
+      "inheritance": "AD"
+    },
+    "review": {
+      "identity_reviewed": true,
+      "disease_mechanism_reviewed": true,
+      "transcript_reviewed": true,
+      "exon_population_reviewed": true,
+      "vcep_reviewed": true,
+      "technical_quality_reviewed": true,
+      "reviewer": "synthetic reviewer",
+      "reviewed_at": "2026-09-27",
+      "source": "synthetic fixture",
+      "rationale": "synthetic calculation test; not a patient"
+    },
+    "source_version": "AbouTayoun_2018_generic",
+    "vcep_policy": "reviewed_generic_applicable",
+    "basis_ids": [
+      "synthetic-pvs1-basis"
+    ],
+    "facts_review": {
+      "nmd_or_frame": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "exon_relevance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "population_tolerance": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "critical_region_or_start": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      },
+      "mechanism": {
+        "source": "synthetic example, not patient evidence",
+        "location": "synthetic fact record",
+        "rationale": "engineering test only"
+      }
+    },
+    "mechanism": {
+      "lof_mechanism": "established",
+      "association": "definitive",
+      "independent_pathogenic_lof_count": 3,
+      "phenotype_lof_count": 3,
+      "phenotype_total_count": 10,
+      "associated_lof_count": 3,
+      "multiple_exons": true,
+      "single_exon_gene": false,
+      "null_mouse": false
+    },
+    "scenarios": [
+      {
+        "id": "scenario1",
+        "facts": {
+          "exon_present": true,
+          "lof_common": false,
+          "alternative_start": true
+        }
+      }
+    ]
+  }
+}

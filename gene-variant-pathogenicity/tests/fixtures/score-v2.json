@@ -1,0 +1,77 @@
+{
+  "framework": "SNV",
+  "rules": {
+    "r0": {
+      "code": "PS1",
+      "status": "reviewed",
+      "framework": "SNV",
+      "source": "synthetic fixture; NOT a medical authority",
+      "version": "test-1",
+      "location": "fixture",
+      "reviewer": "test-harness",
+      "reviewed_at": "2026-09-26",
+      "applicability": "synthetic arithmetic only",
+      "allowed_points": [
+        "4"
+      ]
+    },
+    "r1": {
+      "code": "PS3",
+      "status": "reviewed",
+      "framework": "SNV",
+      "source": "synthetic fixture; NOT a medical authority",
+      "version": "test-1",
+      "location": "fixture",
+      "reviewer": "test-harness",
+      "reviewed_at": "2026-09-26",
+      "applicability": "synthetic arithmetic only",
+      "allowed_points": [
+        "4"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "e0",
+      "code": "PS1",
+      "framework": "SNV",
+      "rule_id": "r0",
+      "status": "reviewed",
+      "gate": "passed",
+      "points": "4",
+      "source_ids": [
+        "fixture"
+      ],
+      "basis_ids": [
+        "b0"
+      ],
+      "rationale": "synthetic test"
+    },
+    {
+      "id": "e1",
+      "code": "PS3",
+      "framework": "SNV",
+      "rule_id": "r1",
+      "status": "reviewed",
+      "gate": "passed",
+      "points": "4",
+      "source_ids": [
+        "fixture"
+      ],
+      "basis_ids": [
+        "b1"
+      ],
+      "rationale": "synthetic test"
+    }
+  ],
+  "combination_policy": {
+    "framework": "SNV",
+    "status": "reviewed",
+    "source": "synthetic",
+    "version": "test",
+    "reviewer": "test-harness",
+    "reviewed_at": "2026-09-26",
+    "mutually_exclusive": [],
+    "caps": []
+  }
+}

@@ -2,7 +2,9 @@
 
 > 基因变异致病性评级分析技能 —— 一个为 Claude（Claude Code / Agent Skills）设计的、遵循 **ACMG/AMP 2015 + ClinGen SVI 系列更新 + ACGS 2024** 的临床级变异解读工作流，内置**三源结构化取数引擎**、**产前遗传咨询专项模块**与**多重质控门控**。
 
-<!-- Version: +GeneBe 三源集成 2026-07; +培训班课件复核 2026-09-21; +§1.8 框内插入不套 H 分支 2026-09-25; +频率证据 v2 (Step 0.45) 2026-09-29 -->
+<!-- Version: +GeneBe 三源集成 2026-07; +培训班课件复核 2026-09-21; +§1.8 框内插入不套 H 分支 2026-09-25; +频率证据 v2 (Step 0.45) 2026-09-29; +exon 两源核对 v0.8.2-local 2026-11-24 -->
+
+> **当前发布：`v0.8.2-local`（2026-11-24）** — 新增 `scripts/exon_check.py` exon 两源核对硬门控；仓库同时提供展开目录与 `gene-variant-pathogenicity.zip` 发布包（两者同源）。
 
 ---
 
@@ -16,6 +18,7 @@
 - [运行模式](#运行模式)
 - [工作流程总览（Step 0–9）](#工作流程总览step-09)
 - [三源取数引擎 `genebe_fields.py`](#三源取数引擎-genebe_fieldspy)
+- [exon 两源核对 `exon_check.py`（v0.8.2）](#exon-两源核对-exon_checkpyv082-新增)
 - [参考知识库](#参考知识库)
 - [输出结构（模块 1–10）](#输出结构模块-110)
 - [关键质控门控](#关键质控门控)
@@ -50,6 +53,7 @@
 |---|---|
 | 🧬 **全格式输入** | HGVS(cDNA/蛋白)、基因+变异、VCF 坐标、rsID、自然语言，均可解析标准化 |
 | 🔀 **三源取数引擎** | `genebe_fields.py` 一条命令并跑 VariantValidator + GeneBe + 五源 Worker，坍缩零散检索 |
+| 🧩 **exon 两源核对** | `scripts/exon_check.py` 同时取 NCBI GenBank 与 Ensembl，exon 数或任一 exon 长度不符即判 `MISMATCH`，禁止带病进入 PVS1（v0.8.2 新增） |
 | 🚦 **智能运行模式** | 快速 / 深度 / **产前**三模式自动切换；CNV 自动路由到独立评分框架 |
 | 📐 **完整 ACMG 引擎** | PVS1 四级决策树、PM2 降级、PS3/BS3 OddsPath 门槛、PM1 三门槛五问、de novo 双轴量化、Bayesian 积分交叉验证 |
 | 🏥 **ClinGen VCEP 全文门控** | 有基因特异性规范时**强制取得全文**后才据其赋分，取不到则诚实回退并请求上传 |
@@ -63,27 +67,30 @@
 ## 仓库结构
 
 ```
-gene-variant-pathogenicity/
-├── SKILL.md                    # 技能主指令（工作流全文，Claude 加载入口）
-├── README.md                   # 本文件
-└── references/
-    ├── ACMG_CRITERIA.md        # SNV/Indel 的 ACMG 证据代码定义与判定规则（核心必读）
-    ├── CNV_CRITERIA.md         # 拷贝数变异 ClinGen 五段式评分框架
-    ├── FREQUENCY_EVIDENCE.md   # 频率相关证据（PM2/BA1/BS1/BS2 及 PS4/PM3 频率前提）规则与落地流程
-    ├── freq_evidence.py        # 频率证据取数 + REF 核对 + 左对齐 + 门控（Step 0.45 调用）
-    ├── freq_repeat_lookup.py   # ClinVar 三态 + 重复区/蛋白窗口检查（Step 0.45 调用）
-    └── genebe_fields.py        # 三源结构化取数引擎（Step 0.4 调用）
+gene-variant-pathogenicity/          # 展开目录（与 gene-variant-pathogenicity.zip 同源）
+├── SKILL.md                         # 技能主指令（工作流全文，加载入口）
+├── README.md                        # 本文件
+├── references/                      # 规则文档 + 文献源（ACMG / CNV / 频率 / 预测器 / 决策树）
+├── scripts/                         # 取数、审核、评分与报告引擎（23 个脚本）
+├── tests/                           # 离线回归（15 个测试文件 / 465 项）
+├── assets/                          # 报告模板与配图
+├── review/                          # 变更记录、规则评审、决策记录（CHANGELOG_V10 等）
+├── original/                        # 2026-09-28 历史档案（只作追溯）
+└── upstream-2026-10-09/             # 上游基线逐字节副本 + SHA256
 ```
 
 | 文件 | 行数 | 作用 |
 |---|---|---|
-| `SKILL.md` | ~1508 | 技能主体：角色、运行模式、Step 0–9、判定引擎、输出结构、关键原则 |
-| `references/ACMG_CRITERIA.md` | ~946 | PVS1 决策树、PM2/BA1/BS1、PS3/BS3、PM1、家系证据、矛盾处理、产前提醒 |
-| `references/CNV_CRITERIA.md` | ~251 | CNV 五段式评分、基因内 CNV 的 PVS1 复用、产前 CNV 专项 |
+| `SKILL.md` | ~334 | 技能主体：角色、运行模式、Step 0–9、判定引擎、输出结构、关键原则 |
+| `references/ACMG_CRITERIA.md` | ~975 | PVS1 决策树、PM2/BA1/BS1、PS3/BS3、PM1、家系证据、矛盾处理、产前提醒 |
+| `references/CNV_CRITERIA.md` | ~104 | CNV 五段式评分、基因内 CNV 的 PVS1 复用、产前 CNV 专项 |
 | `references/FREQUENCY_EVIDENCE.md` | ~250 | 频率证据规则：FAF95/grpmax、Whiffin 最大可信 AF、等价写法陷阱、东亚人群补充 |
-| `references/freq_evidence.py` | ~633 | gnomAD GraphQL → 公共存储桶 VCF 远程 tabix 双来源取数，REF 核对、左对齐、等价写法扫描、VCEP 频率条款拉取 |
-| `references/freq_repeat_lookup.py` | ~314 | ClinVar 三态（FOUND / ABSENT_CONFIRMED / NOT_QUERIED）+ 重复区判定（PM4/BP3） |
-| `references/genebe_fields.py` | ~267 | VariantValidator + GeneBe + 五源 Worker 并跑，输出证据 JSON |
+| `scripts/freq_evidence.py` | ~635 | gnomAD GraphQL → 公共存储桶 VCF 远程 tabix 双来源取数，REF 核对、左对齐、等价写法扫描、VCEP 频率条款拉取 |
+| `scripts/freq_repeat_lookup.py` | ~314 | ClinVar 三态（FOUND / ABSENT_CONFIRMED / NOT_QUERIED）+ 重复区判定（PM4/BP3） |
+| `scripts/genebe_fields.py` | ~473 | VariantValidator + GeneBe + 五源 Worker 并跑，输出证据 JSON |
+| `scripts/pvs1_review.py` | ~237 | PVS1 2018 SVI 决策树 + Table 1 机制档 + VCEP 策略门控 |
+| `scripts/exon_check.py` | ~342 | **exon 两源核对**：NCBI GenBank + Ensembl，输出 c. 坐标 / phase / mod3 / aa 区间与 PASS/MISMATCH |
+| `scripts/score.py` | — | Tavtigian 2020 积分与 ACMG 2015 表 5 对照 |
 
 ---
 
@@ -166,13 +173,13 @@ Step 9-V  参考文献 PMID 反查验证（输出前最后一道质控关卡）
 
 ```bash
 # 默认输出 evidence JSON（供技能消费）
-python3 references/genebe_fields.py "NM_017780.4:c.2831G>A"
+python3 scripts/genebe_fields.py "NM_017780.4:c.2831G>A"
 
 # 人类可读卡片
-python3 references/genebe_fields.py "NM_017780.4:c.2831G>A" --card
+python3 scripts/genebe_fields.py "NM_017780.4:c.2831G>A" --card
 
 # 完整原始合并 JSON
-python3 references/genebe_fields.py "NM_017780.4:c.2831G>A" --raw
+python3 scripts/genebe_fields.py "NM_017780.4:c.2831G>A" --raw
 ```
 
 ### 可选配置（环境变量 / 参数）
@@ -199,6 +206,26 @@ python3 references/genebe_fields.py "NM_017780.4:c.2831G>A" --raw
 > **铁律**：每源独立容错，单源失败不拖垮整体；缺失即 `None`/`❌`，绝不臆造；预测只读 `*_score`；转录本锚定输入 NM；**EAS 原始 AF 仅作快速筛，BA1/BS1 的 FAF95 必须另查 gnomAD grpmax**；GeneBe 自动 ACMG 只进模块 5 对标，**不覆盖本技能专家评级**。
 
 无网络 / 沙箱环境够不到三源时，技能会无缝回落到原生 web_search 流程。
+
+---
+
+## exon 两源核对 `exon_check.py`（v0.8.2 新增）
+
+剪接位点 / exon skipping 的 PVS1 判定依赖**外显子长度与读框**，而"306 还是 307"只差 1 个碱基就可能把 in-frame 判成移码。该工具用两份独立注释（NCBI GenBank + Ensembl REST）互相核对，任一处不一致即拒绝放行。
+
+```bash
+python3 scripts/exon_check.py NM_000214.3 2          # 人类可读卡片
+python3 scripts/exon_check.py NM_000214.3 2 --json   # 写入 pvs1_input.exon_check
+python3 scripts/exon_check.py NM_000214.3 2 --fixture tests/fixtures/exon-check-jag1.json  # 离线回归
+```
+
+**输出**：NCBI / Ensembl 的 exon 表、目标 exon 的 c. 区间、`phase`、`mod3`、aa 区间，以及 `PASS` / `MISMATCH` 与逐条差异。
+
+**坐标约定（错误根源）**：GenBank / Ensembl / HGVS 是 1-based 闭区间（长度 = `end - start + 1`）；UCSC BED/genePred 是 0-based 半开区间（长度 = `end - start`，1-based 起点 = `start + 1`）。两者只差 1，**混用即产生 306 vs 307 一类错误**。
+
+**样例**：`NM_000214.3` exon 2 = c.82..c.387，306 nt，phase 0，306 mod 3 = 0 → exon 2 skipping 为 in-frame；若误记为 307 nt 则判移码（JAG1 `c.82-2A>G` 事故）。
+
+回归：`python3 tests/test_exon_check.py`（4 项，含 off-by-one 必须 MISMATCH 的用例）。
 
 ---
 
@@ -259,6 +286,7 @@ ClinGen 2019/2020 五段式评分框架：初始基因组内容 → 与剂量敏
 5. **PM1 五问自检** — 落在某结构域 + 保守 ≠ 可赋 PM1；须过三门槛五问清单。
 6. **参考文献 PMID 反查（输出前最后一关）** — 逐条反查作者 / 期刊 / 年份 / PMID，识别并更正三类典型错误（作者归属错误、PMID 数字错误、期刊缩写歧义），无法验证的虚构文献一律删除。
 7. **输出前自检清单** — 蛋白验证、VCEP 门控、ClinVar 交叉、频率、预测、PVS1 适用性、积分一致性、邻近地形、产前模块、PMID 反查逐项核实。
+8. **exon 两源核对（硬门控，v0.8.2）** — 凡 PVS1 依赖 exon 长度 / exon skipping / in-frame 判定 / NMD，必须先运行 `scripts/exon_check.py <transcript> <exon>`，把 JSON 卡片写入 `pvs1_input.exon_check`；NCBI GenBank 与 Ensembl 的 exon 数或任一 exon 长度不一致即 `MISMATCH`，不得继续。**禁止把 UCSC BED/genePred 的 0-based 半开坐标直接当 1-based 闭区间**（JAG1 `c.82-2A>G` 的 306 vs 307 教训）。
 
 ---
 
@@ -351,6 +379,7 @@ CMA 报告 arr[GRCh37] 11p11.2(44,100,000-44,300,000)x1，请分类
 | `+培训班课件复核` | 2026-09-21 | 15 份讲者课件逐条比对，修正 12 处硬错误；补充产前前置质控、VUS 报告取舍与措辞、证据优先级与冲突组合判定 |
 | `+§1.8 框内插入` | 2026-09-25 | 框内插入不套 H 分支 |
 | `+频率证据 v2` | 2026-09-28/29 | 新增 Step 0.45 强制门控：三态取数（FOUND / ABSENT_CONFIRMED / NOT_QUERIED）、REF 核对与 indel 左对齐、gnomAD 双来源、重复区判定；起因是一次 indel 因"没查到"被误赋 PM2_Supporting 的事故 |
+| `v0.8.2-local` | 2026-11-24 | 新增 `scripts/exon_check.py` exon 两源核对工具（NCBI GenBank + Ensembl 双源、PASS/MISMATCH 门控）与 `tests/test_exon_check.py` 4 项回归；修正 JAG1 `c.82-2A>G` 案例中 exon 2 被误算为 307 nt 的 off-by-one（0-based 半开 vs 1-based 闭区间混用），306 nt 下 exon skipping 实为 in-frame。详见 `review/CHANGELOG_V10.md` |
 
 ---
 

@@ -1,0 +1,15 @@
+{
+  "odds_path": "18.7001",
+  "review": {
+    "mechanism_matched": true,
+    "assay_validated": true,
+    "controls_independently_classified": true,
+    "replicates_reviewed": true,
+    "calibration_reviewed": true,
+    "vcep_checked": true,
+    "reviewer": "synthetic reviewer",
+    "reviewed_at": "2026-09-27",
+    "source": "synthetic fixture",
+    "rationale": "synthetic calculation test; not a patient"
+  }
+}

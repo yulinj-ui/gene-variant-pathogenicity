@@ -1,0 +1,42 @@
+{
+  "packets": [
+    {
+      "packet_id": "demo-packet",
+      "subject_id": "synthetic-subject",
+      "allele_id": "paternal",
+      "variant_ids": [
+        "demo-v0"
+      ],
+      "basis_ids": [
+        "synthetic-observation"
+      ],
+      "mode": "reviewed_joint_cap",
+      "source": {
+        "kind": "published",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806742/",
+        "version": "2024",
+        "location": "Figure 2; synthetic fixture, not a patient",
+        "gene": "CTNS",
+        "disease": "synthetic cystinosis scenario",
+        "phenotype_definition": "synthetic matched phenotype",
+        "testing_method": "synthetic matched method"
+      },
+      "review": {
+        "applicability_reviewed": true,
+        "phase_reviewed": true,
+        "penetrance_reviewed": true,
+        "vcep_checked": true,
+        "basis_independence_reviewed": true,
+        "joint_points_reviewed": true,
+        "allocation_already_completed": true,
+        "joint_independence_reviewed": true,
+        "cap_applicable": true,
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "source": "synthetic fixture",
+        "rationale": "synthetic calculation test; not a patient"
+      },
+      "joint_points": "6.5"
+    }
+  ]
+}

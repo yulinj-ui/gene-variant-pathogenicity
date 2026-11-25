@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.1-audit",
+  "dossier_id": null,
+  "identity": {
+    "gene": null,
+    "hgnc": null,
+    "disease": null,
+    "disease_id": null,
+    "inheritance": null,
+    "transcript": null
+  },
+  "fields": {
+    "lof_mechanism": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "association": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "independent_pathogenic_lof_count": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "phenotype_lof_count": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "phenotype_total_count": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "associated_lof_count": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "multiple_exons": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "single_exon_gene": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    },
+    "null_mouse": {
+      "value": null,
+      "status": "pending",
+      "source_ids": [],
+      "location": "",
+      "rationale": "",
+      "reviewer": null,
+      "reviewed_at": null
+    }
+  },
+  "variants": [],
+  "denominator": {
+    "definition": null,
+    "inclusion": null,
+    "exclusion": null,
+    "deduplication": null,
+    "cutoff": null,
+    "variant_ids": [],
+    "complete": false
+  },
+  "animal_models": [],
+  "vcep": {
+    "status": "pending",
+    "source_ids": []
+  },
+  "signoff": {
+    "reviewer": null,
+    "date": null,
+    "approved": false
+  },
+  "automatic_score_import": false
+}

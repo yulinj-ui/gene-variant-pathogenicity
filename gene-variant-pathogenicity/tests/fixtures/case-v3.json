@@ -1,0 +1,173 @@
+{
+  "variant": "SYNTHETIC-EXAMPLE (not a patient)",
+  "scoring": {
+    "framework": "SNV",
+    "rules": {
+      "r0": {
+        "code": "PS1",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          "4"
+        ]
+      },
+      "r1": {
+        "code": "PS3",
+        "status": "reviewed",
+        "framework": "SNV",
+        "source": "synthetic fixture; NOT a medical authority",
+        "version": "test-1",
+        "location": "fixture",
+        "reviewer": "test-harness",
+        "reviewed_at": "2026-09-26",
+        "applicability": "synthetic arithmetic only",
+        "allowed_points": [
+          "4"
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "id": "e0",
+        "code": "PS1",
+        "framework": "SNV",
+        "rule_id": "r0",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "4",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "b0"
+        ],
+        "rationale": "synthetic test"
+      },
+      {
+        "id": "e1",
+        "code": "PS3",
+        "framework": "SNV",
+        "rule_id": "r1",
+        "status": "reviewed",
+        "gate": "passed",
+        "points": "4",
+        "source_ids": [
+          "fixture"
+        ],
+        "basis_ids": [
+          "b1"
+        ],
+        "rationale": "synthetic test"
+      }
+    ],
+    "combination_policy": {
+      "framework": "SNV",
+      "status": "reviewed",
+      "source": "synthetic",
+      "version": "test",
+      "reviewer": "test-harness",
+      "reviewed_at": "2026-09-26",
+      "mutually_exclusive": [],
+      "caps": []
+    }
+  },
+  "citations": [],
+  "snapshot_id": "offline-v0.2-demo",
+  "gene_disease_validity": "synthetic only",
+  "sample_detection_confidence": "not assessed",
+  "review_calculations": {
+    "pm3": {
+      "review": {
+        "recessive_disease": true,
+        "disease_applicability": true,
+        "frequency_threshold_validated": true,
+        "case_independence_reviewed": true,
+        "vcep_checked": true,
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "source": "synthetic fixture",
+        "rationale": "synthetic calculation test; not a patient"
+      },
+      "cases": [
+        {
+          "id": "case0",
+          "family_id": "family0",
+          "phase": "unknown",
+          "partner_class": "LP",
+          "partner_variant_id": "variant0",
+          "source_ids": [
+            "synthetic"
+          ],
+          "review": {
+            "affected": true,
+            "target_rare": true,
+            "partner_rare": true,
+            "independent_partner_classification": true,
+            "phase_or_homozygosity_reviewed": true,
+            "reviewer": "synthetic reviewer",
+            "reviewed_at": "2026-09-27",
+            "source": "synthetic fixture",
+            "rationale": "synthetic calculation test; not a patient"
+          }
+        },
+        {
+          "id": "case1",
+          "family_id": "family1",
+          "phase": "unknown",
+          "partner_class": "LP",
+          "partner_variant_id": "variant1",
+          "source_ids": [
+            "synthetic"
+          ],
+          "review": {
+            "affected": true,
+            "target_rare": true,
+            "partner_rare": true,
+            "independent_partner_classification": true,
+            "phase_or_homozygosity_reviewed": true,
+            "reviewer": "synthetic reviewer",
+            "reviewed_at": "2026-09-27",
+            "source": "synthetic fixture",
+            "rationale": "synthetic calculation test; not a patient"
+          }
+        }
+      ]
+    },
+    "pp1pp4": {
+      "joint_points": "3.4",
+      "review": {
+        "applicability_reviewed": true,
+        "phase_reviewed": true,
+        "penetrance_reviewed": true,
+        "independence_reviewed": true,
+        "probability_allocation_reviewed": true,
+        "cap_reviewed": true,
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "source": "synthetic fixture",
+        "rationale": "synthetic calculation test; not a patient"
+      }
+    },
+    "functional": {
+      "odds_path": "18.7001",
+      "review": {
+        "mechanism_matched": true,
+        "assay_validated": true,
+        "controls_independently_classified": true,
+        "replicates_reviewed": true,
+        "calibration_reviewed": true,
+        "vcep_checked": true,
+        "reviewer": "synthetic reviewer",
+        "reviewed_at": "2026-09-27",
+        "source": "synthetic fixture",
+        "rationale": "synthetic calculation test; not a patient"
+      }
+    }
+  }
+}

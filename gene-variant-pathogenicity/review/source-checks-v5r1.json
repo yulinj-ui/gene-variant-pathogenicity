@@ -1,0 +1,44 @@
+[
+  {
+    "file": "references/sources/BA1-exceptions-2018.pdf",
+    "url": "https://www.clinicalgenome.org/docs/ba1-exception-list/",
+    "scope": "official July2018 Table1; nine rows checked; historical snapshot",
+    "accessed_at": "2026-09-27",
+    "sha256": "5b41f97e7cf47e1c97587c39d55361eda9b94abe16ab2cf26218178fa314a0a9"
+  },
+  {
+    "file": "references/sources/PMC6938631.xml",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6938631/",
+    "scope": "four-step framework, controls, conflicts, Table3",
+    "accessed_at": "2026-09-27",
+    "sha256": "a4777d5676c2d229f600c2fad21f63ba75e2a92913b3e57e7ec787598821913a"
+  },
+  {
+    "file": "references/sources/Walker2023.html",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10357475/",
+    "scope": "RNA code routing; not all supplemental rules implemented",
+    "accessed_at": "2026-09-27",
+    "sha256": "190259f8291728d692d1e0fa10d5fb5af91e81b3ad7bf58111ef17cc41e68742"
+  },
+  {
+    "file": "references/sources/Ghosh2018.html",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6188666/",
+    "scope": "BA1 general definition and exceptions",
+    "accessed_at": "2026-09-27",
+    "sha256": "62b71e4ce47c9755673724ddd743d24a3d102fed3a1b35d8075aab9fb582970d"
+  },
+  {
+    "file": "references/sources/Riggs2020.html",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7313390/",
+    "scope": "Loss/Gain tables and 4O explanation; no automatic CNV implementation",
+    "accessed_at": "2026-09-27",
+    "sha256": "f2c35d1feeac542b8e3ee69ca23e596c55e2b054525e6fd50a3486cc023f9760"
+  },
+  {
+    "file": "references/sources/biesecker2024.xml",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10806742/",
+    "scope": "Table4 conversion; earlier source audit retained",
+    "accessed_at": "2026-09-27",
+    "sha256": "187c67f0de556fbc9e1bbc0ea1d09f80ecbc53b1e1f07f806b04966dbdf236a1"
+  }
+]

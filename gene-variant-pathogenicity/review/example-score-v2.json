@@ -1,0 +1,61 @@
+{
+  "primary_framework": "Tavtigian_2020_points",
+  "point_candidate": "LP",
+  "acmg_2015_comparison": {
+    "framework": "ACMG_2015_Table5_on_reviewed_strengths",
+    "candidate": "P",
+    "matched_rules": [
+      "P2"
+    ],
+    "status": "test_only",
+    "reasons": [],
+    "note": "2015 combining structure on supplied strengths; no automatic strength restoration or later combination amendments"
+  },
+  "framework_disagreement": true,
+  "difference_note": "Compare strengths and framework versions; do not select the higher category",
+  "framework": "SNV",
+  "accepted": [
+    {
+      "id": "e0",
+      "code": "PS1",
+      "framework": "SNV",
+      "rule_id": "r0",
+      "status": "reviewed",
+      "gate": "passed",
+      "points": "4",
+      "source_ids": [
+        "fixture"
+      ],
+      "basis_ids": [
+        "b0"
+      ],
+      "rationale": "synthetic test"
+    },
+    {
+      "id": "e1",
+      "code": "PS3",
+      "framework": "SNV",
+      "rule_id": "r1",
+      "status": "reviewed",
+      "gate": "passed",
+      "points": "4",
+      "source_ids": [
+        "fixture"
+      ],
+      "basis_ids": [
+        "b1"
+      ],
+      "rationale": "synthetic test"
+    }
+  ],
+  "excluded": [],
+  "net_points": "8",
+  "sandbox_partition": "LP_range",
+  "classification": null,
+  "status": "test_only_not_clinically_validated",
+  "blockers": [],
+  "limitations": [
+    "source-checked arithmetic is not clinical validation; classification stays null",
+    "Table 5 comparison uses supplied strengths; BA1 exceptions, VCEP and fractional SNV framework are not automated"
+  ]
+}
